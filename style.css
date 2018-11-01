@@ -1,0 +1,20 @@
+body {
+    padding:0px;
+    margin:auto;
+    width:30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img {
+    margin:auto;
+}
+
+p {
+    font-size:40px;
+    padding:10px;
+}
+
+.p {
+    color:white;
+}
