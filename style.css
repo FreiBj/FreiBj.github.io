@@ -42,7 +42,7 @@ div.links {
     height:100px;
     position:fixed;
     bottom:0; /*Denne koden trengs for å få footeren til å holde seg nederst*/
-    background-color:red;
+    background-color:white;
 }
 
 .footer img{
