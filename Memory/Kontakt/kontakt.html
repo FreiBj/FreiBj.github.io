@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Kontakt oss</title>
+        <link rel="stylesheet" type="text/css" href="../nav.css">
+        <link rel="stylesheet" type="text/css" href="kontakt.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!--Koble til fonten Roboto-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:800" rel="stylesheet"> <!--Koble til fonten Poppins-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
+    </head>
+    
+    <body>
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+              <a class="flicker-3" href="../index.html">Hjem</a>
+              <a class="flicker-3" href="../besøk.html">Besøksenteret</a>
+              <a class="flicker-3" href="../hurtigruta.html">Hurtigruta</a>
+              <a class="flicker-3" href="../Kontakt/kontakt.html">Kontakt</a>
+          </div>
+        </div>
+        
+        <header>
+            <h1><a href="tel:+4997032607">Kontakt oss</a></h1>
+        </header>
+
+        <form id="form" class="topBefore">
+		    <input id="name" type="text" placeholder="Navn">
+		    <input id="email" type="text" placeholder="E-MAIL">
+		    <textarea id="message" type="text" placeholder="Kontekst"></textarea>
+            <input id="submit" type="submit" value="Send">
+        </form>
+        
+        <script src="../script.js"></script>
+    </body>
+</html>
