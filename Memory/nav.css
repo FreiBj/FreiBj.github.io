@@ -1,0 +1,86 @@
+span.hamburger {
+    font-size:45px;
+    cursor:pointer;
+    color:black;
+    padding:10px;
+    z-index:300000; /*Skal ligge over alt annet*/
+}
+
+/*--------------Fullscreen Navigation----------------*/
+
+/*Animation for å ha en smooth overgang til mørkere farge*/
+@keyframes transitionIn { /*Overgangen inn til fullskjerm navigasjonen*/
+  from {background-color: rgba(0,0,0, 0);
+  }
+  to {background-color: rgba(0,0,0, 1);}
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+}
+
+li a {
+  display: block;
+  color:#f6f6f6;
+  /*text-align: center;*/
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:19px;
+}
+
+
+.overlay {
+    height: 100%; /*Skal dekke hele siden, både vertikalt og lodrett*/
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1000; /*Overlayen skal ha første prioritet fordi den skal være over alt aka*/
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0, 0);
+    background-color: rgba(0,0,0, 1);
+    /*background-color:#001f3f;*/
+    animation-name: transitionIn; /**/
+    animation-duration: 0.7s; /*Overgangen skal vare i 0.7 sekunder, passer perfekt*/
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.overlay a {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 75px;
+    /*color:#c1c1c1;*/
+    display: block;
+    /*transition: 0.3s;*/
+    font-weight:900;
+    -webkit-transition: font-size 0.1s, padding 0.5s, color 0.3s; /* Safari */
+    transition: font-size 0.1s, padding 0.5s, color 0.5s;
+    
+    background: url("https://media.giphy.com/media/3o751YKIPE1hgXhcEU/giphy.gif");
+    background-size:auto;
+    color:transparent;
+    -moz-background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.overlay a:hover, .overlay a:focus{ /*Focus = når du tykker tab endrer den farge også*/
+    color: white; /*Endrer fargen på teksten fra gjennomsiktig til hvit*/
+    padding-left:50px; /*Skyver teksten litt ut mot høyre som gir en kul effekt*/
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+}

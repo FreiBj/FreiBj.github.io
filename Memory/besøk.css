@@ -1,0 +1,35 @@
+span.hamburger {
+    position:absolute;
+}
+
+*{margin:0px; padding:0px;}
+
+.first-sec {
+    width:100vw;
+    height:100vh;
+}
+
+.first-sec img {
+    width:100vw;
+    height:100vh;
+    filter: brightness(50%);
+    margin-bottom:-10px; /*For å fjerne en hvitspace under bildet*/
+}
+
+
+h1 {
+    position:absolute;
+    top:10%;
+    color:white;
+    font-size:55px;
+    font-family: "Poppins",Sans-Serif;
+    line-height: 55px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+
+#konstruksjon:nth-letter(odd){
+  color:blue;
+}

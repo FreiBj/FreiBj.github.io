@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arctic Memory AS</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> <!--Koble til CSS dokumentet til hovedsiden-->
+        <link rel="stylesheet" type="text/css" href="nav.css"> <!--Koble til Navigasjons stilene-->
+        <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!--Koble til fonten Roboto-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:800" rel="stylesheet"> <!--Koble til fonten Poppins-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
+    </head>
+
+    <body>
+        <div id="myNav" class="overlay">
+          <a style="cursor:pointer" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+              <a href="index.html">Hjem</a>
+              <a href="besøk.html">Besøksenteret</a>
+              <a href="hurtigruta.html">Hurtigruta</a>
+              <a href="Kontakt/kontakt.html">Kontakt</a>
+          </div>
+        </div>
+        <span style="color:white;" id="hamburger" class="hamburger" onclick="openNav()">&#9776;</span> <!--Hamburger ikonet, når den trykkes på kjører openNav()-->
+
+        <section class="first-sec" style="margin-bottom:800px;">
+            <div class="video-container">
+              <video autoplay muted loop id="player">
+                <source src="header-vid.mp4" type="video/mp4">
+              </video>
+          </div>
+
+            <div class="first-sec-content">
+                <h1>ARCTIC PRESERVATION VISITOR CENTRE</h1>
+                <p>Et besøks og opplevelsesenter på <b>Svalbard</b></p>
+            </div>
+            <a class="arrowButton" id="arrowButton" href="#mid-sec"><div id="arrow" class="arrow"></div></a>
+        </section>
+
+        <section style="position:static;">
+        <div class="mid-sec" id="mid-sec" style="width:100vw; height:100vh; margin-top:50%;">
+            <div class="text">
+                <h1>Ambisjon og mål</h1>
+                <div class="outer"><div class="inner"></div></div>
+                <p style="width:700px;">Arctic Memory vil etablere et besøks- og opplevelsessenter i
+                Longyearbyen hvor besøkende til Svalbard får en helt unik opplevelese! Besøkssenteret skal gi en interaktiv og virtuel reise gjennom Frøhvelvet, Arctic World Archive og Svalbard geologiske og naturhistoriske utvikling.</p>
+            </div>
+            <div class="info-card">
+                <p>Svalbard Globale Frøhvelv forvales av den norkse stat, Crop trust, NorGen, Statsbygg
+                <br/><br/>Arctic World Archive er et samarbeid mellom Piql AS i Drammen
+                og Store Norske Spitsbergen Kulkompani AS i Longyearbyen</p>
+            </div>
+
+            <div class="text second">
+                <h1>Hvorfor Svalbard?</h1>
+                <div class="outer"><div class="inner"></div></div>
+                <p>Longyearbyens unike geopolitiske stabilitet, klima og permfrost gjør Svalbard til er perfekt sted for lagring av film. Ved riktige forhold kan dataen holde opp til 500 år.</p>
+            </div>
+
+            <div class="info-card" style="position:absolute; float:left;">
+                <p>Interessen for disse arkivene er stor verden over. Pressedekning etter åpningen av Arctic World Archive viser at
+                <br/><br>I løpet av 2 uker ble det skrevet 700 ulike artiker online om arkivet.</p>
+            </div>
+
+            <div class="text second">
+                <h1>Hvelvet</h1>
+                <div class="outer"><div class="inner"></div></div>
+                <p style="width:650px;">I Longyearbyen er det etablert to unike hvelv i verdens sammenheng. <i>Frøhvelvet</i> som tar vare på verdens frøreserver og <b>Arctic World Archive</b> som tar vare på verdens digitale kunst, arkitektur og historie.</p>
+            </div>
+
+            <img class="first-img" src="https://static1.squarespace.com/static/55c7cdbfe4b0ff8d21146290/55da46e1e4b07cfd7ebb5410/55da46f6e4b022811c54b6f6/1442879809725/svl14_018.jpg?format=1500w">
+            <img class="second-img" src="https://static1.squarespace.com/static/55c7cdbfe4b0ff8d21146290/55da46e1e4b07cfd7ebb5410/55da46f5e4b022811c54b6e8/1442879745957/svl14_015.jpg?format=1500w">
+            <img class="third-img" src="https://static1.squarespace.com/static/55c7cdbfe4b0ff8d21146290/55da46e1e4b07cfd7ebb5410/55da46ece4b0dd59bc9ac615/1442879726175/svl14_008.jpg?format=1500w">
+            <p class="footprint">Bli med og sett et evigvarende globalt positivt fotavtrykk!</p>
+        </div>
+      </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

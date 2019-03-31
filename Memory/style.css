@@ -1,0 +1,235 @@
+/*koblet opp til hoved siden aka index.html*/
+
+/*Basics*/
+body, html {
+    margin:0px; padding:0px; /**/
+    font-family: 'Roboto', sans-serif;
+}
+
+b {font-family: "Poppins";}
+
+.first-sec-content {
+    position: absolute;
+    width:750px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top:350px;
+}
+
+.first-sec-content h1, p{
+    z-index:300; /*Skal ligge på toppen*/
+    /*Skal være fritt plassert og oppå videoen*/
+   /* position the top  edge of the element at the middle of the parent */
+    text-align: center;
+}
+
+.first-sec-content h1 {
+    /*Visuals*/
+    color:white;
+    font-size:55px;
+    font-family: "Poppins",Sans-Serif;
+    line-height: 55px;
+}
+
+.first-sec-content p{
+    color:white;
+    font-size:25px;
+    font-family:"Roboto", Sans-Serif; /*Sans er backup*/
+    /*top:47%;*/
+    margin-top:-30px; /*OVerskrift og tekst nermere hverandre*/
+}
+
+.mid-sec .text {
+    font-family: "Raleway", sans-serif;
+    width:100%;
+    background-color:#f7f7f7;
+    height:250px;
+    position:relative;
+    /*margin-bottom:100px;*/
+    top:0%;
+    z-index: -1; /*Infoboksen skal være over teksten*/
+}
+
+.mid-sec .text h1{
+    font-size:50px;
+    font-weight:200;
+    width:200px;
+    position:absolute;
+    left:50px;
+    color:#111111;
+    padding-top:30px; /*Center Vertikalt*/
+    padding-bottom:30px; /*Center vertikalt*/
+}
+
+.mid-sec .text p{
+    font-weight:800;
+    position:absolute;
+    left:400px;
+    width:550px;
+    font-size:25px;
+    color:#AAAAAA;
+    padding-top:50px; /*Center Vertikalt*/
+    padding-bottom:50px; /*Center vertikalt*/
+}
+
+.button a {
+    font-family: "Roboto", Sans-Serif;
+    text-decoration: none;
+    top:60%;
+    font-size:20px;
+    border:solid 1px black;
+    border-radius: 15px;
+    padding:3px;
+    background-color:black;
+    color:white;
+}
+
+span { /*Hambruger knappen som åpner navigasjonen*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; /*Skal ligge over videoen*/
+}
+
+.video-container {
+  /*position: absolute;*/
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index:-1;
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  pointer-events: none;
+}
+
+/*Pilknappen ned*/
+.arrow {
+    box-sizing: border-box; /*Extender opp istedenfor ut til siden*/
+    height: 2.5vw;
+    width: 2.5vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+}
+
+.arrowButton {
+    z-index:300; /*Skal ligge på toppen*/
+    position:absolute; /*Skal være fritt plassert og oppå videoen*/
+    top: 90%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /*Nødvendig*/
+    text-align: center;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+/*Fade aniamation på Arrow down*/
+.transition {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0.3s linear,
+    opacity 0.3s linear;
+    -moz-transition: visibility 0.3s linear,
+    opacity 0.3s linear; /*Støtte for andre browsere*/
+    -o-transition: visibility 0.3s linear,
+    opacity 0.3s linear; /*Støtte for andre browsere*/
+}
+
+.mid-sec .info-card {
+    width:350px;
+    height:200px;
+    background-color:#001D2D;
+    color:white;
+    padding:20px;
+    font-family:"Poppins", Sans-Serif;
+    float:right;
+    margin-top:30px;
+    z-index:100000;
+}
+
+.mid-sec .info-card p {
+    /*float:left;*/
+    text-align:left;
+}
+
+.mid-sec .first-img {
+    position: absolute;
+    top:125%;
+    z-index:-11;
+    width:100vw;
+}
+
+.mid-sec .second-img {
+    position:absolute;
+    top:125%;
+    z-index:-11;
+    width:100vw;
+    height:100vh;
+}
+
+.mid-sec .third-img {
+    position:absolute;
+    top:250%;
+    z-index:-9;
+    width:100vw;
+    height:100vh;
+}
+
+.mid-sec .text.second {
+    margin-top:300px;
+}
+
+
+/*Den rette linjen på informasjons kortene*/
+.outer {
+  width: 1px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  float:left;
+  padding-left:300px;
+}
+.inner {
+  position: absolute;
+  width:100%;
+  height: 40%;
+  background: grey;
+  top: 30%;
+}
+
+/*Teksten som er helt nederst*/
+.footprint {
+    width:600px;
+    padding:20px;
+    background-color:#001D2D;
+    font-family: 'Reenie Beanie', cursive;
+    font-size:50px;
+    font-weight:700;
+    color:#f7f7f7;
+    margin:auto;/*Margin auto sentrerer teksten*/
+    border-radius:30px;
+    margin-top:200px;
+}

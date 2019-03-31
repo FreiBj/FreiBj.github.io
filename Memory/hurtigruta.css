@@ -1,0 +1,38 @@
+span.hamburger {
+    position:absolute;
+}
+
+body {
+    margin:0px; padding:0px;
+}
+
+img {
+    width:100vw;
+    height:100vh;
+    margin-bottom: -10px; /*Fjerner en whitespace nederst under bildet*/
+    filter: brightness(60%);
+}
+
+h1 {
+    width:800px;
+    text-align: center;
+    color:white;
+    position:absolute;
+    top:30%;
+    font-family:"Poppins", Sans-Serif;
+    font-size:55px;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    text-align:center;
+    color:white;
+    width:500px;
+    position:absolute;
+    font-family:"Raleway";
+    font-size:23px;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
