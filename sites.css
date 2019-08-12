@@ -36,14 +36,14 @@
 }
 
 
-.container{
-  display:flex;
-  margin:auto;
-  width:50%;
-  flex-wrap: wrap;
-  text-align:center;
-  justify-content:space-evenly;
-  margin-top:100px;
+.container {
+   display: flex;
+   margin: auto;
+   width: 100%;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+   margin-top: 100px;
 }
 
 .item {
