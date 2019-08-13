@@ -1,68 +1,83 @@
+--font-sans: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
 * {
-  font-family: 'Montserrat', sans-serif;
-  margin:0; padding:0;
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+}
+
+hr {
+    border:0.4px solid #d6dbe0;
+    margin:50px;
+    width:auto;
+    border-radius: 25px;
 }
 
 .logo, a{
-  line-height: 1.38;
   font-weight:700;
-  color: #000;
-  font-size: calc(120% + 1vw);
+  font-size: calc(120% + 0.5vw);
   line-height: 44px;
   font-weight: 700;
   text-decoration:none;
-  padding:35px;
+  /*padding:35px;*/
+  color:#0070f3;
 }
 
-.contact a {
-  padding:30px;
-  font-size: 19px;
-  font-weight:400
-    
+.logo {
+    font-size: calc(120% + 0.5vw);
+    line-height: 1.5;
 }
 
-.column {
-  float: right;
-  width: 50%;
-}
+/*.contact a {*/
+/*  padding:30px;*/
+/*  font-size: 19px;*/
+/*  font-weight:400*/
+/*}*/
 
-.row {
-  display: flex;
-}
+/*.column {*/
+/*  float: right;*/
+/*  width: 50%;*/
+/*}*/
 
-.column {
+/*.row {*/
+/*  display: flex;*/
+/*}*/
+
+/*.column {*/
 /*   flex: 50%; */
-  margin:20px;
-}
+/*  margin:20px;*/
+/*}*/
 
 
-.container {
-   display: flex;
-   margin: auto;
-   width: 100%;
-   flex-wrap: wrap;
-   text-align: center;
-   justify-content: center;
-   margin-top: 100px;
-}
+/*.container{*/
+/*  display:flex;*/
+/*  margin:auto;*/
+/*  width:50%;*/
+/*  flex-wrap: wrap;*/
+/*  text-align:center;*/
+/*  justify-content:space-around;*/
+/*  margin-top:100px;*/
+/*}*/
 
-.item {
-  width:350px;
-  height:300px;
+/*.item {*/
+/*  width:350px;*/
+/*  height:300px;*/
   /*background-color:#001628;*/
-  margin:auto;
-  border: 2px solid black;
-  border-radius:12px;
-  margin:20px;
-  color:black;
-}
+/*  margin:auto;*/
+/*  border: 2px solid black;*/
+/*  border-radius:12px;*/
+/*  margin:20px;*/
+/*  color:black;*/
+/*}*/
 
-.item h2 {
-  font-weight:700;
-  font-size:30px;
-  margin:13px;
-}
+/*.item h2 {*/
+/*  font-weight:700;*/
+/*  font-size:30px;*/
+/*  margin:13px;*/
+/*}*/
 
-img {
-    width:350px;
-}
+/*img {*/
+/*    width:350px;*/
+/*}*/
