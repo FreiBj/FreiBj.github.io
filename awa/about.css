@@ -1,0 +1,64 @@
+/*Global Flex Class*/
+.flex-parent {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.first-sec {
+    min-height:100vh;
+}
+
+.first-sec .bg-img{
+    height:60vh;
+    min-width:100vw;
+    font-size:80px;
+    
+    background-image: url('https://images.unsplash.com/photo-1526408909967-8af0125136e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1152&q=80');
+    background-position: center;
+    background-size: cover;
+    
+    font-family: "Poppins", Sans-Serif;
+    font-weight:800;
+    font-size:55px;
+    color:white;
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);*/
+}
+
+.about-sec {
+    font-family: "Raleway", sans-serif;
+    
+    max-width:50vw;
+    text-align:left;
+}
+
+.about-sec h2{
+    font-size:50px;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-weight: 200;
+    text-align:left;
+    width:100%;
+}
+
+.about-sec p {
+    font-size:20px;
+}
+
+.about-sec p:last-child {
+    margin-bottom:50px;
+}
+
+.vault-img img{
+    /*min-height: 200px;*/
+    max-width: 50vw;
+    
+    margin-top:30px;
+    
+    /*background-image: url("vault.jpg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+}
