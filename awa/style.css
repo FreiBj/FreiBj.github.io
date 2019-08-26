@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -20,7 +20,7 @@ time, mark, audio, video {
 	font-family: 'Raleway', sans-serif;
 	line-height:1.5;
 	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*Global Flex Class*/
@@ -69,22 +69,22 @@ time, mark, audio, video {
 @media only screen and (max-width: 768px) {
     .video, video {
         /*height: 50vh;*/
-        
+
     }
-    
+
     .mid-sec .text-card h1 {
         font-size:8vw;
         margin-top:2rem;
     }
-    
+
     .mid-sec .text-card p {
         max-width:70vw;
     }
-    
+
     footer {
         flex-direction: column;
     }
-    
+
 }
 
 .text-card {
@@ -132,13 +132,13 @@ time, mark, audio, video {
 .info-div {
     display:flex;
     align-items: center;
-    
+
     background-image: url('https://images.unsplash.com/photo-1526056567064-acb5c538b488?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto');
     background-position: center;
     background-size: cover;
     min-height:35rem;
     padding:4rem;
-    
+
 }
 
 .info-div:nth-child(2) {
