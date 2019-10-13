@@ -37,6 +37,7 @@ time, mark, audio, video {
     height: 100vh;
     display: flex;
     align-items: center;
+		pointer-events: none; !important
 }
 
 .video video {
@@ -78,7 +79,7 @@ time, mark, audio, video {
     }
 
     .mid-sec .text-card p {
-        max-width:70vw;
+        max-width:90vw;
     }
 
     footer {
