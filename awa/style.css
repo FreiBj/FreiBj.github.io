@@ -37,7 +37,7 @@ time, mark, audio, video {
     height: 100vh;
     display: flex;
     align-items: center;
-		pointer-events: none; !important
+	pointer-events: none; !important
 }
 
 .video video {
@@ -56,7 +56,7 @@ time, mark, audio, video {
 
 .video .video-text h1{
     font-family: "Poppins", Sans-Serif;
-    font-size:55px;
+    font-size:45px;
     color:white;
     text-align:center;
 }

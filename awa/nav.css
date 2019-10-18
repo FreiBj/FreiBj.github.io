@@ -61,8 +61,8 @@ li a {
 }
 
 .overlay {
-    height: 100vh; /*Skal dekke hele siden, både vertikalt og lodrett*/
-    width: 100vw;
+    min-height: 100vh; /*Skal dekke hele siden, både vertikalt og lodrett*/
+    min-width: 100vw;
     display: none;
     position: fixed;
     z-index: 1000; /*Overlayen skal ha første prioritet fordi den skal være over alt aka*/
@@ -91,7 +91,7 @@ li a {
     font-family: 'Poppins', sans-serif;
     padding: 8px;
     text-decoration: none;
-    font-size: 65px;
+    font-size: 8vh;
     /*color:#c1c1c1;*/
     display: block;
     /*transition: 0.3s;*/
