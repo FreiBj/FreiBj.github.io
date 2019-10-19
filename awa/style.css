@@ -51,6 +51,7 @@ time, mark, audio, video {
 /*Header and small paragraph on top of Video*/
 .video .video-text {
     position:absolute;
+    bottom:5%;
     width:100%
 }
 
@@ -99,7 +100,7 @@ time, mark, audio, video {
     flex-direction: row;
     flex-wrap:wrap;
     width: 100vw;
-    min-height:50vh;
+    min-height:60vh;
     /*background-color: #f7f7f7;*/
 }
 
