@@ -99,7 +99,7 @@ time, mark, audio, video {
     flex-direction: row;
     flex-wrap:wrap;
     width: 100vw;
-    min-height:60vh;
+    min-height:50vh;
     /*background-color: #f7f7f7;*/
 }
 
