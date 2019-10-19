@@ -23,16 +23,30 @@ time, mark, audio, video {
     -moz-osx-font-smoothing: grayscale;
 }
 span.hamburger {
-    font-size:4em;
+    font-size:3.5em;
     cursor:pointer;
     color:black;
     padding:10px;
     z-index:300000; /*Skal ligge over alt annet*/
+    line-height: 1;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1; /*Skal ligge over videoen*/
+}
+
+span.awa {
+    font-size:1.7em;
+    cursor:pointer;
+    color:black;
+    padding:10px;
+    z-index:3; /*Skal ligge over alt annet*/
+    line-height: 1;
 
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1; /*Skal ligge over videoen*/
 }
 
 /*--------------Fullscreen Navigation----------------*/
