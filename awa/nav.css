@@ -20,8 +20,9 @@ time, mark, audio, video {
 	font-family: 'Raleway', sans-serif;
 	line-height:1.5;
 	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 span.hamburger {
     font-size:3.5em;
     cursor:pointer;
@@ -135,14 +136,16 @@ li a {
 
 /*Footer*/
 footer {
-    max-width:100vw;
+    min-width:100vw;
     min-height:40vh;
 
     background-color: #262626;
 
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
     align-content: stretch;
 
