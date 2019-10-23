@@ -7,21 +7,6 @@
     flex-direction: column;
 }
 
-@font-face {
-  font-family: LyonDisplay-Regular;
-  src: url(fonts/LyonDisplay-Regular.otf);
-}
-
-@font-face {
-  font-family: LyonDisplay-Light;
-  src: url(fonts/LyonDisplay-Light.otf);
-}
-
-* {
-  font-family: 'LyonDisplay', serif; !important
-  font-size: 48px;
-}
-
 .video {
     width: 100vw;
     height: 100vh;
@@ -60,6 +45,10 @@
     max-width:650px;
 }
 
+.video .video-text img {
+  max-width:40vw;
+}
+
 @media only screen and (max-width: 768px) {
     .video, video {
         /*height: 50vh;*/
@@ -77,6 +66,10 @@
 
     footer {
         flex-direction: column;
+    }
+
+    .video .video-text img {
+      max-width:calc(70vw);
     }
 
 }
@@ -105,8 +98,8 @@
 }
 
 .mid-sec .text-card p {
-    font-family: "LyonDisplay-Light", Sans-Serif;
-    padding:55px; /*MÅ ENDRES!*/
+    font-family: "LyonDisplay-Regular", Sans-Serif;
+    margin:55px; /*MÅ ENDRES!*/
     font-weight: 400;
     max-width:50vw;
     font-size: 23px;
@@ -120,7 +113,7 @@
     background-color:#1E1F2E;
     color:white;
     padding:20px;
-    font-family: "Raleway", Sans-Serif;
+    font-family: "LyonDisplay-Regular", Sans-Serif;
     font-weight:300;
     font-size:22px;
     z-index:100;
@@ -140,10 +133,4 @@
 
 .info-div:nth-child(2) {
     background-image: url('https://images.unsplash.com/photo-1526241293825-22718a4c8f97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto');
-}
-
-/*Vertical line, line to separate the header and the paragraph*/
-.vl {
-  border-left: 1px solid grey;
-  height: 6em;
 }

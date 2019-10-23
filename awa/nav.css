@@ -1,3 +1,63 @@
+@font-face {
+  font-family: LyonDisplay-Black;
+  src: url(fonts/LyonDisplay-Black.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-BlackItalic;
+  src: url(fonts/LyonDisplay-BlackItalic.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-Bold;
+  src: url(fonts/LyonDisplay-Bold.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-BoldItalic;
+  src: url(fonts/LyonDisplay-BoldItalic.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-Light;
+  src: url(fonts/LyonDisplay-Light.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-LightItalic;
+  src: url(fonts/LyonDisplay-LightItalic.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-Medium;
+  src: url(fonts/LyonDisplay-Medium.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-MediumItalic;
+  src: url(fonts/LyonDisplay-MediumItalic.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-Regular;
+  src: url(fonts/LyonDisplay-Regular.otf);
+}
+
+@font-face {
+  font-family: LyonDisplay-RegularItalic;
+  src: url(fonts/LyonDisplay-RegularItalic.otf);
+}
+
+/*Global Flex Class*/
+.flex-parent {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,37 +77,41 @@ time, mark, audio, video {
 	font-size: 100%;
 	/*font: inherit;*/
 	vertical-align: baseline;
-	font-family: 'Raleway', sans-serif;
+	/* font-family: 'Raleway', sans-serif; */
 	line-height:1.5;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+	max-width:100vw;
 }
 
 span.hamburger {
     font-size:3.5em;
     cursor:pointer;
     color:black;
-    padding:10px;
+    margin:10px;
     z-index:300000; /*Skal ligge over alt annet*/
     line-height: 1;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 1; /*Skal ligge over videoen*/
 }
 
-span.awa {
-    font-size:1.7em;
+span.awa h1 {
+    font-size:2em;
     cursor:pointer;
-    color:black;
-    padding:10px;
+    color:white;
+    margin:10px;
     z-index:3; /*Skal ligge over alt annet*/
     line-height: 1;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+
+		font-family: "LyonDisplay-Regular", sans-serif;
+	  text-align:left;
 }
 
 /*--------------Fullscreen Navigation----------------*/
@@ -103,8 +167,8 @@ li a {
 }
 
 .overlay a {
-    font-family: 'Poppins', sans-serif;
-    padding: 8px;
+    font-family: 'LyonDisplay-Regular', sans-serif;
+		margin: 8px;
     text-decoration: none;
     font-size: 8vh;
     /*color:#c1c1c1;*/
@@ -158,7 +222,7 @@ img {
 
 footer li {
     /*line-height:1.5;*/
-    font-size:20px;
+    font-size:25px;
 }
 
 footer div {
@@ -198,7 +262,7 @@ footer div {
 /*Blockquote styling*/
 blockquote {
    color:#AAAAAA;
-   font-family: Tahoma, sans-serif;
+   font-family: "LyonDisplay-RegularItalic", sans-serif;
    font-size: 27px;
    width: 85%;
    /*margin: 0 auto;*/
@@ -214,7 +278,7 @@ blockquote p {
 blockquote p::before,
 blockquote p::after {
    content: "“";
-   font-family: Georgia;
+   font-family: "LyonDisplay-RegularItalic", sans-serif;
    font-size: 8rem;
    margin: -2rem 0 0 -4rem;
    position: absolute;

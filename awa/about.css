@@ -20,7 +20,7 @@
     background-position: center;
     background-size: cover;
 
-    font-family: "Poppins", Sans-Serif;
+    font-family: "LyonDisplay-Bold", Sans-Serif;
     font-weight:800;
     font-size:55px;
     color:white;
@@ -28,7 +28,7 @@
 }
 
 .about-sec {
-    font-family: "Raleway", sans-serif;
+    font-family: "LyonDisplay-Regular", sans-serif;
 
     max-width:50vw;
     text-align:left;
