@@ -91,11 +91,11 @@ span.hamburger {
     margin:10px;
     z-index:300000; /*Skal ligge over alt annet*/
     line-height: 1;
+    font-family: "LyonDisplay-Regular", sans-serif;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    z-index: 1; /*Skal ligge over videoen*/
 }
 
 span.awa h1 {
@@ -103,7 +103,7 @@ span.awa h1 {
     cursor:pointer;
     color:white;
     margin:10px;
-    z-index:3; /*Skal ligge over alt annet*/
+    z-index:1; /*Skal ligge over alt annet*/
     line-height: 1;
 
     position: absolute;
@@ -155,11 +155,11 @@ li a {
 }
 
 .overlay-content {
-    /*display:flex;*/
+    display:flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    position: relative;
+    /* position: relative; */
     top: 15%;
     width: 100%;
     /*text-align: left;*/
@@ -183,7 +183,7 @@ li a {
     background-size:cover; /*Was auto with commented gif*/
     color:transparent;
     -moz-background-clip: text;
-	-webkit-background-clip: text;
+	  -webkit-background-clip: text;
 }
 
 .overlay a:hover, .overlay a:focus{ /*Focus = når du tykker tab endrer den farge også*/
@@ -194,8 +194,8 @@ li a {
 .overlay .closebtn {
     position: absolute;
     /*top: 20px;*/
-    padding: 10px;
-    font-size:4em;
+    /* padding: 10px; */
+    font-size:7em;
 }
 
 /*Footer*/
@@ -217,7 +217,7 @@ footer {
 }
 
 img {
-    max-width:100px;
+    max-width:150px;
 }
 
 footer li {
@@ -226,7 +226,7 @@ footer li {
 }
 
 footer div {
-    /*padding:10px;*/
+    padding:10px;
 }
 
  /*Style all font awesome icons */
