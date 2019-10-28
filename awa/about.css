@@ -1,10 +1,35 @@
 /*Global Flex Class*/
-.flex-parent {
+.flex-parent-left {
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     flex-direction: column;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about-sec h2 {
+        font-size:8vw;
+        margin-top:2rem;
+        text-align:left;
+        min-width:85vw;
+    }
+    
+    .about-sec h3 {
+      text-align:left;
+      min-width:85vw;
+    }
+
+    .about-sec p {
+        min-width:85vw;
+        text-align:left;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
 }
 
 .first-sec {
@@ -62,7 +87,7 @@
 
 .vault-img img{
     /*min-height: 200px;*/
-    max-width: 50vw;
+    max-width: 70vw;
 
     margin-top:30px;
 

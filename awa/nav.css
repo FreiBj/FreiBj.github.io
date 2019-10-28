@@ -266,6 +266,7 @@ blockquote {
    font-size: 27px;
    width: 85%;
    /*margin: 0 auto;*/
+   max-width:100vw;
 }
 blockquote h1 {
    font-size: 4rem;
