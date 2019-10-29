@@ -1,9 +1,13 @@
+var pageYOffset;
+var lastPageYOffset;
+
 function noscroll() {
   window.scrollTo(0,0);
 }
 
 window.onscroll = function() {
-    console.log(window.pageYOffset);
+    var pageYOffset = window.pageYOffset;
+    console.log(pageYOffset);
     var nav = document.getElementById('hamburger');
     if ( window.pageYOffset > 710 ) {
         document.getElementById("hamburger").style.color = "black";
@@ -26,10 +30,15 @@ function openNav() {
     document.getElementById("myNav").style.display = "block";
     document.querySelector("span").style.display = "none";
     // window.addEventListener('scroll', noscroll);
+    lastPageYOffset = window.pageYOffset;
+    window.scrollTo(0,1)
+    console.log("Last PageyOffset" + lastPageYOffset);
+
 }
 
 function closeNav() {
     document.getElementById("myNav").style.display = "none";
     document.querySelector("span").style.display = "block";
     // window.removeEventListener('scroll', noscroll);
+    window.scrollTo(0, lastPageYOffset);
 }
