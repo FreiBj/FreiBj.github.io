@@ -47,8 +47,9 @@
     }
 
     .mid-sec .text-card h1 {
-        font-size:8vw;
+        font-size:calc(8vw + 1em);
         margin-top:2rem;
+        min-width:85vw;
     }
 
     .mid-sec .text-card p {
@@ -83,7 +84,8 @@
     font-family: "LyonDisplay-Regular", Sans-Serif;
     font-size: 55px;
     font-weight: 200;
-    max-width: 400px;
+    /*max-width: 400px;*/
+    max-width:50vw;
     color: #111111;
     text-align:left;
     display:flex;

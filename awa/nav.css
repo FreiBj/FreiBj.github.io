@@ -103,6 +103,7 @@ span.awa h1 {
     cursor:pointer;
     color:white;
     margin:10px;
+    max-width:200px;
     z-index:1; /*Skal ligge over alt annet*/
     line-height: 1;
 
