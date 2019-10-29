@@ -31,8 +31,9 @@ function openNav() {
     document.querySelector("span").style.display = "none";
     // window.addEventListener('scroll', noscroll);
     lastPageYOffset = window.pageYOffset;
-    window.scrollTo(0,1)
-    console.log("Last PageyOffset" + lastPageYOffset);
+    window.scrollTo(0,100);
+    // console.log("Last PageyOffset" + lastPageYOffset);
+    console.log("TESTING " + pageYOffset);
 
 }
 
