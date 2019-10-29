@@ -194,12 +194,6 @@ li a {
     padding-left:50px; /*Skyver teksten litt ut mot høyre som gir en kul effekt*/
 }
 
-.overlay .closebtn {
-    position: absolute;
-    /*top: 20px;*/
-    /* padding: 10px; */
-    font-size:7em;
-}
 
 /*Footer*/
 footer {

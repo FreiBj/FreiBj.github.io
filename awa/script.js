@@ -25,11 +25,11 @@ window.onscroll = function() {
 function openNav() {
     document.getElementById("myNav").style.display = "block";
     document.querySelector("span").style.display = "none";
-    window.addEventListener('scroll', noscroll);
+    // window.addEventListener('scroll', noscroll);
 }
 
 function closeNav() {
     document.getElementById("myNav").style.display = "none";
     document.querySelector("span").style.display = "block";
-    window.removeEventListener('scroll', noscroll);
+    // window.removeEventListener('scroll', noscroll);
 }
