@@ -1,12 +1,3 @@
-/*Global Flex Class*/
-.flex-parent {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-}
-
 .video {
     width: 100vw;
     height: 100vh;
