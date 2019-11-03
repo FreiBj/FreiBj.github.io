@@ -103,7 +103,7 @@ span.awa h1 {
     cursor:pointer;
     color:white;
     margin:10px;
-    max-width:200px;
+    max-width:400px;
     z-index:1; /*Skal ligge over alt annet*/
     line-height: 1;
 
@@ -111,7 +111,7 @@ span.awa h1 {
     top: 0;
     left: 0;
 
-		font-family: "LyonDisplay-Regular", sans-serif;
+		font-family: "LyonDisplay-Light", sans-serif;
 	  text-align:left;
 }
 
