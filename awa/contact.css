@@ -1,0 +1,91 @@
+.contact {
+  min-width: 100vw;
+  max-width:100vw;
+  min-height:70vh;
+}
+
+.contact h1, .contact a {
+  font-family: "LyonDisplay-Regular", Sans-Serif;
+  font-size:80px;
+
+  color:#262626;
+  text-decoration: none;
+}
+
+.form {
+
+}
+
+#form {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input {
+  font-family: "LyonDisplay-Regular", Sans-Serif;
+  font-size: 14px;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent; /*Gjør fargen på send knappen gjennomsikig*/
+  outline: none;
+  color: #726659;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none; /*Fjerner kanten nederst så den under er som en kant*/
+
+
+  /*Når du holder over så tar det litt lengre tid før fargen kommer opp, gir en fin effekt*/
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+/*Endrer fargen når du holder musen over*/
+input:hover, textarea:hover, #submit:hover{
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px; /*Textfeltet skal være større enn de andre*/
+  max-height: 110px;
+  padding: 15px; /*For å line opp textfeltet med de andre*/
+
+  background: transparent; /*Gjennomsiktig*/
+
+  color: #726659;
+  font-family: "LyonDisplay-Regular", Sans-Serif;
+  font-size: 14px;
+  resize: none;/*Skal ikke være mulig å endre på størrelsen på tekstfield*/
+  border: solid 1px #b3aca7;
+  outline:none; /*Fjerner en sånn blå border som kommer rundt når du selecter textfeltet*/
+
+  /*Animasjon for å spice litt opp*/
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+#submit {
+  width: 502px;
+
+  padding: 0;
+  margin: -8px 0px 0px 0px; /*-8px er for å fjerne et gap med whitespace*/
+
+  font-family: "LyonDisplay-Regular", Sans-Serif;
+  font-size: 14px;
+  color: #b3aca7;
+
+  cursor: pointer;
+  outline:none;
+
+  border: solid 1px #b3aca7;
+  border-top: none; /*Bruker borderen til kontekst feltet*/
+}

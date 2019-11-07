@@ -15,7 +15,7 @@
         text-align:left;
         min-width:85vw;
     }
-    
+
     .about-sec h3 {
       text-align:left;
       min-width:85vw;
@@ -47,7 +47,7 @@
 
     font-family: "LyonDisplay-Bold", Sans-Serif;
     font-weight:800;
-    font-size:55px;
+    /* font-size:55px; */
     color:white;
     /*box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);*/
 }

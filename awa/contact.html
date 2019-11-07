@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Arctic World Archive</title>
+
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <link rel="stylesheet" type="text/css" href="nav.css">
+
+        <!-- Add icon library -->
+        <script src="https://kit.fontawesome.com/3f79689e7f.js"></script>
+
+        <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">--> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
+        <meta name="description" content="Arctic World Archive">
+        <meta name="keywords" content="keywords,here">
+    </head>
+
+    <body>
+        <div id="myNav" class="overlay">
+          <!--<a style="cursor:pointer" class="closebtn" onclick="closeNav()">&times;</a>-->
+          <div class="overlay-content flex-parent">
+              <a style="cursor:pointer" onclick="closeNav()">&times;</a>
+              <a href="index.html">Home</a>
+              <a href="memories.html">Memories</a>
+              <a href="contribute.html">Contribute</a>
+              <a href="news.html">News</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <span style="color:black;" id="hamburger" class="hamburger flex-parent" onclick="openNav()">&#9776;</span> <!--Hamburger ikonet, når den trykkes på kjører openNav()-->
+
+        <section class="contact flex-parent">
+          <div class="form flex-parent">
+            <header>
+                <h1><a href="tel:+4997032607">Contact Us</a></h1>
+            </header>
+
+            <form id="form" class="topBefore">
+    		    <input id="name" type="text" placeholder="Navn">
+    		    <input id="email" type="text" placeholder="E-MAIL">
+    		    <textarea id="message" type="text" placeholder="Melding"></textarea>
+                <input id="submit" type="submit" value="Send">
+            </form>
+
+          </div>
+        </section>
+
+        <footer>
+            <div>
+                <img src="AWA_Logo_Negativ_RGB.png" class="footer-logo">
+            </div>
+
+            <div>
+                <ul>
+                    <li style="line-height:2;"><h2>Sitemap</h2></li>
+                    <li>Memories</li>
+                    <li>Contribute</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <a><li style="line-height:2;"><h2>Address</h2></li></a>
+                    <li>Arctic World Archive</li>
+                    <li>Grønland 56</li>
+                    <li>3045 Drammen</li>
+                    <li>Norway</li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
