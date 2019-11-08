@@ -46,10 +46,11 @@
 
     }
 
-    .mid-sec .text-card h1 {
+    .mid-sec .text-card h2 {
         font-size:calc(8vw + 1em);
         margin-top:2rem;
         min-width:85vw;
+        justify-content: flex-start;
     }
 
     .mid-sec .text-card p {
@@ -80,7 +81,7 @@
     /*background-color: #f7f7f7;*/
 }
 
-.text-card h1 {
+.text-card h2 {
     font-family: "LyonDisplay-Regular", Sans-Serif;
     font-size: 55px;
     font-weight: 200;
@@ -107,7 +108,7 @@
 }
 
 /*The blue info-card*/
-.info-card {
+/* .info-card {
     max-width:320px;
     background-color:#1E1F2E;
     color:white;
@@ -116,7 +117,7 @@
     font-weight:300;
     font-size:22px;
     z-index:100;
-}
+} */
 
 .info-div {
     display:flex;
@@ -126,7 +127,7 @@
     background-position: center;
     background-size: cover;
     min-height:35rem;
-    padding:4rem;
+    /* padding:4rem; */
 
 }
 
