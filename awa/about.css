@@ -45,8 +45,8 @@
     background-position: center;
     background-size: cover;
 
-    font-family: "LyonDisplay-Bold", Sans-Serif;
-    font-weight:800;
+    font-family: "LyonDisplay-Regular", Sans-Serif;
+    /*font-weight:800;*/
     /* font-size:55px; */
     color:white;
     /*box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);*/
