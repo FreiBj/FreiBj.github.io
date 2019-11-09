@@ -68,7 +68,7 @@
     font-size: 55px;
     font-weight: 200;
     /*max-width: 400px;*/
-    max-width:50vw;
+    max-width:50%;
     color: #111111;
     text-align:left;
     display:flex;
@@ -83,7 +83,7 @@
     font-family: "LyonDisplay-Regular", Sans-Serif;
 
     font-weight: 400;
-    max-width:50vw;
+    max-width:50%;
     font-size: 23px;
     color: #AAAAAA;
     /*line-height:1.5;*/
@@ -107,7 +107,7 @@
     background-image: url('https://images.unsplash.com/photo-1526056567064-acb5c538b488?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto');
     background-position: center;
     background-size: cover;
-    min-height:35rem;
+    min-height:50rem;
     /* padding:4rem; */
 
 }
