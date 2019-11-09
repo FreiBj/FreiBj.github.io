@@ -125,9 +125,9 @@ span.awa h1 {
 }
 
 .overlay {
-    min-height: 100vh; /*Skal dekke hele siden, både vertikalt og lodrett*/
+    min-height: 100%; /*Skal dekke hele siden, både vertikalt og lodrett*/
     min-width: 100%;
-    max-height: 100vh;
+    max-height: 100%;
     max-width:100%;
     display: none;
     position: fixed;
@@ -143,22 +143,25 @@ span.awa h1 {
 
 .overlay-content {
     display:flex;
+    flex-direction:column;
     flex-wrap:nowrap;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
-    min-height: 100vh; /*Skal dekke hele siden, både vertikalt og lodrett*/
+
+    height:100%;
+
+    /* min-height: 100%;
+    max-height: 100%;
     min-width: 100%;
-    max-height: 100vh;
-    max-width:100%;
+    max-width:100%; */
 }
 
 .overlay-content a {
     font-family: 'LyonDisplay-Bold', sans-serif;
-		margin: 0.7vh;
+		/* margin: 0.7vh; */
     text-decoration: none;
-    /* font-size: 8vh; */
+    font-size: 8vh;
     display: block;
     /*transition: 0.3s;*/
     -webkit-transition: font-size 0.1s, padding 0.5s, color 0.3s; /* Safari */
