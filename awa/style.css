@@ -28,14 +28,6 @@
     text-align:center;
 }
 
-.video .video-text p {
-    font-family: "Roboto", Sans-Serif;
-    font-size:29px;
-    color:white;
-    text-align:center;
-    max-width:650px;
-}
-
 .video .video-text img {
   max-width:40vw;
 }
@@ -74,8 +66,8 @@
     align-items: center;
     align-content: center;
     flex-direction: row;
-    flex-wrap:wrap;
-    min-width: 100vw;
+    flex-wrap:wrap
+    max-width:100vw;
     min-height:75vh;
     /*max-height:75vh;*/
     /*background-color: #f7f7f7;*/
@@ -120,8 +112,6 @@
 } */
 
 .info-div {
-    display:flex;
-    align-items: center;
 
     background-image: url('https://images.unsplash.com/photo-1526056567064-acb5c538b488?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto');
     background-position: center;

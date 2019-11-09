@@ -5,16 +5,16 @@ function noscroll() {
   window.scrollTo(0,0);
 }
 
-window.onscroll = function() {
-    var pageYOffset = window.pageYOffset;
-    console.log(pageYOffset);
-    var nav = document.getElementById('hamburger');
-    if ( window.pageYOffset > 710 ) {
-        document.getElementById("hamburger").style.color = "black";
-    } else {
-        document.getElementById("hamburger").style.color = "white";
-    }
-}
+// window.onscroll = function() {
+//     var pageYOffset = window.pageYOffset;
+//     console.log(pageYOffset);
+//     var nav = document.getElementById('hamburger');
+//     if ( window.pageYOffset > 710 ) {
+//         document.getElementById("hamburger").style.color = "black";
+//     } else {
+//         document.getElementById("hamburger").style.color = "white";
+//     }
+// }
 
 // window.onscroll = function() {
 //     if (window.pageYOffset > 50) {
