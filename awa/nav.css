@@ -48,10 +48,28 @@
   src: url(fonts/LyonDisplay-RegularItalic.otf);
 }
 
+a {
+  font-weight: bold;
+  color:#7D7773;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#B4ACA6;
+}
+
 /*Global Flex Class*/
 .flex-parent {
     display:flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.flex-parent-left {
+    display:flex;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     flex-direction: column;
