@@ -68,6 +68,15 @@ a:hover {
     align-content: center;
 }
 
+.flex-col {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 .flex-left {
     display:flex;
     justify-content: flex-start;
@@ -179,7 +188,6 @@ span.awa h1 {
 
 .overlay-content a {
     font-family: 'LyonDisplay-Bold', sans-serif;
-		/* margin: 0.7vh; */
     text-decoration: none;
     font-size: 8vh;
     display: block;
@@ -187,7 +195,7 @@ span.awa h1 {
     -webkit-transition: font-size 0.1s, padding 0.5s, color 0.3s; /* Safari */
     transition: font-size 0.1s, padding 0.5s, color 0.5s;
 
-    color:white;
+    color:white !important;
 }
 
 .overlay a:hover, .overlay a:focus{ /*Focus = når du tykker tab endrer den farge også*/
@@ -199,7 +207,7 @@ span.awa h1 {
 /*Footer*/
 footer {
     /* min-width:100%; */
-    min-height:30vh;
+    min-height:40vh;
     min-width:100%;
     max-width:100%;
 
