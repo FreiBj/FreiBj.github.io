@@ -67,13 +67,13 @@ a:hover {
     flex-direction: column;
 }
 
-.flex-parent-left {
+/* .flex-parent-left {
     display:flex;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
     flex-direction: column;
-}
+} */
 
 
 html, body, div, span, applet, object, iframe,
@@ -111,7 +111,7 @@ span.hamburger {
     line-height: 1;
     font-family: "LyonDisplay-Regular", sans-serif;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
 }
