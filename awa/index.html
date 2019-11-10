@@ -18,8 +18,8 @@
         <!-- Add icon library -->
         <script src="https://kit.fontawesome.com/3f79689e7f.js"></script>
 
-        <!-- <meta name='viewport' content='initial-scale=1, viewport-fit=cover'> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
+        <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">--> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
         <meta name="description" content="Arctic World Archive">
         <meta name="keywords" content="keywords,here">
     </head>
@@ -27,7 +27,7 @@
     <body>
         <div id="myNav" class="overlay">
           <!--<a style="cursor:pointer" class="closebtn" onclick="closeNav()">&times;</a>-->
-          <div class="overlay-content">
+          <div class="overlay-content flex-parent">
               <a style="cursor:pointer" onclick="closeNav()">&times;</a>
               <a href="index.html">Home</a>
               <a href="memories.html">Memories</a>
@@ -50,8 +50,8 @@
             </video>
         </section>
 
-        <section class="mid-sec flex-parent">
-                <div class="text-card flex-parent">
+        <section class="mid-sec">
+                <div class="text-card">
                     <h2>A safe repository for world memory</h2>
                     <p>
                         Designed to withstand natural and man-made disasters, in the safest location on earth, data stored here will last for centuries.
@@ -129,15 +129,11 @@
             </div>
 
             <div>
-                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
-                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="linkedin"></a>
-                <!-- <a href="https://www.facebook.com/ArcticWorldArchive/" target="_blank"><span uk-icon="facebook"></span></a>
-                <a href="https://www.linkedin.com/company/arctic-world-archive/" target="_blank"><span uk-icon="linkedin"></span></i></a> -->
+                <a href="https://www.facebook.com/ArcticWorldArchive/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.linkedin.com/company/arctic-world-archive/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
         </footer>
 
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script> -->
         <script src="script.js"></script>
     </body>
 </html>

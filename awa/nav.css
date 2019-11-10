@@ -48,16 +48,6 @@
   src: url(fonts/LyonDisplay-RegularItalic.otf);
 }
 
-a {
-  font-weight: bold;
-  color:#7D7773;
-  text-decoration: none;
-}
-
-a:hover {
-  color:#B4ACA6;
-}
-
 /*Global Flex Class*/
 .flex-parent {
     display:flex;
@@ -66,14 +56,6 @@ a:hover {
     align-content: center;
     flex-direction: column;
 }
-
-/* .flex-parent-left {
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-} */
 
 
 html, body, div, span, applet, object, iframe,
@@ -99,7 +81,7 @@ time, mark, audio, video {
 	line-height:1.5;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	/* max-width:100%; */
+	/* max-width:100vw; */
 }
 
 span.hamburger {
@@ -111,7 +93,7 @@ span.hamburger {
     line-height: 1;
     font-family: "LyonDisplay-Regular", sans-serif;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
 }
@@ -125,7 +107,7 @@ span.awa h1 {
     z-index:1; /*Skal ligge over alt annet*/
     line-height: 1;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -143,15 +125,12 @@ span.awa h1 {
 }
 
 .overlay {
-    min-height: 100%; /*Skal dekke hele siden, både vertikalt og lodrett*/
-    min-width: 100%;
-    max-height: 100%;
-    max-width:100%;
+    min-height: 100vh; /*Skal dekke hele siden, både vertikalt og lodrett*/
+    min-width: 100vw;
+    max-height: 100vh;
+    max-width:100vw;
     display: none;
-    /* position: fixed; */
-
-    position: fixed; top: 0; right: 0; bottom: 0; left: 0;
-
+    position: fixed;
     z-index: 1000; /*Overlayen skal ha første prioritet fordi den skal være over alt aka*/
     /*top: 0;*/
     /*left: 0;*/
@@ -164,25 +143,25 @@ span.awa h1 {
 
 .overlay-content {
     display:flex;
-    flex-direction:column;
-    flex-wrap:nowrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    align-content: stretch;
-
-    min-height: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    max-width:100%;
+    align-content: center;
+    /* position: relative; */
+    top: 15%;
+    width: 100%;
+    /*text-align: left;*/
+    /*margin-top: 30px;*/
 }
 
-.overlay-content a {
-    font-family: 'LyonDisplay-Bold', sans-serif;
-		/* margin: 0.7vh; */
+.overlay a {
+    font-family: 'LyonDisplay-Regular', sans-serif;
+		margin: 1vh;
     text-decoration: none;
     font-size: 8vh;
+    /*color:#c1c1c1;*/
     display: block;
     /*transition: 0.3s;*/
+    font-weight:900;
     -webkit-transition: font-size 0.1s, padding 0.5s, color 0.3s; /* Safari */
     transition: font-size 0.1s, padding 0.5s, color 0.5s;
 
@@ -202,10 +181,9 @@ span.awa h1 {
 
 /*Footer*/
 footer {
-    /* min-width:100%; */
+    /* min-width:100vw; */
     min-height:30vh;
-    min-width:100%;
-    max-width:100%;
+    max-width:100vw;
 
     background-color: #262626;
 
@@ -235,7 +213,7 @@ li a {
   text-decoration: none;
 }
 
-.footer-logo {
+img {
     max-width:150px;
 }
 
@@ -285,7 +263,7 @@ blockquote {
    font-size: 27px;
    width: 85%;
    /*margin: 0 auto;*/
-   /* max-width:100%; */
+   /* max-width:100vw; */
 }
 blockquote h1 {
    font-size: 4rem;
