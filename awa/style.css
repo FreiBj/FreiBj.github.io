@@ -54,6 +54,8 @@
     min-width:100%;
     max-width:100%;
     min-height:55vh;
+    margin-top:2rem;
+    margin-bottom:2rem  ;
     /*max-height:75vh;*/
     /*background-color: #f7f7f7;*/
 }
