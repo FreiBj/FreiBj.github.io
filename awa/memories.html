@@ -2,19 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Arctic World Archive</title>
+        <title>Memories</title>
 
         <link rel="stylesheet" type="text/css" href="nav.css">
         <link rel="stylesheet" type="text/css" href="memories.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,500" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:800" rel="stylesheet"> <!--Koble til fonten Poppins-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#1e1e2e">
+        <meta name="theme-color" content="#ffffff">
 
         <!-- Add icon library -->
         <script src="https://kit.fontawesome.com/3f79689e7f.js"></script>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
 
-        <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">--> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
+        <!-- <meta name='viewport' content='initial-scale=1, viewport-fit=cover'> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
         <meta name="description" content="Arctic World Archive Memories">
         <meta name="keywords" content="keywords,here">
     </head>
@@ -32,124 +40,112 @@
               <a href="contact.html">Contact</a>
           </div>
         </div>
-        <span style="color:white;" id="hamburger" class="hamburger" onclick="openNav()">&#9776;</span> <!--Hamburger ikonet, når den trykkes på kjører openNav()-->
+        <span style="color:black;" id="hamburger" class="hamburger" onclick="openNav()">&#9776;</span> <!--Hamburger ikonet, når den trykkes på kjører openNav()-->
 
 
-        <div class="wrapper">
+        <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
 
-  <div class="header">
-    <h1 class="header__title">Expanding Card Grid</h1>
-    <h2 class="header__subtitle">with Flexbox</h2>
-  </div>
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 
-      <div class="cards">
+        <!-- UIkit SECTION -->
+        <div class="uk-section-xsmall">
+            <div class="uk-container">
+        	    <div class="uk-margin uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+        		    <div>
+        			    <div class="uk-animation-toggle" tabindex="0">
+        			        <div class="uk-margin uk-card uk-card-default uk-card-hover">
+        				        <div class="uk-card-media-top">
+        					        <img src="memories-assets/alinari.jpg" alt="">
+        						</div>
+        					    <div class="uk-card-body">
+        					        <div class="uk-card-badge uk-label">Badge</div>
+        						    <h3 class="uk-card-title"><a href="" target="_blank">Alinari</a></h3>
+        						    <p>The Vatican Library has digitally preserved 500 irreplaceable manuscripts of great historical value in the Arctic World Archive for 500 years. The manuscripts were selected based on their historical and cultural value, and the risk the of deterioration and permanent loss. The manuscripts include a text written by Luke the Evangelist and a hand-written version of the Quran.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div>
+        			    <div class="uk-animation-toggle" tabindex="0">
+        			        <div class="uk-margin uk-card uk-card-default uk-card-hover">
+        				        <div class="uk-card-media-top">
+        					        <img src="memories-assets/Logo_BAV.jpg" alt="">
+        						</div>
+        					    <div class="uk-card-body">
+        					        <div class="uk-card-badge uk-label">Badge</div>
+        						    <h3 class="uk-card-title"><a href="https://www.vaticanlibrary.va/home.php?ling=eng" target="_blank">Biblioteca Apostolica Vaticana</a></h3>
+        						    <p>The Vatican Library has digitally preserved 500 irreplaceable manuscripts of great historical value in the Arctic World Archive for 500 years. The manuscripts were selected based on their historical and cultural value, and the risk the of deterioration and permanent loss. The manuscripts include a text written by Luke the Evangelist and a hand-written version of the Quran.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div>
+        			    <div class="uk-animation-toggle" tabindex="0">
+        			        <div class="uk-margin uk-card uk-card-default uk-card-hover">
+        				        <div class="uk-card-media-top">
+        					        <img src="https://getuikit.com/docs/images/light.jpg" alt="">
+        						</div>
+        					    <div class="uk-card-body">
+        					        <div class="uk-card-badge uk-label">Badge</div>
+        						    <h3 class="uk-card-title"><a href="" target="_blank">Brazilian Museum of the Person</a></h3>
+        						    <p>The Brazilian Museum of the Person deposited an extract from the "Memória de Brasileiros e Brasileiras" collection, composed of more than 2000 digitized photos and 300 life stories recorded between 2006 and 2016. In addition, 11 interviews with indigenous leaders from different ethnic groups in Brazil was included. The content was chosen in honour of the International Year of Moderation and Indigenous Languages chosen by the United Nations for 2019.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+            <div class="uk-container">
+        	    <div class="uk-margin uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+        		    <div>
+        			    <div class="uk-animation-toggle" tabindex="0">
+        			        <div class="uk-margin uk-card uk-card-default uk-card-hover">
+        				        <div class="uk-card-media-top">
+        					        <img src="memories-assets/yongseok.jpg" alt="">
+        						</div>
+        					    <div class="uk-card-body">
+        					        <div class="uk-card-badge uk-label">Badge</div>
+        						    <h3 class="uk-card-title"><a href="" target="_blank">Contemporary Artist (Korea)</a></h3>
+        						    <p>Through his art, Yongseok Oh emphasizes the crossing of the past and the present, the real and the imagined, by creating a visual collage of stills and moving images. <br><br> The idea behind the Eternal Pause project was to use old still photographs and bring the moment back to life through movement. To realise the project, he sought people who wanted to preserve their photos forever or wanted to their photos to live beyond their life. He then wanted to celebrate the concept of time further by finding a way to preserve that now living moment into the future.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div>
+        			    <div class="uk-animation-toggle" tabindex="0">
+        			        <div class="uk-margin uk-card uk-card-default uk-card-hover">
+        				        <div class="uk-card-media-top">
+        					        <img src="memories-assets/czechRadio.jpg" alt="">
+        						</div>
+        					    <div class="uk-card-body">
+        					        <div class="uk-card-badge uk-label">Badge</div>
+        						    <h3 class="uk-card-title"><a href="" target="_blank">Czech Radio</a></h3>
+        						    <p>As Europe’s second oldest radio broadcaster, Czech Radio has a rich archive of great national and international value. Czech Radio has deposited its “Golden Treasure” of radio history, including speeches by Albert Einstein and recordings from Prague’s uprising in 1945.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div>
+        			    <div class="uk-animation-toggle" tabindex="0">
+        			        <div class="uk-margin uk-card uk-card-default uk-card-hover">
+        				        <div class="uk-card-media-top">
+        					        <img src="memories-assets/esa.png" alt="">
+        						</div>
+        					    <div class="uk-card-body">
+        					        <div class="uk-card-badge uk-label">Badge</div>
+        						    <h3 class="uk-card-title"><a href="" target="_blank">European Space Agency</a></h3>
+        						    <p>The European Space Agency (ESA) deposited some sample data acquired by its first Earth Remote Sensing (ERS) satellite launched in 1991, and a thorough description of the mission objectives and achievements. This history captures the moment that saw a whole new chapter opened for the world in continuously and consistently monitoring the health of our planet from space and should never be lost, a truly magnificent story.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
 
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        Expander
-      </div>
-    </div>
-
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        Expander
-      </div>
-    </div>
-
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        Expander
-      </div>
-    </div>
-
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        Expander
-      </div>
-    </div>
-
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        Expander
-      </div>
-    </div>
-
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        Expander
-      </div>
-    </div>
-
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        Expander
-      </div>
-    </div>
-
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        Expander
-      </div>
-    </div>
-
-    <div class=" card [ is-collapsed ] ">
-      <div class="card__inner [ js-expander ]">
-        <span>Card</span>
-        <i class="fa fa-folder-o"></i>
-      </div>
-      <div class="card__expander">
-        <i class="fa fa-close [ js-collapser ]"></i>
-        <h1>Lorem ipsum</h1>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-
-
-        <footer>
+        <footer class="uk-margin-top" uk-sticky>
             <div>
                 <img src="AWA_Logo_Negativ_RGB.png" class="footer-logo">
             </div>
@@ -180,7 +176,9 @@
             </div>
         </footer>
 
-        <script src="cards.js"></script>
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </body>

@@ -7,11 +7,19 @@
         <link rel="stylesheet" type="text/css" href="contact.css">
         <link rel="stylesheet" type="text/css" href="nav.css">
 
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#1e1e2e">
+        <meta name="theme-color" content="#ffffff">
+
         <!-- Add icon library -->
         <script src="https://kit.fontawesome.com/3f79689e7f.js"></script>
 
-        <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">--> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
+        <!-- <meta name='viewport' content='initial-scale=1, viewport-fit=cover'> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
         <meta name="description" content="Arctic World Archive">
         <meta name="keywords" content="keywords,here">
     </head>
@@ -19,7 +27,7 @@
     <body>
         <div id="myNav" class="overlay">
           <!--<a style="cursor:pointer" class="closebtn" onclick="closeNav()">&times;</a>-->
-          <div class="overlay-content flex-parent">
+          <div class="overlay-content">
               <a style="cursor:pointer" onclick="closeNav()">&times;</a>
               <a href="index.html">Home</a>
               <a href="memories.html">Memories</a>
@@ -35,7 +43,7 @@
         <section class="contact flex-parent">
           <div class="flex-parent bg-img">
                 <!-- <h1>Contact Us</h1> -->
-            </div>
+          </div>
 
           <!-- <div class="form flex-parent">
             <header>
@@ -50,15 +58,18 @@
             </form>
 
           </div> -->
-
-          <h1>Contact Us</h1>
-          
-          <p>
-            If you would like more information on anything to do with the Arctic World Archive, get in touch: info@awa.org
-            +47 47174798
-            C/O Piql AS
-            Grønland 56, Drammen
-          </p>
+          <div class="contact-sec flex-parent">
+            <h1>Contact Us</h1>
+            <p>
+              If you would like more information on anything to do with the Arctic World Archive, <br>get in touch: <a href="mailto:info@awa.org">info@awa.org</a>
+              <br><br>
+              <a href="tel:+4747174798">+47 47174798</a>
+              <br><br>
+              C/O Piql AS
+              <br><br>
+              Grønland 56, Drammen
+            </p>
+          </div>
         </section>
 
         <footer>
