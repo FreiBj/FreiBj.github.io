@@ -50,12 +50,6 @@
 
 .text-card {
     font-family: "LyonDisplay-Regular", Sans-Serif;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap:wrap;
     min-width:100%;
     max-width:100%;
     min-height:75vh;
@@ -71,12 +65,7 @@
     max-width:50%;
     color: #111111;
     text-align:left;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap:wrap;
+    
 }
 
 .mid-sec .text-card p {

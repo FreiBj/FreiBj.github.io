@@ -59,15 +59,16 @@ a:hover {
 }
 
 /*Global Flex Class*/
-.flex-parent {
+.flex-center {
     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-direction: column;
 }
 
-.flex-parent-left {
+.flex-left {
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -186,12 +187,7 @@ span.awa h1 {
     -webkit-transition: font-size 0.1s, padding 0.5s, color 0.3s; /* Safari */
     transition: font-size 0.1s, padding 0.5s, color 0.5s;
 
-    /*background: url("https://media.giphy.com/media/3o751YKIPE1hgXhcEU/giphy.gif");*/
-    background:url("https://i.pinimg.com/originals/fb/c3/a6/fbc3a674db5cf625e18f2b22d5be1d62.gif");
-    background-size:cover; /*Was auto with commented gif*/
-    color:transparent;
-    -moz-background-clip: text;
-	  -webkit-background-clip: text;
+    color:white;
 }
 
 .overlay a:hover, .overlay a:focus{ /*Focus = når du tykker tab endrer den farge også*/
@@ -208,9 +204,10 @@ footer {
     max-width:100%;
 
     background-color: #262626;
-    
+
 
     display:flex;
+    flex-direction: row;
     flex-wrap:wrap;
     /*justify-content: space-around;*/
     justify-content: space-evenly;
