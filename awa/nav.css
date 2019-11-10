@@ -209,11 +209,9 @@ footer {
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    /*justify-content: space-around;*/
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    align-content: stretch;
+    justify-content: space-around;
+    align-items:center;
+    align-content:center;
 
     color:white;
 }
