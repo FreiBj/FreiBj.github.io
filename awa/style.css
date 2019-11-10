@@ -54,8 +54,8 @@
     min-width:100%;
     max-width:100%;
     min-height:55vh;
-    margin-top:2rem;
-    margin-bottom:2rem  ;
+    padding-top:2rem;
+    padding-bottom:2rem  ;
     /*max-height:75vh;*/
     /*background-color: #f7f7f7;*/
 }
@@ -74,7 +74,7 @@
 .mid-sec .text-card p {
     font-family: "LyonDisplay-Regular", Sans-Serif;
 
-    max-width:35%;
+    max-width:50%;
     font-size: 23px;
     color: #AAAAAA;
 }

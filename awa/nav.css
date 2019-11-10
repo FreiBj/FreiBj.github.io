@@ -58,6 +58,10 @@ a:hover {
   color:#B4ACA6;
 }
 
+.uk-link, a {
+    color: #7D7773 !important;
+}
+
 /*Global Flex Class*/
 .flex-center {
     display:flex;
@@ -284,12 +288,13 @@ footer div {
 
 /*Blockquote styling*/
 blockquote {
-   color:#AAAAAA;
+   color:#7D7773;
    font-family: "LyonDisplay-RegularItalic", sans-serif;
    font-size: 27px;
-   width: 85%;
-   /*margin: 0 auto;*/
+   width: 60%;
+   /* margin: 0 auto; */
    /* max-width:100%; */
+   margin:20px;
 }
 blockquote h1 {
    font-size: 4rem;
@@ -304,7 +309,7 @@ blockquote p::after {
    content: "“";
    font-family: "LyonDisplay-RegularItalic", sans-serif;
    font-size: 8rem;
-   margin: -2rem 0 0 -4rem;
+   margin: -4rem 0 0 -4rem;
    position: absolute;
    opacity: 0.5;
 }
@@ -316,4 +321,5 @@ blockquote p::after {
 
 blockquote cite {
     font-size: 1.2rem;
+    color:#B4ACA6;
 }
