@@ -50,17 +50,17 @@
 
 a {
   font-weight: bold;
-  color:#7D7773;
+  color:#B4ACA6;
   text-decoration: none;
 }
 
 a:hover {
-  color:#B4ACA6;
+  color:#7D7773;
 }
-
-.uk-link, a {
+/*
+.uk-link a {
     color: #7D7773 !important;
-}
+} */
 
 /*Global Flex Class*/
 .flex-center {
@@ -244,16 +244,16 @@ ul {
   /*overflow: hidden;*/
 }
 
-li a {
+ul a {
   display: block;
-  color:#f6f6f6;
+  color:gray !important;
   /*text-align: center;*/
   /* padding: 14px 16px; */
   text-decoration: none;
 }
 
 .footer-logo {
-    max-width:150px;
+    max-width:225px;
 }
 
 footer li {
