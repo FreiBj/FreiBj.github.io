@@ -29,7 +29,7 @@
 @media only screen and (max-width: 768px) {
     .mid-sec .text-card h2 {
         font-size:calc(8vw + 0.5em);
-        margin-top:2rem;
+        /* margin-top:2rem; */
         min-width:85vw;
         /* justify-content: flex-start; */
     }
@@ -74,7 +74,7 @@
 .mid-sec .text-card p {
     font-family: "LyonDisplay-Regular", Sans-Serif;
 
-    max-width:50%;
+    max-width:45%;
     font-size: 23px;
     color: #AAAAAA;
 }

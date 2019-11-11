@@ -58,7 +58,9 @@
   /* margin-top:100px; */
   /* margin-bottom:100px; */
   text-align:center;
-  margin:20px;
+  /* margin:20px; */
+  padding-top:4vw;
+  padding-bottom:4vw;
 
 }
 
