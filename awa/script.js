@@ -33,7 +33,6 @@ function openNav() {
     lastPageYOffset = window.pageYOffset;
     window.scrollTo(0, window.pageYOffset + 1); /*Scrolling 1 pixel downwards*/
     // console.log("Last PageyOffset" + lastPageYOffset);
-    console.log("TESTING " + pageYOffset);
 
 }
 

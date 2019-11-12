@@ -48,9 +48,9 @@
   src: url(fonts/LyonDisplay-RegularItalic.otf);
 }
 
-a {
+.uk-link, a {
   font-weight: bold;
-  color:#B4ACA6;
+  color:#B4ACA6 !important;
   text-decoration: none;
 }
 
@@ -123,12 +123,14 @@ time, mark, audio, video {
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 	/* max-width:100%; */
+    
+    text-decoration: none !important;
 }
 
 span.hamburger {
     font-size:3.5em;
     cursor:pointer;
-    color:black;
+    color:#B4ACA6;
     margin:10px;
     z-index:300000; /*Skal ligge over alt annet*/
     line-height: 1;
@@ -211,11 +213,13 @@ span.awa h1 {
     color:white !important;
 }
 
-.overlay a:hover, .overlay a:focus{ /*Focus = når du tykker tab endrer den farge også*/
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .overlay a:not(.closeButton):hover, .overlay a:not(.closeButton):focus  { /*Focus = når du tykker tab endrer den farge også*/
     color: white; /*Endrer fargen på teksten fra gjennomsiktig til hvit*/
     padding-left:50px; /*Skyver teksten litt ut mot høyre som gir en kul effekt*/
 }
-
+}
 
 /*Footer*/
 footer {
@@ -246,7 +250,7 @@ ul {
 
 ul a {
   display: block;
-  color:gray !important;
+  color:white !important;
   /*text-align: center;*/
   /* padding: 14px 16px; */
   text-decoration: none;
