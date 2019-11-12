@@ -96,7 +96,7 @@
 }
 
 .about-sec a {
-    
+
 }
 
 .about-sec h3, .about-sec a {
@@ -110,6 +110,7 @@
 
 .about-sec p {
     font-size:20px;
+    color: #7D7773;
 }
 
 .about-sec p:last-child {

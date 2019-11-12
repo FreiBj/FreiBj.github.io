@@ -51,7 +51,7 @@
 .uk-link, a {
   font-weight: bold;
   color:#B4ACA6 !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -123,8 +123,8 @@ time, mark, audio, video {
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 	/* max-width:100%; */
-    
-    text-decoration: none !important;
+
+    /* text-decoration: none !important; */
 }
 
 span.hamburger {
@@ -216,9 +216,9 @@ span.awa h1 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .overlay a:not(.closeButton):hover, .overlay a:not(.closeButton):focus  { /*Focus = når du tykker tab endrer den farge også*/
-    color: white; /*Endrer fargen på teksten fra gjennomsiktig til hvit*/
-    padding-left:50px; /*Skyver teksten litt ut mot høyre som gir en kul effekt*/
-}
+      color: white; /*Endrer fargen på teksten fra gjennomsiktig til hvit*/
+      padding-left:50px; /*Skyver teksten litt ut mot høyre som gir en kul effekt*/
+    }
 }
 
 /*Footer*/
@@ -241,14 +241,18 @@ footer {
     color:white;
 }
 
-ul {
+.article-list  li {
+  font-size:20px;
+}
+
+ul:not(.article-list) {
   list-style-type: none;
   margin: 0;
   padding: 0;
   /*overflow: hidden;*/
 }
 
-ul a {
+ul a:not(.article-list) {
   display: block;
   color:white !important;
   /*text-align: center;*/
@@ -300,39 +304,6 @@ footer div {
 }
 
 /*Blockquote styling*/
-blockquote {
-   color:#7D7773;
-   font-family: "LyonDisplay-RegularItalic", sans-serif;
-   font-size: 27px;
-   width: 60%;
-   /* margin: 0 auto; */
-   /* max-width:100%; */
-   margin:20px;
-}
-blockquote h1 {
-   font-size: 4rem;
-}
-blockquote p {
-   font-style: italic;
-   margin-bottom: 0;
-}
-
-blockquote p::before,
-blockquote p::after {
-   content: "“";
-   font-family: "LyonDisplay-RegularItalic", sans-serif;
-   font-size: 8rem;
-   margin: -4rem 0 0 -4rem;
-   position: absolute;
-   opacity: 0.5;
-}
-
-blockquote p::after {
-   content: "”";
-   margin: -3.5rem -4rem 0 0;
-}
-
-blockquote cite {
-    font-size: 1.2rem;
-    color:#B4ACA6;
+.uk-margin-small-bottom {
+  font-family:"LyonDisplay-RegularItalic",sans-serif;
 }
