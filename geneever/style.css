@@ -1,0 +1,16 @@
+body {
+  margin:0; padding:0;
+}
+
+
+.top-bar {
+  width:100%;
+  
+  background-color:red;
+  
+  
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
