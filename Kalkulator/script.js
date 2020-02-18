@@ -31,11 +31,17 @@ function autocomplete(inp, arr) {
       /*append the DIV element as a child of the autocomplete container:*/
       this.parentNode.appendChild(a);
       /*for each item in the array...*/
+      
       for (i = 0; i < arr.length; i++) {
         /*check if the item starts with the same letters as the text field value:*/
         if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
           /*create a DIV element for each matching element:*/
           b = document.createElement("DIV");
+          
+          console.log("appeared");
+          // document.getElementById("myInput").className = "input-open";
+          console.log(document.getElementById("myInput").className);
+          
           /*make the matching letters bold:*/
           b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
           b.innerHTML += arr[i].substr(val.length);
@@ -50,7 +56,7 @@ function autocomplete(inp, arr) {
               closeAllLists();
               
               
-              console.log(12345);
+              console.log("Closing");
               // document.getElementById("myInput").className = "input-open";
               
               
@@ -117,4 +123,4 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var athletes = ["Alimalik","Anders","Ann Sofie","Eivind","Fie","Frei","Ida Sofie Dybfest","Ingrid W. Leid","Jacob Hauglund","Jacob Lindseth","Jesper","Kristian","Malin Asheim","Malin H Rygh","Marthine","Miriam","Nokve","Nora","Oline","Oliver","Othilia","Sander","Sara","Wilma","Jonass","Dennis","Theodor","Emil","Vetle Hagen"];
+var athletes = ["Alimalik","Anders","Ann Sofie","Eivind","Fie","Frei","Ida Sofie Dybfest","Ingrid W. Leid","Jacob Hauglund","Jacob Lindseth","Jesper","Kristian","Malin Asheim","Malin H Rygh","Marthine","Miriam","Nokve","Nora","Oline","Oliver","Othilia","Sander","Sara","Wilma"];
