@@ -39,7 +39,7 @@ function autocomplete(inp, arr) {
           b = document.createElement("DIV");
           
           console.log("appeared");
-          // document.getElementById("myInput").className = "input-open";
+          document.getElementById("myInput").className = "input-open";
           console.log(document.getElementById("myInput").className);
           
           /*make the matching letters bold:*/
