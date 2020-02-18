@@ -1,0 +1,50 @@
+body {
+  margin:0; padding:0;
+  font-family: 'Roboto', sans-serif;
+  
+  background-color:white;
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size:50px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size:40px;
+  font-weight: 300;
+}
+
+p {
+  font-size:30px;
+  font-weight:300;
+}
+
+.card {
+  width:600px;
+  height:500px;
+  
+  background-color:#fcfcfc;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border:0px solid;
+  border-radius: 30px;
+  
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(102,100,100,0,4);
+  -moz-box-shadow: 0px 3px 5px -1px rgba(102,100,100,0,4);
+  box-shadow: 0px 3px 5px -1px rgba(102,100,100,0.4);
+}
+
+input#name {
+  border:0px solid;
+  border-radius: 10px;
+  padding:10px;
+}
