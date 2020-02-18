@@ -74,9 +74,13 @@ p {
 }
 
 .input-open {
-  border-radius: none;
+  border:1px solid #7EBBFD;
+  /*border-radius: none;*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  padding:10px;
+  outline:0 none;
+  font-size:16px;
 }
 
 .autocomplete-items div:last-child {

@@ -19,6 +19,7 @@ function autocomplete(inp, arr) {
   var currentFocus;
   /*execute a function when someone writes in the text field:*/
   inp.addEventListener("input", function(e) {
+    
       var a, b, i, val = this.value;
       /*close any already open lists of autocompleted values*/
       closeAllLists();
@@ -40,7 +41,7 @@ function autocomplete(inp, arr) {
           
           console.log("appeared");
           document.getElementById("myInput").className = "input-open";
-          console.log(document.getElementById("myInput").className);
+          // console.log(document.getElementById("myInput").className);
           
           /*make the matching letters bold:*/
           b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
@@ -57,7 +58,7 @@ function autocomplete(inp, arr) {
               
               
               console.log("Closing");
-              // document.getElementById("myInput").className = "input-open";
+              document.getElementById("myInput").className = "input-closed";
               
               
           });
@@ -104,15 +105,23 @@ function autocomplete(inp, arr) {
     /*a function to remove the "active" class from all autocomplete items:*/
     for (var i = 0; i < x.length; i++) {
       x[i].classList.remove("autocomplete-active");
+      console.log("WHA TTHE ACtuAL FUCK");
     }
   }
   function closeAllLists(elmnt) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
     var x = document.getElementsByClassName("autocomplete-items");
+    console.log(x);
+    
+    if (x == null) {
+      console.log("IT*S FUCKING WORJING");
+    }
+    
     for (var i = 0; i < x.length; i++) {
       if (elmnt != x[i] && elmnt != inp) {
         x[i].parentNode.removeChild(x[i]);
+        // console.log("gone");
       }
     }
   }
