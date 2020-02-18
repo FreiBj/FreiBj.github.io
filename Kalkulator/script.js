@@ -2,6 +2,7 @@ var names = ["Frei","Anders", "Jacob", "Oliver","Ingrid","Sander"]
 
 var frei = ["Frei", 30];
 var emil = ["Emil", 10]
+var jonass = ["Jonass", 100]
 
 var okning;
 
@@ -47,6 +48,12 @@ function autocomplete(inp, arr) {
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();
+              
+              
+              console.log(12345);
+              // document.getElementById("myInput").className = "input-open";
+              
+              
           });
           a.appendChild(b);
         }
@@ -110,4 +117,4 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var athletes = ["Alimalik","Anders","Ann Sofie","Eivind","Fie","Frei","Ida Sofie Dybfest","Ingrid W. Leid","Jacob Hauglund","Jacob Lindseth","Jesper","Kristian","Malin Asheim","Malin H Rygh","Marthine","Miriam","Nokve","Nora","Oline","Oliver","Othilia","Sander","Sara","Wilma"];
+var athletes = ["Alimalik","Anders","Ann Sofie","Eivind","Fie","Frei","Ida Sofie Dybfest","Ingrid W. Leid","Jacob Hauglund","Jacob Lindseth","Jesper","Kristian","Malin Asheim","Malin H Rygh","Marthine","Miriam","Nokve","Nora","Oline","Oliver","Othilia","Sander","Sara","Wilma","Jonass","Dennis","Theodor","Emil","Vetle Hagen"];
