@@ -12,12 +12,29 @@
     
     <div class="card">
       <h2>Finn ditt navn og legg til %</h2>
-      <input type="text" id="name" name="name" placeholder="Ditt navn"><br><br>
       
-      <button onclick="myFunction()">Legg til</button>
+      
+      <!--<input type="text" id="name" name="name" placeholder="Ditt navn" autocomplete="off">-->
+      
+      
+      <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete">
+          <input id="myInput" type="text" name="myCountry" placeholder="Ditt navn">
+        </div>
+        <!--<input type="submit">-->
+      </form>
+      
+      
+      <br>
+      
+      <!--<button onclick="myFunction()">Legg til</button>-->
+      <input type="submit">
     </div>
     
     
     <script src="script.js"></script>
+    <script>
+    autocomplete(document.getElementById("myInput"), athletes);
+    </script>
   </body>
 </html>
