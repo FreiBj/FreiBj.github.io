@@ -1,17 +1,20 @@
-var names = ["Frei","Anders", "Jacob", "Oliver","Ingrid","Sander"]
-
-var frei = ["Frei", 30];
-var emil = ["Emil", 10]
-var jonass = ["Jonass", 100]
-
+var selectedAthlete;
+var input;
 var okning;
 
 function myFunction(name) {
-  console.log("myFunction is working!");
-  console.log(frei);
-  frei[1] = frei[1]+ 10
+  input = document.getElementById("myInput").value;
+
+  for (var i=0; i < gA.length;i++) {
+    if (gA[i].name == input) {
+      gA[i].percentage = gA[i].percentage + 10;
+      console.log("We've found " + gA[i].name + " ,you've got " + gA[i].percentage + "%");
+    }
+  }
+  document.getElementById("myInput").value = null;
 }
 
+// Autocomplete Code
 // Autocomplete Code
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
@@ -19,11 +22,11 @@ function autocomplete(inp, arr) {
   var currentFocus;
   /*execute a function when someone writes in the text field:*/
   inp.addEventListener("input", function(e) {
-    
+
       var a, b, i, val = this.value;
       /*close any already open lists of autocompleted values*/
       closeAllLists();
-      if (!val) { return false;}
+      if (!val) {document.getElementById("myInput").className = "input-closed";return false;}
       currentFocus = -1;
       /*create a DIV element that will contain the items (values):*/
       a = document.createElement("DIV");
@@ -32,17 +35,16 @@ function autocomplete(inp, arr) {
       /*append the DIV element as a child of the autocomplete container:*/
       this.parentNode.appendChild(a);
       /*for each item in the array...*/
-      
+
       for (i = 0; i < arr.length; i++) {
         /*check if the item starts with the same letters as the text field value:*/
         if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
           /*create a DIV element for each matching element:*/
           b = document.createElement("DIV");
-          
-          console.log("appeared");
+
           document.getElementById("myInput").className = "input-open";
           // console.log(document.getElementById("myInput").className);
-          
+
           /*make the matching letters bold:*/
           b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
           b.innerHTML += arr[i].substr(val.length);
@@ -55,12 +57,9 @@ function autocomplete(inp, arr) {
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();
-              
-              
-              console.log("Closing");
+
               document.getElementById("myInput").className = "input-closed";
-              
-              
+
           });
           a.appendChild(b);
         }
@@ -105,23 +104,15 @@ function autocomplete(inp, arr) {
     /*a function to remove the "active" class from all autocomplete items:*/
     for (var i = 0; i < x.length; i++) {
       x[i].classList.remove("autocomplete-active");
-      console.log("WHA TTHE ACtuAL FUCK");
     }
   }
   function closeAllLists(elmnt) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
     var x = document.getElementsByClassName("autocomplete-items");
-    console.log(x);
-    
-    if (x == null) {
-      console.log("IT*S FUCKING WORJING");
-    }
-    
     for (var i = 0; i < x.length; i++) {
       if (elmnt != x[i] && elmnt != inp) {
         x[i].parentNode.removeChild(x[i]);
-        // console.log("gone");
       }
     }
   }
@@ -131,5 +122,69 @@ function autocomplete(inp, arr) {
   });
 }
 
-/*An array containing all the country names in the world:*/
-var athletes = ["Alimalik","Anders","Ann Sofie","Eivind","Fie","Frei","Ida Sofie Dybfest","Ingrid W. Leid","Jacob Hauglund","Jacob Lindseth","Jesper","Kristian","Malin Asheim","Malin H Rygh","Marthine","Miriam","Nokve","Nora","Oline","Oliver","Othilia","Sander","Sara","Wilma"];
+/*An array containing all the athleetes at Drammen Turn:*/
+// var athletes = ["Alimalik","Anders","Ann Sofie","Eivind","Fie","Frei","Ida Sofie Dybfest","Ingrid W. Leid","Jacob Hauglund","Jacob Lindseth","Jesper","Kristian","Malin Asheim","Malin H Rygh","Marthine","Miriam","Nokve","Nora","Oline","Oliver","Othilia","Sander","Sara","Wilma"];
+var athletes = ["Alimalik","Anders","Ann","Eivind","Fie","Frei","Ida"];
+
+// Numbering system, Ali starts off as [0], Anders [1] and so on.
+
+function person(name) {
+  this.name = name;
+  this.percentage = 0; /*Standard starting point for everyone*/
+
+  this.output = function output() {
+    console.log(this.name, this.percentage);
+    return(this.name + this.percentage);
+  }
+}
+
+a = new person("Frei");
+
+// a.output();
+
+var gA = new Array;
+
+for (var i=0;i < athletes.length;i++) {
+  console.log(athletes[i]);
+
+  var names = athletes[i];
+  var a = new person(names);
+  gA.push(a);
+}
+
+for (var i=0; i < gA.length;i++) {
+  if (gA[i].name == input) {
+    console.log("We've found " + gA[i].name);
+  }
+}
+
+
+// var athletes = ["Alimalik","Anders","Ann","Eivind","Fie","Frei","Ida"];
+//
+// function person(name) {
+//   this.name = name;
+//   this.percentage = 0; /*Standard starting point for everyone*/
+//
+//   this.output = function output() {
+//     console.log(this.name, this.percentage);
+//     return(this.name + this.percentage);
+//   }
+// }
+//
+// var gA = new Array;
+//
+// for (var i=0;i < athletes.length;i++) {
+//   console.log(athletes[i]);
+//
+//   var names = athletes[i];
+//   var a = new person(names);
+//   gA.push(a);
+// }
+//
+// var input = "Anders";
+//
+// for (var i=0; i < gA.length;i++) {
+//   if (gA[i].name == input) {
+//     console.log("We've found " + gA[i].name);
+//   }
+// }

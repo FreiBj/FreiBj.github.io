@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -14,36 +14,36 @@
     <meta name="msapplication-TileColor" content="#b91d47">
     <meta name="theme-color" content="#e74030">
   </head>
-  
+
   <body>
     <h1>100% Trening</h1>
-    
+
     <div class="card">
       <h2>Finn ditt navn og legg til %</h2>
-      
-      
+
+
       <!--<input type="text" id="name" name="name" placeholder="Ditt navn" autocomplete="off">-->
-      
-      
+
+
       <form autocomplete="off" action="/action_page.php">
         <div class="autocomplete">
           <input class="input-closed" id="myInput" type="text" name="myCountry" placeholder="Ditt navn">
         </div>
         <!--<input type="submit">-->
       </form>
-      
-      
+
+
       <br>
-      
+
       <!--<button onclick="myFunction()">Legg til</button>-->
-      <input type="submit" class="input-closed">
+      <input type="submit" class="input-closed" onclick="myFunction()">
     </div>
-    
+
     <!--<footer>-->
     <!--  <img src="https://www.gymogturn.no/wp-content/uploads/2019/04/drammen-logo-300x202.png" alt="Drammen Turn Logo">-->
     <!--</footer>-->
-    
-    
+
+
     <script src="script.js"></script>
     <script>
     autocomplete(document.getElementById("myInput"), athletes);
