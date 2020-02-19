@@ -2,7 +2,7 @@ body {
   margin:0; padding:0;
   font-family: 'Roboto', sans-serif;
 
-  background-color:black;
+  background-color:white;
 
   display:flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ p {
 }
 
 .card {
-  width:600px;
+  width:50vw;
   height:500px;
 
   background-color:#fcfcfc;
@@ -170,4 +170,40 @@ input[type=submit] {
 .autocomplete-active {
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+
+.leaderboard {
+  width:150px;
+  height:500px;
+  text-align: center;
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+  
+  
+  margin:0; padding:0;
+  
+  background-color: #fcfcfc;
+
+  border:0px solid;
+  /*border-radius: 30px;*/
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(102,100,100,0,4);
+  -moz-box-shadow: 0px 3px 5px -1px rgba(102,100,100,0,4);
+  box-shadow: 0px 3px 5px -1px rgba(102,100,100,0.4);
+  
+  /*position: absolute;*/
+  left: 0;
+}
+
+.leaderboard ul li {
+  text-align:center;
+  list-style-type: none;
+  text-decoration:0;
+  
+  margin:0; padding:0;
 }
