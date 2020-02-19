@@ -18,41 +18,56 @@
   <body>
     <h1>100% Trening</h1>
     
-    <div class="leaderboard">
-      <ul>
-        <li id="top-0"></li>
-        <li id="top-1"></li>
-        <li id="top-2"></li>
-        <li id="top-3"></li>
-        <li id="top-4"></li>
-        <li id="top-5"></li>
-        <li id="top-6"></li>
-        <li id="top-7"></li>
-        <li id="top-8"></li>
-        <li id="top-9"></li>
-      </ul>
+    <div class="main">
+      <div class="leaderboard">
+        
+        <h2>Top 10</h2>
+        <ul>
+          <li id="top-0" style="font-weight:bold;"></li> <span style="color:red;"class="" id="leaderboard"></span>
+          <hr>
+          <li id="top-1" style="font-weight:bold;"></li>
+          <hr>
+          <li id="top-2" style="font-weight:bold;"></li>
+          <hr>
+          <li id="top-3"></li>
+          <hr>
+          <li id="top-4"></li>
+          <hr>
+          <li id="top-5"></li>
+          <hr>
+          <li id="top-6"></li>
+          <hr>
+          <li id="top-7"></li>
+          <hr>
+          <li id="top-8"></li>
+          <hr>
+          <li id="top-9"></li>
+        <ul>
+      </div>
+  
+      <div class="card">
+        <h2>Finn ditt navn og legg til %</h2>
+  
+  
+        <!--<input type="text" id="name" name="name" placeholder="Ditt navn" autocomplete="off">-->
+  
+  
+        <form autocomplete="off" action="/action_page.php">
+          <div class="autocomplete">
+            <input class="input-closed" id="myInput" type="text" name="myCountry" placeholder="Ditt navn">
+          </div>
+          <!--<input type="submit">-->
+        </form>
+  
+  
+        <br>
+  
+  <hr>
+        <!--<button onclick="myFunction()">Legg til</button>-->
+        <input type="submit" class="input-closed" onclick="myFunction()">
+      </div>
     </div>
-
-    <div class="card">
-      <h2>Finn ditt navn og legg til %</h2>
-
-
-      <!--<input type="text" id="name" name="name" placeholder="Ditt navn" autocomplete="off">-->
-
-
-      <form autocomplete="off" action="/action_page.php">
-        <div class="autocomplete">
-          <input class="input-closed" id="myInput" type="text" name="myCountry" placeholder="Ditt navn">
-        </div>
-        <!--<input type="submit">-->
-      </form>
-
-
-      <br>
-
-      <!--<button onclick="myFunction()">Legg til</button>-->
-      <input type="submit" class="input-closed" onclick="myFunction()">
-    </div>
+    
 
     <!--<footer>-->
     <!--  <img src="https://www.gymogturn.no/wp-content/uploads/2019/04/drammen-logo-300x202.png" alt="Drammen Turn Logo">-->

@@ -30,7 +30,9 @@ function myFunction(name) {
         gA.sortAttr("percentage");
         
         var x = document.getElementById("top-" + i);
+        var y = document.getElementById("leaderboard");
         x.innerHTML = gA[i].name + " " + gA[i].percentage;
+        y.innerHTML = gA[i].percentage;
         
       }
       
@@ -42,8 +44,11 @@ function myFunction(name) {
   for (var i=0; i < 10; i++) {
     gA.sortAttr("percentage");
     
+    var y = document.getElementById("leaderboard");
     var x = document.getElementById("top-" + i);
     x.innerHTML = gA[i].name + " " + gA[i].percentage;
+    y.innerHTML = gA[i].percentage;
+    
     
   }
 }
