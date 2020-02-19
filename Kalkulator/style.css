@@ -196,7 +196,7 @@ input[type=submit] {
   -moz-box-shadow: 0px 3px 5px -1px rgba(102,100,100,0,4);
   box-shadow: 0px 3px 5px -1px rgba(102,100,100,0.4);
   
-  /*position: absolute;*/
+  position: absolute;
   left: 0;
 }
 

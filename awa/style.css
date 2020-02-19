@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-	pointer-events: none;
+	  pointer-events: none;
 }
 
 .video video {
@@ -80,16 +80,16 @@
 }
 
 /*The blue info-card*/
-/* .info-card {
-    max-width:320px;
-    background-color:#1E1F2E;
-    color:white;
-    padding:20px;
-    font-family: "LyonDisplay-Regular", Sans-Serif;
-    font-weight:300;
-    font-size:22px;
-    z-index:100;
-} */
+/* .info-card {*/
+/*    max-width:320px;*/
+/*    background-color:#1E1F2E;*/
+/*    color:white;*/
+/*    padding:20px;*/
+/*    font-family: "LyonDisplay-Regular", Sans-Serif;*/
+/*    font-weight:300;*/
+/*    font-size:22px;*/
+/*    z-index:100;*/
+/*}*/
 
 .info-div {
     min-width:100%;

@@ -2,19 +2,52 @@ var selectedAthlete;
 var input;
 var okning;
 
-function myFunction(name) {
-  input = document.getElementById("myInput").value;
+Array.prototype.sortAttr = function(attr,reverse) {
+  var sorter = function(a,b) {
+    var aa = a[attr];
+    var bb = b[attr];
+    if(aa+0==aa && bb+0==bb) return bb-aa; // numbers
+    else return aa.localeCompare(bb); // strings
+  }
+  this.sort(function(a,b) {
+    var result = sorter(a,b);
+    if(reverse) result*= -1;
+    return result;
+  });
+};
 
+
+function myFunction(name) {
+  // gA.sortAttr("percentage");
+  input = document.getElementById("myInput").value;
+  
   for (var i=0; i < gA.length;i++) {
     if (gA[i].name == input) {
       gA[i].percentage = gA[i].percentage + 10;
       console.log("We've found " + gA[i].name + " ,you've got " + gA[i].percentage + "%");
+      
+      for (var i=0; i < 10; i++) {
+        gA.sortAttr("percentage");
+        
+        var x = document.getElementById("top-" + i);
+        x.innerHTML = gA[i].name + " " + gA[i].percentage;
+        
+      }
+      
     }
   }
+  
   document.getElementById("myInput").value = null;
+  
+  for (var i=0; i < 10; i++) {
+    gA.sortAttr("percentage");
+    
+    var x = document.getElementById("top-" + i);
+    x.innerHTML = gA[i].name + " " + gA[i].percentage;
+    
+  }
 }
 
-// Autocomplete Code
 // Autocomplete Code
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
@@ -123,8 +156,8 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the athleetes at Drammen Turn:*/
-// var athletes = ["Alimalik","Anders","Ann Sofie","Eivind","Fie","Frei","Ida Sofie Dybfest","Ingrid W. Leid","Jacob Hauglund","Jacob Lindseth","Jesper","Kristian","Malin Asheim","Malin H Rygh","Marthine","Miriam","Nokve","Nora","Oline","Oliver","Othilia","Sander","Sara","Wilma"];
-var athletes = ["Alimalik","Anders","Ann","Eivind","Fie","Frei","Ida"];
+var athletes = ["Alimalik","Anders","Ann Sofie","Eivind","Fie","Frei","Ida Sofie Dybfest","Ingrid W. Leid","Jacob Hauglund","Jacob Lindseth","Jesper","Kristian","Malin Asheim","Malin H Rygh","Marthine","Miriam","Nokve","Nora","Oline","Oliver","Othilia","Sander","Sara","Wilma"];
+// var athletes = ["Alimalik","Anders","Ann","Eivind","Fie","Frei","Ida"];
 
 // Numbering system, Ali starts off as [0], Anders [1] and so on.
 
@@ -137,10 +170,6 @@ function person(name) {
     return(this.name + this.percentage);
   }
 }
-
-a = new person("Frei");
-
-// a.output();
 
 var gA = new Array;
 
@@ -157,6 +186,16 @@ for (var i=0; i < gA.length;i++) {
     console.log("We've found " + gA[i].name);
   }
 }
+
+
+/*Leaderboard loop to find the top 10 athletes by percentage*/
+// for (var i=1; i <= 10; i++) {
+//   console.log("top-" + i);
+//   var x = document.getElementById("top-" + i);
+//   x.innerHTML = gA[i].name + gA[i].percentage;
+  
+//   console.log(x.text);
+// }
 
 
 // var athletes = ["Alimalik","Anders","Ann","Eivind","Fie","Frei","Ida"];
