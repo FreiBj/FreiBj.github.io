@@ -70,8 +70,29 @@ p {
   border-radius: 10px;
   padding:10px;
   outline:0 none;
+  
+  /*background-color:DodgerBlue;*/
 
   font-size:16px;
+}
+
+.percent {
+  /*background-color:#7EBBFD;*/
+  
+  border:0px solid;
+  border-radius: 10px;
+  padding:10px;
+  outline:0 none;
+  
+  color:white;
+  
+  background-color:DodgerBlue;
+
+  font-size:16px;
+}
+
+.buttons button {
+  padding:10px; margin:3px;
 }
 
 .input-open {
@@ -174,7 +195,7 @@ input[type=submit] {
 }
 
 .leaderboard {
-  width:200px;
+  width:250px;
   height:500px;
   /*text-align: center;*/
   
@@ -211,6 +232,7 @@ input[type=submit] {
   
   margin:0; padding:0;
   font-size:20px;
+  margin-left:5px;
 }
 
 .leaderboard ul {

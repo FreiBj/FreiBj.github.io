@@ -2,6 +2,7 @@ var selectedAthlete;
 var input;
 var okning;
 
+/*Sorting function that sorts the array dictionaries*/
 Array.prototype.sortAttr = function(attr,reverse) {
   var sorter = function(a,b) {
     var aa = a[attr];
@@ -16,14 +17,16 @@ Array.prototype.sortAttr = function(attr,reverse) {
   });
 };
 
+input = document.getElementById("myInput").value;
 
-function myFunction(name) {
+function myFunction(increment) {
   // gA.sortAttr("percentage");
   input = document.getElementById("myInput").value;
   
   for (var i=0; i < gA.length;i++) {
     if (gA[i].name.toLowerCase() == input.toLowerCase()) {
-      gA[i].percentage = gA[i].percentage + 10;
+      gA[i].percentage = gA[i].percentage + increment;
+      document.getElementById("finn-navn").innerHTML = "Hei " + gA[i].name + ", du har " + gA[i].percentage + "%";
       console.log("We've found " + gA[i].name + " ,you've got " + gA[i].percentage + "%");
       
       for (var i=0; i < 10; i++) {
@@ -46,9 +49,8 @@ function myFunction(name) {
     
     // var y = document.getElementById("leaderboard");
     var x = document.getElementById("top-" + i);
-    x.innerHTML = gA[i].name + " " + gA[i].percentage;
+    x.innerHTML = gA[i].name + " " + gA[i].percentage + "%";
     // y.innerHTML = gA[i].percentage;
-    
     
   }
 }
@@ -64,7 +66,7 @@ function autocomplete(inp, arr) {
       var a, b, i, val = this.value;
       /*close any already open lists of autocompleted values*/
       closeAllLists();
-      if (!val) {document.getElementById("myInput").className = "input-closed";return false;}
+      if (!val) {document.getElementById("myInput").className = "input-closed"; return false;}
       currentFocus = -1;
       /*create a DIV element that will contain the items (values):*/
       a = document.createElement("DIV");

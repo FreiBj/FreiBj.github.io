@@ -103,11 +103,11 @@ p {font-size:20px;}
 }
 
 .top-bar .nav-bar #learn-more, .fiftyfifty a {
-  border:2px solid #2565AE;
+  border:2px solid DodgerBlue;
   border-radius:20px;
   padding:10px;
 
-  background-color:#2565AE;
+  background-color:DodgerBlue;
   color:white;
 }
 
