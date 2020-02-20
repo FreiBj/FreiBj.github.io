@@ -22,7 +22,7 @@ function myFunction(name) {
   input = document.getElementById("myInput").value;
   
   for (var i=0; i < gA.length;i++) {
-    if (gA[i].name == input) {
+    if (gA[i].name.toLowerCase() == input.toLowerCase()) {
       gA[i].percentage = gA[i].percentage + 10;
       console.log("We've found " + gA[i].name + " ,you've got " + gA[i].percentage + "%");
       
@@ -30,9 +30,9 @@ function myFunction(name) {
         gA.sortAttr("percentage");
         
         var x = document.getElementById("top-" + i);
-        var y = document.getElementById("leaderboard");
+        // var y = document.getElementById("leaderboard");
         x.innerHTML = gA[i].name + " " + gA[i].percentage;
-        y.innerHTML = gA[i].percentage;
+        // y.innerHTML = gA[i].percentage;
         
       }
       
@@ -44,10 +44,10 @@ function myFunction(name) {
   for (var i=0; i < 10; i++) {
     gA.sortAttr("percentage");
     
-    var y = document.getElementById("leaderboard");
+    // var y = document.getElementById("leaderboard");
     var x = document.getElementById("top-" + i);
     x.innerHTML = gA[i].name + " " + gA[i].percentage;
-    y.innerHTML = gA[i].percentage;
+    // y.innerHTML = gA[i].percentage;
     
     
   }
