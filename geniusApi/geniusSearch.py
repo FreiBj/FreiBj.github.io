@@ -20,12 +20,12 @@ def request_song_info(song_title, artist_name):
     remote_song_info = dict()
     
     def scrap_song_url(url):
-                page = requests.get(url)
-                html = BeautifulSoup(page.text, 'html.parser')
-                lyrics = html.find('div', class_='lyrics').get_text()
+            page = requests.get(url)
+            html = BeautifulSoup(page.text, 'html.parser')
+            lyrics = html.find('div', class_='lyrics').get_text()
                 
-                print(lyrics)
-                return lyrics
+            print(lyrics)
+            return lyrics
 
     for hit in json['response']['hits']:
         if artist_name.lower() in hit['result']['primary_artist']['name'].lower() and song_title.lower() in hit['result']['title'].lower():
@@ -53,3 +53,4 @@ def request_song_info(song_title, artist_name):
         
 
 request_song_info(song_t, artist_n)
+
