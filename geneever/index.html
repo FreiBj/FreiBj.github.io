@@ -18,6 +18,12 @@
     <meta name="theme-color" content="#ffffff">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -30,22 +36,24 @@
   <body>
 
     <!--Top bar (Logo and navigation)-->
-    <div class="top-bar">
-      <div class="logo">
-        <a href="#"><h1>GeneEver</h1></a>
+    <div class="uk-container top-bar">
+      <div class="uk-container logo">
+        <!--<a href="#"><h1>GeneEver</h1></a>-->
+        <a href="/"><img src="logo.png" style="width:200px;"></a>
       </div>
 
-      <div class="nav-bar">
+      <div class="uk-container nav-bar">
         <a href="#">Home</a>
         <a href="#">Work</a>
         <a href="#">News</a>
         <a href="#" id="learn-more">Learn More</a>
       </div>
     </div>
+    
 
     <div class="section-one">
 
-      <div class="fiftyfifty">
+      <div class="fiftyfifty" style="display:flex; align-content:center;">
 
       </div>
 
@@ -61,11 +69,67 @@
       </div>
 
     </div>
+    
+    
+    <!--<img style="width:100%;" src="https://images.squarespace-cdn.com/content/v1/5be1707a2487fd7857a1b5b8/1560434737144-WJ7UKEYX2AVBNK006WLX/ke17ZwdGBToddI8pDm48kL0t2H64KRl6KG6vXbVSTZ57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0j4YgbvV5VW_li_7GkNwUgo4NVBldeOcaotohzYtIzIM0oY2t3AIIBOmDC5fyzOgGA/DNA.png">-->
+    
 
-    <div class="section-two">
-      <!-- <img style="width:100%;" src="https://images.squarespace-cdn.com/content/v1/5be1707a2487fd7857a1b5b8/1560434737144-WJ7UKEYX2AVBNK006WLX/ke17ZwdGBToddI8pDm48kL0t2H64KRl6KG6vXbVSTZ57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0j4YgbvV5VW_li_7GkNwUgo4NVBldeOcaotohzYtIzIM0oY2t3AIIBOmDC5fyzOgGA/DNA.png"> -->
+    <!--<div class="uk-container uk-flex uk-flex-center section-two">-->
+    <!--   <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>-->
+    <!--      <div>-->
+    <!--        <span class="uk-margin-small-right" uk-icon="icon: info; ratio:2"></span>-->
+    <!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>-->
+    <!--      </div>-->
+          
+    <!--      <div>-->
+    <!--        <span class="uk-margin-small-right" uk-icon="icon: server; ratio:2"></span>-->
+    <!--        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+    <!--        </p>-->
+    <!--        </div>-->
+          
+    <!--      <div>-->
+    <!--        <span class="uk-margin-small-right" uk-icon="icon: world; ratio:2"></span>-->
+    <!--        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
+    <!--        </p>-->
+    <!--      </div>-->
+            
+    <!--  </div>-->
+    <!--</div>-->
+    
+    <div class="uk-flex uk-flex-center uk-flex-wrap uk-flex-middle section"> <!--Section two divider, whole page-->
+      <!--<div class="uk-container uk-flex uk-flex-center">-->
+      <!--</div>-->
+      <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+          <h3 class="uk-card-title">Default</h3>
+          <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      
+      <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+          <h3 class="uk-card-title">Default</h3>
+          <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      
+      <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+          <h3 class="uk-card-title">Default</h3>
+          <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      
     </div>
-  
+    
+    
+    
+    
+    <div class="section">
+      
+    </div>
+    
+    
+    
+    <!--<div class="uk-container uk-flex uk-flex-center">-->
+    <!--  <img src="genetics_icon_tomatoes.png">-->
+    <!--</div>-->
+    
+    
     <script src="particles.min.js"></script>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>

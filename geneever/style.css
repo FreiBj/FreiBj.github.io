@@ -59,7 +59,7 @@ p {font-size:20px;}
 
 
 .top-bar {
-  width:100%;
+  /*width:100%;*/
   height:8em;
 
   background-color:#fcfcfc;
@@ -103,11 +103,12 @@ p {font-size:20px;}
 }
 
 .top-bar .nav-bar #learn-more, .fiftyfifty a {
-  border:2px solid DodgerBlue;
+  /*border:2px solid DodgerBlue;*/
   border-radius:20px;
   padding:10px;
 
   background-color:DodgerBlue;
+  /*background-color:#ed7d31;*/
   color:white;
 }
 
@@ -144,7 +145,8 @@ DNA bildet i først seksjonen*/
   /*display:inline-block;*/
 }
 
-.section-two {
-  width:100%;
-  height:50vh;
+.section {
+  /*width:70%;*/
+  /*height:50vh;*/
+  min-height:50vh;
 }
