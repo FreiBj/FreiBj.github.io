@@ -113,10 +113,10 @@ p {font-size:20px;}
 }
 
 .section-one {
-  height:50vh;
+  min-height:50vh;
 
-  display:flex;
-  align-items: center;
+  /*display:flex;*/
+  /*align-items: center;*/
 }
 
 
@@ -131,19 +131,23 @@ DNA bildet i først seksjonen*/
 /*}*/
 
 .fiftyfifty {
-  width:50%; height:50vh; background-color:#fcfcfc;
+  min-width:50%;
+  height:50vh;
+  background-color:#fcfcfc;
 
-  overflow:hidden;
+  /*overflow:hidden;*/
 
-  text-align:left;
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items:flex-start;
-  align-content: flex-start;
+  /*text-align:left;*/
+  /*display:flex;*/
+  /*flex-wrap:wrap;*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-items:flex-start;*/
+  /*align-content: flex-start;*/
   /*display:inline-block;*/
 }
+
+
 
 .section {
   /*width:70%;*/
