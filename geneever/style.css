@@ -139,8 +139,8 @@ DNA bildet i først seksjonen*/
 /*}*/
 
 .fiftyfifty:not(img) {
-  min-width:50%;
-  height:50vh;
+  /*min-width:50%;*/
+  /*height:50vh;*/
   /*background-color:#fcfcfc;*/
   background-color:#fcfcfc;
 
@@ -160,4 +160,8 @@ DNA bildet i først seksjonen*/
   /*width:70%;*/
   /*height:50vh;*/
   min-height:50vh;
+}
+
+.logo {
+  width:200px;
 }

@@ -2,10 +2,9 @@ windowHeight = window.innerHeight * 0.3;
 windowWidth = window.innerWidth * 0.3;
 
 
-
 /*Colors for the small balls, speed and width and height*/
 var fills   = ['#012732', '#015870', '#a8acb2', '#ed7d31'],
-    h       = 125,
+    h       = 150,
     w       = 700,
     
     // h       = windowHeight,
