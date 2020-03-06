@@ -18,13 +18,21 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+
+/*Text antialiasing*/
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* HTML5 display-role reset for older browsers */
 /* article, aside, details, figcaption, figure, */
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -43,7 +51,7 @@ table {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -51,11 +59,11 @@ a {
   text-decoration: none;
 }
 
-h1 {font-size:40px;}
-h2 {font-size:35px;}
+h1 {font-size:40px; font-weight:700;}
+h2 {font-size:35px; font-weight:300;}
 h3 {font-size:25px;}
 
-p {font-size:20px;}
+p {font-size:20px; font-weight:400;}
 
 
 .top-bar {
@@ -130,7 +138,7 @@ DNA bildet i først seksjonen*/
   /*align-items:center;*/
 /*}*/
 
-.fiftyfifty {
+.fiftyfifty:not(img) {
   min-width:50%;
   height:50vh;
   background-color:#fcfcfc;
@@ -146,9 +154,7 @@ DNA bildet i først seksjonen*/
   /*align-content: flex-start;*/
   /*display:inline-block;*/
 }
-
-
-
+  
 .section {
   /*width:70%;*/
   /*height:50vh;*/

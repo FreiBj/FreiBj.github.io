@@ -17,17 +17,18 @@
     <meta name="msapplication-TileColor" content="#015870">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!--Raleway font from Google Fonts-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">-->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+    
+    <!--UiKit CSS and JS libraries-->
+    <link rel="stylesheet" href="uikit.min.css"/>
+    <script src="uikit.min.js"></script>
+    <script src="uikit-icons.min.js"></script>
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <link rel="stylesheet" href="normalize.css">
+    <!--<link rel="stylesheet" href="normalize.css">-->
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -51,24 +52,27 @@
     </div>
     
 
-    <div class="section-one uk-flex uk-flex-center uk-flex-wrap uk-flex-middle uk-flex-row" style="background-color:DarkSlateBlue;">
+    <div class="section-one uk-flex uk-flex-center uk-flex-wrap uk-flex-middle uk-flex-row" >
 
       <div class="fiftyfifty uk-flex-last uk-flex uk-flex-center uk-flex-middle" style="display:flex; align-content:center;">
         <img src="genetics_icon_tomatoes.png" alt="genetics_icon_tomatoes.png" style="height:100%;">
       </div>
 
 
-      <div class="fiftyfifty" id="text" style="width:50%; height:100%;">
-        <h3>What We Do</h3>
+      <div class="fiftyfifty uk-flex uk-flex-column uk-flex-flex-start" id="text" style="width:50%; height:100%;">
+        <h2>What We Do</h3>
         <br>
-        <h2>GeneEver and The World</h2>
+        <h1>GeneEver and The World</h2>
         <br>
         <p style="width:50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum eu ex nec convallis.</p>
         <br>
         <a href="#">Learn More</a>
+        <button>Learn More</button>
       </div>
 
     </div>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fafafa" fill-opacity="1" d="M0,288L60,256C120,224,240,160,360,117.3C480,75,600,53,720,69.3C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     
     <div class="dna-helix section uk-flex uk-flex-center uk-flex-middle">
       <!--Moving DNA helix in own divider-->
@@ -121,8 +125,9 @@
     <!--</div>-->
     
 
-    <footer class="uk-container" style="background-color:DodgerBlue;">
+    <footer class="footer uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-flex-around" style="background-color:#fcfcfc;">
       <a href="/"><img src="logo.png" alt="Footer logo" style="width:200px;"></a>
+      <h1>Lorem10</h1>
     </footer>
     
     <!--<div class="uk-container uk-flex uk-flex-center">-->
@@ -132,9 +137,11 @@
     
     <!--<script src="particles.min.js"></script>-->
     
+    <!--Libraries for animated DNA helix-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-        
+    
+    <!--Script for whole page-->
     <script src="script.js"></script>
   </body>
 </html>
