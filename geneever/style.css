@@ -141,6 +141,7 @@ DNA bildet i først seksjonen*/
 .fiftyfifty:not(img) {
   min-width:50%;
   height:50vh;
+  /*background-color:#fcfcfc;*/
   background-color:#fcfcfc;
 
   /*overflow:hidden;*/
