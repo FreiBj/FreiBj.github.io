@@ -1,3 +1,18 @@
+// Navbar open and close
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+hamburger.addEventListener('click', ()=>{
+    //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+    link.classList.toggle("fade");
+    });
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+
+
 windowHeight = window.innerHeight * 0.3;
 windowWidth = window.innerWidth * 0.3;
 

@@ -67,7 +67,7 @@ p {font-size:20px; font-weight:400;}
 
 
 .top-bar {
-  /*width:100%;*/
+  width:100%;
   height:8em;
 
   background-color:#fcfcfc;
@@ -82,13 +82,13 @@ p {font-size:20px; font-weight:400;}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  .top-bar {
+  /* .top-bar {
     flex-direction: column;
     flex-wrap:wrap;
     align-content: center;
     justify-content:center;
     height:10em;
-  }
+  } */
 
   .top-bar .nav-bar {
     padding-top:15px;
@@ -110,7 +110,7 @@ p {font-size:20px; font-weight:400;}
   margin:1em;
 }
 
-.top-bar .nav-bar #learn-more, .fiftyfifty a {
+#learn-more, .fiftyfifty a {
   /*border:2px solid DodgerBlue;*/
   border-radius:20px;
   padding:10px;
@@ -120,23 +120,18 @@ p {font-size:20px; font-weight:400;}
   color:white;
 }
 
+#learn-more:hover, .fiftyfifty a:hover {
+  /* color: #f2f5f7; */
+  background-color:rgb(58, 119, 180);
+  transition: all ease-in-out 200ms;
+}
+
 .section-one {
   min-height:50vh;
 
   /*display:flex;*/
   /*align-items: center;*/
 }
-
-
-/*Teksten som står til høyre for
-DNA bildet i først seksjonen*/
-/*.section-one #text {*/
-/*  display:flex;*/
-/*  flex-wrap:wrap;*/
-/*  flex-direction: column;*/
-/*  justify-content: flex-start;*/
-  /*align-items:center;*/
-/*}*/
 
 .fiftyfifty:not(img) {
   /*min-width:50%;*/
@@ -146,14 +141,6 @@ DNA bildet i først seksjonen*/
 
   /*overflow:hidden;*/
 
-  /*text-align:left;*/
-  /*display:flex;*/
-  /*flex-wrap:wrap;*/
-  /*flex-direction: column;*/
-  /*justify-content: center;*/
-  /*align-items:flex-start;*/
-  /*align-content: flex-start;*/
-  /*display:inline-block;*/
 }
   
 .section {
@@ -164,4 +151,167 @@ DNA bildet i først seksjonen*/
 
 .logo {
   width:200px;
+}
+
+/* NEW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Navbar css */
+/* The new navbar css */
+nav {
+  height: 8em;
+  width: 100vw;
+  background-color: darkgray;
+  /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); */
+
+
+  /* position: fixed; */
+  /* z-index: 10; */
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-wrap: nowrap;
+}
+
+.logo{
+  /* padding:1vh 1vw; */
+  text-align: center;
+}
+.logo img {
+  /* height: 10vh; */
+  /* width: 10vw; */
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  /* width: 88vw; */
+  /* padding: 0 0.7vw; */
+  justify-content: space-around;
+  align-items: center;
+  /* text-transform: uppercase; */
+
+}
+
+.nav-links li a{
+  text-decoration: none;
+  /* margin: 0 0.7vw; */
+
+  font-size:20px;
+  margin:1em;
+
+  color:white;
+
+}
+
+.nav-links li a:hover {
+  color: #61DAFB;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #61DAFB;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+  width: 80%;
+}
+
+.hamburger div{
+  width: 30px;
+  height:3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  nav{
+    /* position: fixed; */
+    z-index: 3;
+
+    justify-content: space-between;
+  }
+
+  .hamburger{
+    display:block;
+    /* position: absolute; */
+    cursor: pointer;
+    /* right: 5%; */
+    /* top: 50%; */
+    /* transform: translate(-5%, -50%); */
+    z-index: 2;
+    transition: all 0.7s ease;
+
+    vertical-align:middle;
+  }
+  .nav-links{
+    position: fixed;
+    background: #131418;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open{
+    clip-path: circle(100vh at 90% -10%);
+    -webkit-clip-path: circle(100vh at 100% );
+    pointer-events: all;
+  }
+  .landing{
+    flex-direction: column;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .nav-links li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4){
+    transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5){
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6){
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+  .nav-links li:nth-child(7){
+    transition: all 0.5s ease 1s;
+    margin: 0;
+  }
+  li.fade{
+    opacity: 1;
+  }
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  transition: all 0.7s ease;
+  width:0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
 }

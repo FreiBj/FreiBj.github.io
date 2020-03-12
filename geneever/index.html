@@ -32,16 +32,18 @@
 
     <!--<link rel="stylesheet" href="normalize.css">-->
     <link rel="stylesheet" href="style.css">
-  </head>
 
+
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
+  </head>
 
 
   <body>
 
     <!--Top bar (Logo and navigation)-->
-    <div class="uk-container top-bar">
+    <!-- <div class="uk-container top-bar">
       <div class="uk-container logo">
-        <!--<a href="#"><h1>GeneEver</h1></a>-->
         <a href="/"><img src="logo.png" style="width:200px;"></a>
       </div>
 
@@ -51,7 +53,31 @@
         <a href="#">News</a>
         <a href="#" id="learn-more">Learn More</a>
       </div>
-    </div>
+    </div> -->
+
+
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="GeneEver Logo" style="width:200px;">
+      </div>
+
+      <!-- Hamburger icon css -->
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      
+      <!-- <div class="nav-links"> -->
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">News</a></li>
+          <a href="#" id="learn-more">Learn More</a>
+        </ul>
+      <!-- </div> -->
+     </nav>
     
 
     <div class="section-one uk-flex uk-flex-center uk-flex-wrap uk-flex-middle uk-flex-row">
@@ -155,5 +181,6 @@
     
     <!--Script for whole page-->
     <script src="script.js"></script>
+
   </body>
 </html>
