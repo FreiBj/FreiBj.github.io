@@ -21,21 +21,21 @@
     <meta property="twitter:description" content="All of my work gathered at one easy to read website. The goal is to show people how a few lines of code can result in something beautiful.">
     <meta property="twitter:image" content="img.jpg">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:200,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sites.css">
     <link rel="stylesheet" type="text/css" href="cssans.min.css">
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
-    <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet"/>
-    <link href="https://unpkg.com/sanitize.css/page.css" rel="stylesheet"/>
+    <!--<link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>-->
+    <!--<link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet"/>-->
+    <!--<link href="https://unpkg.com/sanitize.css/page.css" rel="stylesheet"/>-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Fixing scalability issues-->
   </head>
 
-  <body>
-    <div class="row">
+
+  <body data-barba="wrapper">
+    <div class="row wrapper">
       <div class="column">
         <a class="logo" href="sites.html">
-          <div class="cssans cssans--center">
+          <div class="cssans cssans--left">
             <div class="cssans__accessible">CSSans Pro</div>
 
             <div class="cssans__word">
@@ -63,51 +63,112 @@
       </div>
     </div>
 
-    <div class="nav-bar">
-        <a href="sites.html" class="link">Home</a>
-        <a href="home.html" class="link">Work</a>
-        <a href="about.html" class="link">About</a>
+    <!--<div class="container">-->
+    <!--  <a href="https://freibj.github.io/awa/index.html" target="_blank">-->
+    <!--      <div class="card">-->
+    <!--         <h2>-->
+    <!--           Arctic World Archive-->
+    <!--         </h2>-->
+    <!--         <img src="arctic.png" alt="Image of Arctic World Archive website">-->
+    <!--       </div>-->
+    <!--    </a>-->
+
+    <!--  <a href="#" target="_blank">-->
+    <!--      <div class="card">-->
+    <!--         <h2>-->
+    <!--            Bruteforce-->
+    <!--          </h2>-->
+    <!--          <img src="repl.png" alt="Image of Repl.it website">-->
+    <!--        </div>-->
+    <!--    </a>-->
+
+    <!--  <a href="cookie/index.html" target="_blank">-->
+    <!--     <div class="card">-->
+    <!--        <h2>-->
+    <!--          Cookie Clicker-->
+    <!--        </h2>-->
+    <!--        <img src="cookie.png" alt="Image of Cookie clicker game">-->
+    <!--      </div>-->
+    <!--    </a>-->
+
+    <!--    <a href="https://github.com/FreiBj/FreiBj.github.io" target="_blank">-->
+    <!--      <div class="card">-->
+    <!--        <h2>-->
+    <!--          GitHub Repo-->
+    <!--        </h2>-->
+    <!--        <img src="github.png" alt="Image of the Github repo page">-->
+    <!--    </div>-->
+    <!--    </a>-->
+
+    <!--</div>-->
+    
+    <div class="loading-container">
+      <div class="loading-screen">
+      </div>
     </div>
-
-    <hr style="margin-top:-2%; margin-bottom:0;"/>
-
-    <div class="container">
-      <a href="https://freibj.github.io/awa/index.html" target="_blank">
-          <div class="card">
-             <h2>
-               Arctic World Archive
-             </h2>
-             <img src="arctic.png" alt="Image of Arctic World Archive website">
-           </div>
-        </a>
-
-      <a href="#" target="_blank">
-          <div class="card">
-             <h2>
-                Bruteforce
-              </h2>
-              <img src="repl.png" alt="Image of Repl.it website">
-            </div>
-        </a>
-
-      <a href="cookie/index.html" target="_blank">
-         <div class="card">
-            <h2>
-              Cookie Clicker
-            </h2>
-            <img src="cookie.png" alt="Image of Cookie clicker game">
-          </div>
-        </a>
-
-        <a href="https://github.com/FreiBj/FreiBj.github.io" target="_blank">
-          <div class="card">
-            <h2>
-              GitHub Repo
-            </h2>
-            <img src="github.png" alt="Image of the Github repo page">
+    
+    <div class="wrapper">
+      
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main data-barba="container" data-barba-namespace="home">
+        
+        <div class="left">
+          <h1>New GeneEver project</h1>
+          <a href="geneever.html" class="cta">Show me it!</a>
         </div>
-        </a>
-
+        
+        <img src="https://www.pexels.com/assets/pexels-stock-photos-6c3d5eb0cbed47e1bdf44ff85ebd9cd4669f50b895b3c6e76a23a4fd43852099.jpg">
+      
+      </main>
+      
+      
+      <main data-barba="container" data-barba-namespace="home">
+        <div class="left">
+          <h1>Arctic World Archive + Snøhetta</h1>
+          <a href="https://www.arcticworldarchive.org" target="_blank" class="cta">Take me to AWA</a>
+        </div>
+        <img src="arctic.png">
+        
+    
+      </main>
+      
+      <main data-barba="container" data-barba-namespace="home">
+        
+        <div class="left">
+          <h1>Bruteforce in Python</h1>
+          <a href="https://www.arcticworldarchive.org" target="_blank" class="cta">Try out my program</a>
+        </div>
+        
+        <img src="repl.png">
+    
+      </main>
+      
+      <main data-barba="container" data-barba-namespace="home">
+        
+        <div class="left">
+          <h1>Cookie Clicker</h1>
+          <a href="https://www.arcticworldarchive.org" target="_blank" class="cta">Play this game!</a>
+        </div>
+        
+        <img src="cookie.png">
+    
+      </main>
+        
     </div>
+    
+    
+    
+    
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
