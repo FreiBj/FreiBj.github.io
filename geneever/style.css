@@ -66,20 +66,6 @@ h3 {font-size:25px;}
 p {font-size:20px; font-weight:400;}
 
 
-.top-bar {
-  width:100%;
-  height:8em;
-
-  background-color:#fcfcfc;
-
-
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   /* .top-bar {
@@ -95,22 +81,7 @@ p {font-size:20px; font-weight:400;}
   }
 }
 
-.top-bar .logo h1 {
-  font-size:30px;
-  font-weight:800;
-}
-
-.top-bar .nav-bar {
-  font-size: 0;
-}
-
-.top-bar .nav-bar a {
-  font-size:20px;
-
-  margin:1em;
-}
-
-#learn-more, .fiftyfifty a {
+#learn-more {
   /*border:2px solid DodgerBlue;*/
   border-radius:20px;
   padding:10px;
@@ -127,36 +98,41 @@ p {font-size:20px; font-weight:400;}
 }
 
 .section-one {
-  min-height:50vh;
-
-  /*display:flex;*/
-  /*align-items: center;*/
+  /* min-height:50vh;
+   */
+   display:flex;
+   /* justify-content: space-evenly; */
+   flex-wrap:wrap;
 }
 
-.fiftyfifty:not(img) {
-  /*min-width:50%;*/
-  /*height:50vh;*/
-  /*background-color:#fcfcfc;*/
-  background-color:#fcfcfc;
-
-  /*overflow:hidden;*/
-
-}
-  
-.section {
-  /*width:70%;*/
-  /*height:50vh;*/
-  min-height:50vh;
-}
-
+/* Standard logo Size - 200px's */
 .logo {
   width:200px;
 }
 
+#text {
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  flex-shrink:0;
+
+  height:24rem;
+  background-color:red;
+  min-width:24rem;
+}
 
 
+#image {
+  /* height:100%; */
+  flex:1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 
-
+  height:24rem;
+  background-color:blue;
+  min-width:24rem;
+}
 
 
 
@@ -172,7 +148,7 @@ p {font-size:20px; font-weight:400;}
 
 
 nav {
-  height: 10vh;
+  height: 7rem;
   background: #5b78c7;
 
   display:flex;
@@ -199,7 +175,7 @@ nav {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  margin:10px;
+  margin:1em;
 }
 
 .landing {
@@ -254,13 +230,13 @@ nav {
     width: 100%;
     flex-direction: column;
     clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    /* -webkit-clip-path: circle(100px at 90% -10%); */
     transition: all 1s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
     clip-path: circle(100vh at 50% 100%);
-    -webkit-clip-path: circle(100vh at 50% 50%);
+    -webkit-clip-path: circle(100vh at 50% 100%);
     pointer-events: all;
   }
   .landing {

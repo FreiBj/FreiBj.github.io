@@ -32,8 +32,8 @@ var fills = ['#012732', '#015870', '#a8acb2', '#ed7d31'],
     y = d3.scale.linear().range([h - 10, 10]),
     z = d3.scale.linear().range([10, 2]);
 
-/*Choose class, id or tag for the helix to be placed in*/
-var svg = d3.select(".dna-helix")
+/*Choose class, id or tag for the helix to be placed in -- was .dna-helix*/
+var svg = d3.select("")
     .append("svg")
     .attr("width", w)
     .attr("height", h)

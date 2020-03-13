@@ -27,7 +27,7 @@
 
 
   <!--UiKit CSS and JS libraries-->
-  <link rel="stylesheet" href="uikit.min.css" />
+  <!-- <link rel="stylesheet" href="uikit.min.css" /> -->
   <script src="uikit.min.js"></script>
   <script src="uikit-icons.min.js"></script>
 
@@ -67,7 +67,7 @@
     </div>
 
     <div class="logo">
-      <img src="logo.png" alt="GeneEver Logo">
+      <img src="logo.png" alt="GeneEver Logo" class="logo">
     </div>
 
     <ul class="nav-links">
@@ -79,9 +79,10 @@
   </nav>
 
 
-  <div class="section-one uk-flex uk-flex-center uk-flex-wrap uk-flex-middle uk-flex-row">
+  <!-- Section one div -->
+  <div class="section-one">
 
-    <div class="fiftyfifty uk-flex uk-flex-center uk-flex-column" id="text" style="width:50%;">
+    <div id="text">
       <!--Had a height:100%; selector-->
       <h2>What We Do</h2>
       <br>
@@ -90,12 +91,11 @@
       <p style="width:50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum eu ex nec
         convallis.</p>
       <br>
-      <a href="#" style="width:6em; text-align:center;">Learn More</a>
-      <!--<button>Learn More</button>-->
+      <a href="#" id="learn-more" style="width:6em; text-align:center;">Learn More</a>
     </div>
 
-    <div class="fiftyfifty uk-flex uk-flex-center uk-flex-middle" style="height:100%;">
-      <img src="genetics_icon_tomatoes.png" alt="genetics_icon_tomatoes.png" style="width:50%;height:100%;">
+    <div id="image">
+      <img src="genetics_icon_tomatoes.png" alt="genetics_icon_tomatoes.png" style="height:20em;">
     </div>
 
   </div>
