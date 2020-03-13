@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GeneEver</title>
-    <meta name="description" content="GeneEver">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type="text/css" href="_root.css">
-    
-    
-    <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="msapplication-TileColor" content="#015870">
-    <meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>GeneEver</title>
+  <meta name="description" content="GeneEver">
 
-    <!--Raleway font from Google Fonts-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">-->
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <!--UiKit CSS and JS libraries-->
-    <link rel="stylesheet" href="uikit.min.css"/>
-    <script src="uikit.min.js"></script>
-    <script src="uikit-icons.min.js"></script>
-
-    <!--<link rel="stylesheet" href="normalize.css">-->
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="_root.css">
 
 
-    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileColor" content="#015870">
+  <meta name="theme-color" content="#ffffff">
 
-  </head>
+  <!--Raleway font from Google Fonts-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">-->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 
 
-  <body>
+  <!--UiKit CSS and JS libraries-->
+  <link rel="stylesheet" href="uikit.min.css" />
+  <script src="uikit.min.js"></script>
+  <script src="uikit-icons.min.js"></script>
 
-    <!--Top bar (Logo and navigation)-->
-    <!-- <div class="uk-container top-bar">
+  <!--<link rel="stylesheet" href="normalize.css">-->
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
+</head>
+
+
+<body>
+
+  <!--Top bar (Logo and navigation)-->
+  <!-- <div class="uk-container top-bar">
       <div class="uk-container logo">
         <a href="/"><img src="logo.png" style="width:200px;"></a>
       </div>
@@ -56,131 +57,138 @@
     </div> -->
 
 
-    <!-- Navbar -->
-    <nav>
-      <div class="logo">
-        <img src="logo.png" alt="GeneEver Logo" style="width:200px;">
+  <!-- Navbar -->
+
+  <nav>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+    <div class="logo">
+      <img src="logo.png" alt="GeneEver Logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">News</a></li>
+      <a href="#" id="learn-more">Learn More</a>
+    </ul>
+  </nav>
+
+
+  <div class="section-one uk-flex uk-flex-center uk-flex-wrap uk-flex-middle uk-flex-row">
+
+    <div class="fiftyfifty uk-flex uk-flex-center uk-flex-column" id="text" style="width:50%;">
+      <!--Had a height:100%; selector-->
+      <h2>What We Do</h2>
+      <br>
+      <h1>GeneEver and The World</h1>
+      <br>
+      <p style="width:50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum eu ex nec
+        convallis.</p>
+      <br>
+      <a href="#" style="width:6em; text-align:center;">Learn More</a>
+      <!--<button>Learn More</button>-->
+    </div>
+
+    <div class="fiftyfifty uk-flex uk-flex-center uk-flex-middle" style="height:100%;">
+      <img src="genetics_icon_tomatoes.png" alt="genetics_icon_tomatoes.png" style="width:50%;height:100%;">
+    </div>
+
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#fcfcfc" fill-opacity="1"
+      d="M0,288L60,256C120,224,240,160,360,117.3C480,75,600,53,720,69.3C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+    </path>
+  </svg>
+
+
+  <div class="dna-helix uk-flex uk-flex-center uk-flex-middle uk-margin-large-bottom">
+    <!--Moving DNA helix in own divider-->
+  </div>
+
+
+  <!--<img style="width:100%;" src="https://images.squarespace-cdn.com/content/v1/5be1707a2487fd7857a1b5b8/1560434737144-WJ7UKEYX2AVBNK006WLX/ke17ZwdGBToddI8pDm48kL0t2H64KRl6KG6vXbVSTZ57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0j4YgbvV5VW_li_7GkNwUgo4NVBldeOcaotohzYtIzIM0oY2t3AIIBOmDC5fyzOgGA/DNA.png">-->
+
+
+  <div class="uk-container uk-flex uk-flex-center section-two uk-margin-medium-top uk-margin-medium-bottom">
+    <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+      <div>
+        <span class="uk-flex uk-flex-center uk-margin-small-bottom" uk-icon="icon: info; ratio:2"></span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqu</p>
       </div>
 
-      <!-- Hamburger icon css -->
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div>
+        <span class="uk-flex uk-flex-center uk-margin-small-bottom" uk-icon="icon: server; ratio:2"></span>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
       </div>
-      
-      <!-- <div class="nav-links"> -->
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">News</a></li>
-          <a href="#" id="learn-more">Learn More</a>
-        </ul>
-      <!-- </div> -->
-     </nav>
-    
 
-    <div class="section-one uk-flex uk-flex-center uk-flex-wrap uk-flex-middle uk-flex-row">
-      
-      <div class="fiftyfifty uk-flex uk-flex-center uk-flex-column" id="text" style="width:50%;"> <!--Had a height:100%; selector-->
-        <h2>What We Do</h2>
-        <br>
-        <h1>GeneEver and The World</h1>
-        <br>
-        <p style="width:50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum eu ex nec convallis.</p>
-        <br>
-        <a href="#" style="width:6em; text-align:center;">Learn More</a>
-        <!--<button>Learn More</button>-->
-      </div>
-      
-      <div class="fiftyfifty uk-flex uk-flex-center uk-flex-middle" style="height:100%;">
-        <img src="genetics_icon_tomatoes.png" alt="genetics_icon_tomatoes.png" style="width:50%;height:100%;">
+      <div>
+        <span class="uk-flex uk-flex-center uk-margin-small-bottom" uk-icon="icon: world; ratio:2"></span>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
       </div>
 
     </div>
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fcfcfc" fill-opacity="1" d="M0,288L60,256C120,224,240,160,360,117.3C480,75,600,53,720,69.3C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+  </div>
 
-    
-    <div class="dna-helix uk-flex uk-flex-center uk-flex-middle uk-margin-large-bottom">
-      <!--Moving DNA helix in own divider-->
+  <!--<div class="uk-flex uk-flex-center uk-flex-wrap uk-flex-middle section">-->
+  <!--  <div class="uk-container uk-flex uk-flex-center">-->
+  <!--  </div>-->
+  <!--  <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">-->
+  <!--      <h3 class="uk-card-title">Default</h3>-->
+  <!--      <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+  <!--  </div>-->
+
+  <!--  <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">-->
+  <!--      <h3 class="uk-card-title">Default</h3>-->
+  <!--      <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+  <!--  </div>-->
+
+  <!--  <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">-->
+  <!--      <h3 class="uk-card-title">Default</h3>-->
+  <!--      <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+  <!--  </div>-->
+
+  <!--</div>-->
+
+
+  <!--Footer with block elements-->
+  <footer class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-around" style="background-color:#fcfcfc;">
+
+    <div class="uk-block uk-block-primary" style="width:50%;">
+      <a href="/"><img src="logo.png" alt="Footer logo" class="logo"></a>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    
-    
-    <!--<img style="width:100%;" src="https://images.squarespace-cdn.com/content/v1/5be1707a2487fd7857a1b5b8/1560434737144-WJ7UKEYX2AVBNK006WLX/ke17ZwdGBToddI8pDm48kL0t2H64KRl6KG6vXbVSTZ57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0j4YgbvV5VW_li_7GkNwUgo4NVBldeOcaotohzYtIzIM0oY2t3AIIBOmDC5fyzOgGA/DNA.png">-->
-    
 
-    <div class="uk-container uk-flex uk-flex-center section-two uk-margin-medium-top uk-margin-medium-bottom">
-       <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
-          <div>
-            <span class="uk-flex uk-flex-center uk-margin-small-bottom" uk-icon="icon: info; ratio:2"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-          </div>
-          
-          <div>
-            <span class="uk-flex uk-flex-center uk-margin-small-bottom" uk-icon="icon: server; ratio:2"></span>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            </div>
-          
-          <div>
-            <span class="uk-flex uk-flex-center uk-margin-small-bottom" uk-icon="icon: world; ratio:2"></span>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-            
-      </div>
+    <div class="uk-block uk-block-default" style="width:50%;">
+      <a href="/"><img src="logo.png" alt="Footer logo" class="logo"></a>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    
-    <!--<div class="uk-flex uk-flex-center uk-flex-wrap uk-flex-middle section">-->
-    <!--  <div class="uk-container uk-flex uk-flex-center">-->
-    <!--  </div>-->
-    <!--  <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">-->
-    <!--      <h3 class="uk-card-title">Default</h3>-->
-    <!--      <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
-    <!--  </div>-->
-      
-    <!--  <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">-->
-    <!--      <h3 class="uk-card-title">Default</h3>-->
-    <!--      <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
-    <!--  </div>-->
-      
-    <!--  <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m">-->
-    <!--      <h3 class="uk-card-title">Default</h3>-->
-    <!--      <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
-    <!--  </div>-->
-      
-    <!--</div>-->
-    
-    
-    <!--Footer with block elements-->
-    <footer class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-around" style="background-color:#fcfcfc;">
-      
-      <div class="uk-block uk-block-primary" style="width:50%;">
-        <a href="/"><img src="logo.png" alt="Footer logo" class="logo"></a>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      
-      <div class="uk-block uk-block-default" style="width:50%;">
-        <a href="/"><img src="logo.png" alt="Footer logo" class="logo"></a>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      
-    </footer>
-    
-    <!--<div class="uk-container uk-flex uk-flex-center">-->
-    <!--  <img src="genetics_icon_tomatoes.png">-->
-    <!--</div>-->
-    
-    
-    <!--<script src="particles.min.js"></script>-->
-    
-    <!--Libraries for animated DNA helix-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    
-    <!--Script for whole page-->
-    <script src="script.js"></script>
 
-  </body>
+  </footer>
+
+  <!--<div class="uk-container uk-flex uk-flex-center">-->
+  <!--  <img src="genetics_icon_tomatoes.png">-->
+  <!--</div>-->
+
+  <!--<script src="particles.min.js"></script>-->
+
+  <!--Libraries for animated DNA helix-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"
+    charset="utf-8"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+  <!--Script for whole page-->
+  <script src="script.js"></script>
+
+</body>
+
 </html>

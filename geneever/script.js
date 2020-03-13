@@ -1,14 +1,13 @@
-// Navbar open and close
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
-hamburger.addEventListener('click', ()=>{
-    //Animate Links
+
+hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
     links.forEach(link => {
-    link.classList.toggle("fade");
+        link.classList.toggle("fade");
     });
-    //Hamburger Animation
+
     hamburger.classList.toggle("toggle");
 });
 
@@ -18,16 +17,16 @@ windowWidth = window.innerWidth * 0.3;
 
 
 /*Colors for the small balls, speed and width and height*/
-var fills   = ['#012732', '#015870', '#a8acb2', '#ed7d31'],
-    h       = 150,
-    w       = 700,
-    
+var fills = ['#012732', '#015870', '#a8acb2', '#ed7d31'],
+    h = 150,
+    w = 700,
+
     // h       = windowHeight,
     // w       = windowWidth,
-    
-    numX    = 30,
-    numY    = 30,
-    speed   = 0.02,
+
+    numX = 30,
+    numY = 30,
+    speed = 0.02,
     torsion = 0.2,
     x = d3.scale.linear().range([10, w - 10]),
     y = d3.scale.linear().range([h - 10, 10]),
@@ -44,7 +43,7 @@ svg.append("rect")
     .attr("width", w)
     .attr("height", h)
     .attr("fill", "#ffffff")
-    // .on("mousemove", function () { torsion = 0.5 * d3.mouse(this)[0] / w; });
+// .on("mousemove", function () { torsion = 0.5 * d3.mouse(this)[0] / w; });
 
 var container = svg.append("g");
 
@@ -68,9 +67,9 @@ function generateData() {
     });
 
     var flat = _.flatten(data);
-    x.domain(d3.extent(flat, function(d){ return d.x }));
-    y.domain(d3.extent(flat, function(d){ return d.y }));
-    z.domain(d3.extent(flat, function(d){ return d.z }));
+    x.domain(d3.extent(flat, function (d) { return d.x }));
+    y.domain(d3.extent(flat, function (d) { return d.y }));
+    z.domain(d3.extent(flat, function (d) { return d.z }));
 
     return data
 }
@@ -91,7 +90,7 @@ function draw() {
                 .attr("fill", "black");
 
             d3.select(this).append('line')
-                .attr("stroke", function (d, i) { return fills[index%7] })
+                .attr("stroke", function (d, i) { return fills[index % 7] })
                 .attr("stroke-width", 2)
         });
 
@@ -104,9 +103,9 @@ function draw() {
             .data(d)
             .attr("cx", function (d) { return x(d.x) })
             .attr("cy", function (d) { return y(d.y) })
-            .attr("r",  function (d) { return z(d.z) })
+            .attr("r", function (d) { return z(d.z) })
             .attr("fill-opacity", function (d) { return z(d.z) / 10 })
-            .attr("fill", function (d, i) { return fills[index%7]; });
+            .attr("fill", function (d, i) { return fills[index % 7]; });
 
         d3.select(this)
             .select('line')
