@@ -99,6 +99,10 @@ p {font-size:20px; font-weight:400;}
    display:flex;
    /* justify-content: space-evenly; */
    flex-wrap:wrap;
+
+   min-height:50vh;
+
+   align-items: center;
 }
 
 /* Standard logo Size - 200px's */
@@ -106,31 +110,45 @@ p {font-size:20px; font-weight:400;}
   width:200px;
 }
 
+#text, #image {
+  height:100%;
+  width:50vw;
+  padding:50px 0 50px 0;
+}
+
 #text {
-  flex:1;
+  /* flex:1; */
   display:flex;
   flex-direction: column;
   flex-shrink:0;
 
-  height:24rem;
+  /* height:30em; */
   background-color:red;
-  min-width:24rem;
+  /* width:30rem; */
 }
 
 
 #image {
   /* height:100%; */
-  flex:1;
+  /* flex:1; */
   display:flex;
   justify-content: center;
   align-items: center;
 
-  height:24rem;
+  /* height:30rem; */
   background-color:blue;
-  min-width:24rem;
+  /* min-width:30rem; */
 }
 
-
+@media screen and (max-width: 768px) {
+  .section-one {
+    flex-direction:column;
+  }
+  
+  #text, #image {
+    width:100vw;
+  }
+}
 
 
 
@@ -203,12 +221,14 @@ nav {
 
   nav {
     position: relative;
+    justify-content:space-between;
   }
 
   .hamburger {
     display:block;
     position: absolute;
     cursor: pointer;
+
     right: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
@@ -221,14 +241,14 @@ nav {
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(0px at 90% -10%);
+    -webkit-clip-path: circle(0px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(100vh at 50% 100%);
-    -webkit-clip-path: circle(100vh at 50% 100%);
+    clip-path: circle(150vh at 50% 100%);
+    -webkit-clip-path: circle(150vh at 50% 100%);
     pointer-events: all;
   }
   .landing {
