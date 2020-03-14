@@ -65,18 +65,6 @@ h3 {font-size:25px;}
 
 p {font-size:20px; font-weight:400;}
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-  /* .top-bar {
-    flex-direction: column;
-    flex-wrap:wrap;
-    align-content: center;
-    justify-content:center;
-    height:10em;
-  } */
-}
-
 #learn-more {
   /*border:2px solid DodgerBlue;*/
   border-radius:20px;
@@ -101,7 +89,7 @@ p {font-size:20px; font-weight:400;}
    flex-wrap:wrap;
 
    min-height:50vh;
-
+   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
    align-items: center;
 }
 
@@ -123,7 +111,6 @@ p {font-size:20px; font-weight:400;}
   flex-shrink:0;
 
   /* height:30em; */
-  background-color:red;
   /* width:30rem; */
 }
 
@@ -136,7 +123,6 @@ p {font-size:20px; font-weight:400;}
   align-items: center;
 
   /* height:30rem; */
-  background-color:blue;
   /* min-width:30rem; */
 }
 
@@ -151,6 +137,10 @@ p {font-size:20px; font-weight:400;}
 }
 
 
+/* All footer css */
+footer .uk-block {
+  width:250px;
+}
 
 
 
