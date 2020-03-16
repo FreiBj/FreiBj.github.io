@@ -104,6 +104,10 @@ p {font-size:20px; font-weight:400;}
   padding:50px 0 50px 0;
 }
 
+#image img {
+  height:20em;
+}
+
 #text {
   flex:1;
   display:flex;
@@ -114,8 +118,12 @@ p {font-size:20px; font-weight:400;}
   /* width:30rem; */
 }
 
-#text #text-content {
+#text-content {
   padding: 0 0 0 50px;
+}
+
+#text-content h1, p, h2, a {
+  padding:0 0 20px 0;
 }
 
 
@@ -137,6 +145,28 @@ p {font-size:20px; font-weight:400;}
   
   #text, #image {
     width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  #text-content {
+    width:90%;
+    padding: 0 0 0 0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  #text-content h1, h2 {
+    text-align:center;
+    color:white;
+  }
+
+  #image img {
+    height:17em;
   }
 }
 
@@ -167,6 +197,11 @@ footer {
   font-size:20px;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+}
 
 
 
@@ -252,7 +287,7 @@ nav {
     
 
     right: 5%;
-    top: 4.3%;
+    top: 3.5%;
     /* transform: translate(-50%, -50%); */
     z-index: 2;
   }
@@ -260,7 +295,7 @@ nav {
   .nav-links {
     position: fixed;
     /* background: #5b78c7; */
-    background: #012732;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     height: 100vh;
     width: 100%;
     flex-direction: column;
