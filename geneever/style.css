@@ -160,7 +160,7 @@ p {font-size:20px; font-weight:400;}
     flex-direction: column;
   }
 
-  #text-content h1, h2 {
+  #text-content h1, #text-content h2 {
     text-align:center;
     color:white;
   }
