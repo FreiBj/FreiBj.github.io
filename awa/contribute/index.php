@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Arctic World Archive</title>
+        <title>Contribute</title>
 
-        <link rel="stylesheet" type="text/css" href="contact.css">
+        <link rel="stylesheet" type="text/css" href="/contact/contact.css">
         <link rel="stylesheet" type="text/css" href="/css/nav.css">
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -17,11 +17,13 @@
 
         <!-- Add icon library -->
         <script src="https://kit.fontawesome.com/3f79689e7f.js"></script>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+        
 
         <!-- <meta name='viewport' content='initial-scale=1, viewport-fit=cover'> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP)-->
-        <meta name="description" content="Arctic World Archive">
-        <meta name="keywords" content="Arctic World Archive, contact, contact us, contact awa, contact Arctic World Archive">
+        <meta name="description" content="Arctic World Archive - Contribute">
         <!-- Hotjar Tracking Code for https://www.arcticworldarchive.org -->
         <script>
             (function(h,o,t,j,a,r){
@@ -59,38 +61,55 @@
         </div>
         <span id="hamburger" class="hamburger flex-parent" onclick="openNav()" style="color:black;">&#9776;</span> <!--Hamburger ikonet, når den trykkes på kjører openNav()-->
 
-
         <section class="contact flex-parent">
-          <div class="flex-parent bg-img" style="background-image: url('https://images.unsplash.com/photo-1504719219700-015645beaa7b?ixlib=rb-1.2.1&auto');">
+          <div class="flex-parent bg-img" style="background-image:url('/assets/snowy.jpg')">
                 <!-- <h1>Contact Us</h1> -->
           </div>
 
-          <!-- <div class="form flex-parent">
-            <header>
-                <h1><a href="tel:+4997032607">Contact Us</a></h1>
-            </header>
 
-            <form id="form" class="topBefore">
-    		    <input id="name" type="text" placeholder="Navn">
-    		    <input id="email" type="text" placeholder="E-MAIL">
-    		    <textarea id="message" type="text" placeholder="Melding"></textarea>
-                <input id="submit" type="submit" value="Send">
-            </form>
+        <div class="contact-sec flex-col">
+          <h1>Contribute</h1>
+          <p>
+            For enquiries on how to contribute data or sponsor cultural heritage projects, <br> email: <a href="mailto:info@arcticworldarchive.org">info@arcticworldarchive.org</a>
+            <br><br>
+            <b>Arctic World Archive</b>
+            <br>
+            Grønland 56, Drammen
+            <br>
+            Norway
+          </p>
+        </div>
 
-          </div> -->
-          <div class="contact-sec flex-col">
-            <h1>Contact Us</h1>
-            <p>
-              If you would like more information on anything to do with the Arctic World Archive, get in touch: <br>email: <a href="mailto:info@arcticworldarchive.org">info@arcticworldarchive.org</a>
-              <br><br>
-              <b>Arctic World Archive</b>
-              <br>
-              Grønland 56, Drammen
-              <br>
-              Norway
-            </p>
-          </div>
-        </section>
+        <div class="uk-container">
+          <form action="contactform.php" method="post">
+            <fieldset class="uk-fieldset">
+              <legend class="uk-legend">Contribute Form</legend>
+        
+              <div class="uk-margin">
+                <input class="uk-input" type="text" name="name" placeholder="Full Name">
+              </div>
+
+              <div class="uk-margin">
+                <input class="uk-input" type="text" name="mail" placeholder="Your E-Mail">
+              </div>
+
+              <div class="uk-margin">
+              <input class="uk-input" type="text" name="subject" placeholder="Subject">
+              </div>
+        
+              <div class="uk-margin">
+                <textarea class="uk-textarea" rows="3" name="message" placeholder="Message"></textarea>
+              </div>
+        
+              <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <label><input class="uk-checkbox" type="checkbox" checked />I agree to the AWA privacy policy and understand that my data will be used for contact and sales purposes.</label>
+              </div>
+
+              <button class="uk-button uk-button-primary" type="submit" name="submit">Send Email</button>
+            </fieldset>
+          </form>
+        </div>
+
 
         <footer>
             <div>
