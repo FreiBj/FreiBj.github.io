@@ -1,0 +1,155 @@
+.contact .bg-img {
+    height:60vh;
+    min-width:100%;
+    max-width:100%;
+    font-size:80px;
+
+    /* background-image: url('https://images.unsplash.com/photo-1504719219700-015645beaa7b?ixlib=rb-1.2.1&auto'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: "LyonDisplay-Regular", Sans-Serif;
+    font-weight:800;
+    color:white;
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);*/
+}
+
+/* @media only screen and (max-width: 768px) {
+    .contact-sec h1 {
+      min-width:85vw;
+      font-size:3rem;
+      text-align:left;
+    }
+
+    .contact-sec h2 {
+        font-size:8vw;
+        margin-top:2rem;
+        text-align:left;
+        min-width:85vw;
+    }
+
+    .contact-sec h3 {
+      text-align:left;
+      min-width:85vw;
+    }
+
+    .contact-sec p {
+        min-width:85vw;
+        text-align:left;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+} */
+/*
+.contact-info {
+  min-width: 100%;
+  max-width:100%;
+  min-height:70vh;
+} */
+
+.contact-sec {
+  font-family: "LyonDisplay-Regular", sans-serif;
+
+  /* max-width:50vw; */
+  /* margin-top:100px; */
+  /* margin-bottom:100px; */
+  text-align:center;
+  /* margin:20px; */
+  padding-top:4vw;
+  padding-bottom:4vw;
+
+}
+
+.contact-sec h1{
+  font-size:70px;
+
+  color:#262626;
+  text-decoration: none;
+  font-weight:100;
+}
+
+.contact-sec p, .contact-sec a {
+  font-size:20px;
+}
+
+.form {
+
+}
+
+#form {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input {
+  font-family: "LyonDisplay-Regular", Sans-Serif;
+  font-size: 14px;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent; /*Gjør fargen på send knappen gjennomsikig*/
+  outline: none;
+  color: #726659;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none; /*Fjerner kanten nederst så den under er som en kant*/
+
+
+  /*Når du holder over så tar det litt lengre tid før fargen kommer opp, gir en fin effekt*/
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+/*Endrer fargen når du holder musen over*/
+input:hover, textarea:hover, #submit:hover{
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px; /*Textfeltet skal være større enn de andre*/
+  max-height: 110px;
+  padding: 15px; /*For å line opp textfeltet med de andre*/
+
+  background: transparent; /*Gjennomsiktig*/
+
+  color: #726659;
+  font-family: "LyonDisplay-Regular", Sans-Serif;
+  font-size: 14px;
+  resize: none;/*Skal ikke være mulig å endre på størrelsen på tekstfield*/
+  border: solid 1px #b3aca7;
+  outline:none; /*Fjerner en sånn blå border som kommer rundt når du selecter textfeltet*/
+
+  /*Animasjon for å spice litt opp*/
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+#submit {
+  width: 502px;
+
+  padding: 0;
+  margin: -8px 0px 0px 0px; /*-8px er for å fjerne et gap med whitespace*/
+
+  font-family: "LyonDisplay-Regular", Sans-Serif;
+  font-size: 14px;
+  color: #b3aca7;
+
+  cursor: pointer;
+  outline:none;
+
+  border: solid 1px #b3aca7;
+  border-top: none; /*Bruker borderen til kontekst feltet*/
+}

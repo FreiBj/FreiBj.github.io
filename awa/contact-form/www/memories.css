@@ -1,0 +1,29 @@
+.bg-img{
+    height:60vh;
+    min-width:100%;
+    font-size:80px;
+
+    background-image: url('https://images.unsplash.com/photo-1526923268711-fa1c7e80f0e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: "LyonDisplay-Bold", Sans-Serif;
+    font-weight:800;
+    color:white;
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);*/
+}
+
+h1 {
+  font-size:65px;
+  font-family: "LyonDisplay-Bold", Sans-Serif;
+}
+
+.uk-container {
+  margin:75px;
+}
+
+
+p {
+  font-size:18px;
+}
