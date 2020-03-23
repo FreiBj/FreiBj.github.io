@@ -15,56 +15,11 @@
     /*box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);*/
 }
 
-/* @media only screen and (max-width: 768px) {
-    .contact-sec h1 {
-      min-width:85vw;
-      font-size:3rem;
-      text-align:left;
-    }
-
-    .contact-sec h2 {
-        font-size:8vw;
-        margin-top:2rem;
-        text-align:left;
-        min-width:85vw;
-    }
-
-    .contact-sec h3 {
-      text-align:left;
-      min-width:85vw;
-    }
-
-    .contact-sec p {
-        min-width:85vw;
-        text-align:left;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-} */
-/*
-.contact-info {
-  min-width: 100%;
-  max-width:100%;
-  min-height:70vh;
-} */
-
-.contact-sec {
+.uk-container {
   font-family: "LyonDisplay-Regular", sans-serif;
-
-  /* max-width:50vw; */
-  /* margin-top:100px; */
-  /* margin-bottom:100px; */
-  text-align:center;
-  /* margin:20px; */
-  padding-top:4vw;
-  padding-bottom:4vw;
-
 }
 
-.contact-sec h1{
+h1 {
   font-size:70px;
 
   color:#262626;
@@ -72,15 +27,20 @@
   font-weight:100;
 }
 
-.contact-sec p, .contact-sec a {
+p, a {
   font-size:20px;
 }
 
-#submit {
+.uk-form-label {
+  font-size:1.2rem !important;
+  font-family:"LyonDisplay-Regular", sans-serif;
+}
+
+/* #submit {
   width: 502px;
 
   padding: 0;
-  margin: -8px 0px 0px 0px; /*-8px er for å fjerne et gap med whitespace*/
+  margin: -8px 0px 0px 0px;
 
   font-family: "LyonDisplay-Regular", Sans-Serif;
   font-size: 14px;
@@ -90,5 +50,5 @@
   outline:none;
 
   border: solid 1px #b3aca7;
-  border-top: none; /*Bruker borderen til kontekst feltet*/
-}
+  border-top: none; 
+} */
