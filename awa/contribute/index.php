@@ -93,7 +93,7 @@
                 You can choose to store information for 5, 10 or 25 year and in some cases for perpetuity. We will help
                 find your suitable time frame.
                 <br><br>
-                Please fill in the contact form below and we will get in touch with a proposal.
+                Please fill in the contact form and we will get in touch with a proposal.
             </p>
         </div>
 
@@ -107,15 +107,22 @@
                     <!-- <label class="uk-form-label">Full name</label> -->
                     <div class="uk-margin">
                         <!-- <legend class="uk-legend">Full name</legend> -->
-                        <label class="uk-form-label">Full name</label>
-                        <input class="uk-input" type="text" name="name" placeholder="Full Name">
+                        <label class="uk-form-label">Full name (Required)</label>
+                        <input class="uk-input" type="text" name="name" placeholder="Full Name" required>
+                    </div>
+
+                    <!-- Organization -->
+                    <div class="uk-margin">
+                        <!-- <legend class="uk-legend">Full name</legend> -->
+                        <label class="uk-form-label">Organisation (Required)</label>
+                        <input class="uk-input" type="text" name="org" placeholder="Organisation" required>
                     </div>
 
                     <!-- Email -->
                     <!-- <legend class="uk-legend">Your E-Mail</legend> -->
                     <div class="uk-margin">
-                        <label class="uk-form-label">Your E-mail</label>
-                        <input class="uk-input" type="text" name="mail" placeholder="E-Mail">
+                        <label class="uk-form-label">Your E-mail (Required)</label>
+                        <input class="uk-input" type="text" name="mail" placeholder="E-Mail" required>
                     </div>
 
                     <!-- Phone number -->
@@ -155,7 +162,7 @@
                     </div> -->
 
                     <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                        <label><input class="uk-checkbox" type="checkbox" onclick="checkCheckbox(this)"/>I agree to the AWA <a href="https://www.piql.com/privacy-notice/">privacy policy</a>
+                        <label><input class="uk-checkbox" type="checkbox" onclick="checkCheckbox(this)"/>I agree to the AWA <a href="/privacy-notice/" target="_blank">privacy policy</a>
                             and understand that my data will be used for contact and sales purposes.</label>
                     </div>
 
@@ -167,49 +174,50 @@
 
 
     <footer>
-        <div>
-            <img src="/assets/AWA_Logo_Negativ_RGB.png" class="footer-logo">
-        </div>
+            <div class="uk-block">
+                <img src="/assets/AWA_Logo_Negativ_RGB.png" class="footer-logo" alt="AWA Logo">
+            </div>
 
-        <div>
-            <ul>
-                <a href="/">
-                    <li>Home</li>
-                </a>
-                <a href="/memories/">
-                    <li>Memories</li>
-                </a>
-                <a href="/contribute/">
-                    <li>Contribute</li>
-                </a>
-                <a href="/news/">
-                    <li>News</li>
-                </a>
-                <a href="/about/">
-                    <li>About</li>
-                </a>
-                <a href="/contact/">
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </div>
+            <div class="uk-block">
+                <ul>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/memories/">
+                        <li>Memories</li>
+                    </a>
+                    <a href="/contribute/">
+                        <li>Contribute</li>
+                    </a>
+                    <a href="/news/">
+                        <li>News</li>
+                    </a>
+                    <a href="/about/">
+                        <li>About</li>
+                    </a>
+                    <a href="/contact/">
+                        <li>Contact</li>
+                    </a>
+                    <a href="/privacy-notice/">
+                        <li>Privacy Notice</li>
+                    </a>
+                </ul>
+            </div>
+            
+            <div class="uk-block">
+                <ul>
+                    <li>Arctic World Archive</li>
+                    <li>Grønland 56</li>
+                    <li>3045 Drammen</li>
+                    <li>Norway</li>
+                </ul>
+            </div>
 
-        <div>
-            <ul>
-                <li>Arctic World Archive</li>
-                <li>Grønland 56</li>
-                <li>3045 Drammen</li>
-                <li>Norway</li>
-            </ul>
-        </div>
-
-        <div>
-            <a href="https://www.facebook.com/ArcticWorldArchive/" target="_blank"><i
-                    class="fab fa-facebook-f fa-2x"></i></a>
-            <a href="https://www.linkedin.com/company/arctic-world-archive/" target="_blank"><i
-                    class="fab fa-linkedin fa-2x"></i></a>
-        </div>
-    </footer>
+            <div class="uk-block">
+                <a href="https://www.facebook.com/ArcticWorldArchive/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.linkedin.com/company/arctic-world-archive/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </footer>
 
     <script src="/js/script.js"></script>
     <script>
@@ -220,25 +228,6 @@
             } else {
                 button.setAttribute("disabled", "");
             }
-        }
-
-        function checkCheckbodx() {
-            var b = document.querySelector("button");
-            console.log(b);
-
-            var atr = b.getAttribute("button");
-            console.log(atr);
-
-            if (b.getAttribute("button") === null) {
-                console.log("Checked")
-            }
-
-            // if (b.getAttribute(b) === "disabled") {
-            //     b.removeAttribute("disabled");
-            // } else if (b.getAttribute()) {
-            //     b.setAttribute = "disabled";
-            // }
-            // console.log(b.getAttribute());
         }
     </script>
 </body>

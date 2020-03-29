@@ -232,13 +232,18 @@ footer {
 
 
     display:flex;
-    flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-around;
     align-items:center;
     align-content:center;
 
     color:white;
+}
+
+@media only screen and (max-width: 770px) {
+  footer div {
+    margin:20px;
+  }
 }
 
 .article-list  li {
@@ -249,14 +254,11 @@ ul:not(.article-list) {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /*overflow: hidden;*/
 }
 
 ul a:not(.article-list) {
   display: block;
   color:white !important;
-  /*text-align: center;*/
-  /* padding: 14px 16px; */
   text-decoration: none;
 }
 
@@ -305,5 +307,5 @@ footer div {
 
 /*Blockquote styling*/
 .uk-margin-small-bottom {
-  font-family:"LyonDisplay-RegularItalic",sans-serif;
+  font-family:"LyonDisplay-RegularItalic", sans-serif;
 }

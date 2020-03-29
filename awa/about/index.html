@@ -1,54 +1,58 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>About AWA</title>
 
-        <link rel="stylesheet" type="text/css" href="about.css">
-        <link rel="stylesheet" type="text/css" href="/css/nav.css">
+<head>
+    <meta charset="utf-8">
+    <title>About AWA</title>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#1e1e2e">
-        <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/css/uikit.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#1e1e2e">
+    <meta name="theme-color" content="#ffffff">
 
-        <!-- Add icon library -->
-        <script src="https://kit.fontawesome.com/3f79689e7f.js"></script>
+    <!-- UIkit CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
 
-        <!-- <meta name='viewport' content='initial-scale=1, viewport-fit=cover'> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--1:1 forhold til hardware pixels og Device Independent pixels(DIP) -->
-        <meta name="description" content="Arctic World Archive">
-        <meta name="keywords" content="Arctic World Archive, about us, about, About">
-        <!-- Hotjar Tracking Code for https://www.arcticworldarchive.org -->
-        <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:1570115,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
+    <!-- Add icon library -->
+    <script src="https://kit.fontawesome.com/3f79689e7f.js"></script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152803977-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <!-- <meta name='viewport' content='initial-scale=1, viewport-fit=cover'> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--1:1 forhold til hardware pixels og Device Independent pixels(DIP) -->
+    <meta name="description" content="About AWA">
+    <!-- Hotjar Tracking Code for https://www.arcticworldarchive.org -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1570115, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 
-          gtag('config', 'UA-152803977-1');
-        </script>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152803977-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    <body>
-        <div id="myNav" class="overlay">
-          <!--<a style="cursor:pointer" class="closebtn" onclick="closeNav()">&times;</a>-->
-          <div class="overlay-content">
+        gtag('config', 'UA-152803977-1');
+    </script>
+</head>
+
+<body>
+    <div id="myNav" class="overlay">
+        <!--<a style="cursor:pointer" class="closebtn" onclick="closeNav()">&times;</a>-->
+        <div class="overlay-content">
             <a style="cursor:pointer" onclick="closeNav()" class="closeButton">&times;</a>
             <a href="/">Home</a>
             <a href="/memories/">Memories</a>
@@ -56,111 +60,157 @@
             <a href="/news/">News</a>
             <a href="/about/">About</a>
             <a href="/contact/">Contact</a>
-          </div>
         </div>
-        <span id="hamburger" class="hamburger" onclick="openNav()">&#9776;</span> <!--Hamburger ikonet, når den trykkes på kjører openNav()-->
+    </div>
+    <span id="hamburger" class="hamburger" onclick="openNav()">&#9776;</span>
+    <!--Hamburger ikonet, når den trykkes på kjører openNav()-->
 
-        <section class="first-sec flex-center">
-            <div class="bg-img">
-                <!--<h1>About AWA</h1>-->
-            </div>
+    <section class="first-sec flex-center">
+        <div class="bg-img">
+            <!--<h1>About AWA</h1>-->
+        </div>
+    </section>
 
-            <div class="flex-center about-sec">
-                <h1>About AWA</h1>
+    <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+        <h1 style="font-size:70px;">About AWA</h1>
 
-                <!--About Arctic World Archive-->
-                <p>
-                    The Arctic World Archive (AWA) was inaugurated in March 2017 as a unique collaboration between Store Norske Spitsbergen Kulkompani (SNSK), a more than 100-year-old mining company located at Svalbard, and Piql AS, an innovative technology company located on mainland Norway.
-                    <br/><br/>
-                    The first deposits were made by the National Archives of Mexico and Brazil, followed by a growing number of organisations from over 15 countries, including the Vatican Library, the National Museum of Norway, the European Space Agency, the Museum of the Person, Alinari and major global corporations.
-                    <br/><br/>
-                    Our ambition is to be a secure world archive to help preserve the world's digital memory and ensure that the world's most irreplaceable digital memories of art, culture and literature are secured and made available to future generations.
+        <!--About Arctic World Archive-->
+        <p>
+            The Arctic World Archive (AWA) was inaugurated in March 2017 as a unique collaboration between Store Norske
+            Spitsbergen Kulkompani (<a href="https://www.snsk.no/" target="_blank">SNSK</a>), a more than 100-year-old
+            mining company located at Svalbard, and Piql AS, an innovative technology company located on mainland
+            Norway.
+            <br /><br />
+            The first deposits were made by the National Archives of Mexico and Brazil, followed by a growing number of
+            organisations from over 15 countries, including the Vatican Library, the National Museum of Norway, the
+            European Space Agency, the Museum of the Person, Alinari and major global corporations.
+            <br /><br />
+            Our ambition is to be a secure world archive to help preserve the world's digital memory and ensure that the
+            world's most irreplaceable digital memories of art, culture and literature are secured and made available to
+            future generations.
 
-                    <blockquote style="margin:20px;">
-                    <p class="uk-margin-small-bottom">It is an amazing feeling to know that my own nation’s memory will be kept safe for future generations to see on this arctic island.
-                    </p>
-                    <cite>
-                       - Erick Cardoso,
-                        National Archive of Mexico
-                    </cite>
-                </blockquote>
-                <p style="margin-bottom:30px;">
-                    A large number of factors related to technology and societal change, wars and potential natural disasters make it extremely demanding to preserve digital memories for centuries and AWA has the ambition of being one of the most important global initiatives to achieve just this. that the information is passed on to future generations so that those with knowledge of their past can have a meaningful present and future.
+            <blockquote style="margin:20px;">
+                <p class="uk-margin-small-bottom">It is an amazing feeling to know that my own nation’s memory will be
+                    kept safe for future generations to see on this arctic island.
                 </p>
+                <cite>
+                    - Erick Cardoso,
+                    National Archive of Mexico
+                </cite>
+            </blockquote>
+            <p>
+                A large number of factors related to technology and societal change, wars and potential natural
+                disasters make it extremely demanding to preserve digital memories for centuries and AWA has the
+                ambition of being one of the most important global initiatives to achieve just this. that the
+                information is passed on to future generations so that those with knowledge of their past can have a
+                meaningful present and future.
+            </p>
 
-                <!--Vault image to make reading a little easier-->
-                <div class="vault-img">
-                    <img src="/assets/vault.jpg">
-                </div>
-
-                <br/>
-                <h3 style="margin-top:30px;">The Technology</h3>
-
-                <p>
-                  The technology used to store the data is as important as the Archive itself. Most digital storage mediums have a limited lifetime, and hardware, software and file formats become obsolete as technology evolves
-                  <br><br>
-                  The purpose-built digital medium can last for over 1000 years in the archive with guaranteed future accessibility. The storage medium, piqlFilm, is futureproof and technology independent, so no matter how much time has passed and how technology has evolved, the data will still be accessible.
-                  <br><br>
-                  The technology can withstand extreme electromagnetic exposure and has undergone extensive longevity and accessibility testing.
-                  <br><br>
-                </p>
-
-                <div class="vault-img">
-                    <img src="https://images.unsplash.com/photo-1526240921501-3ab5bbeba831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3744&q=80">
-                </div>
-                <!--About SNSK-->
-                <a href="https://www.snsk.no/" target="_blank"><h3 style="margin-top:30px;">SNSK</h3></a>
-                <p>
-                    SNSK is headquartered in Longyearbyen. The company was founded in November 1916 and took over coal mining in Longyearbyen after the American company Arctic Coal Company. Since then, Store Norske has been operating coal mines in Svalbard continuously, with the exception of a period during World War II. SNSK has solid experience with industrial operations under extreme, arctic conditions.
-                    <br/><br/>
-                    The company is 100 percent owned by the Norwegian state and the authorities have always considered SNSK's business in a broader perspective than the purely corporate economy. The company is an important player in maintaining a stable, Norwegian family community in Svalbard.
-                    <br/><br/>
-                </p>
-
-                <!--About Piql-->
-                <a href="https://www.piql.com" target="_blank"><h3 style="margin-top:30px;">Piql</h3></a>
-                <p>
-                    Piql is dedicated to preventing that irreplaceable data is lost. The company develop methods and technologies that will keep essential information authentic, accessible and usable at any point in the future.
-                    <br/><br/>
-                    Since the company was started in 2002, it has creatively challenged industry standards to come up with new and better solutions. One of these solutions is a migration-free and self-contained storage medium with unique long-term properties.
-                    <br/><br/>
-                    Piql is represented globally through a global network of Piql Partners that offers Piql Services to Clients that has a need to keep data secure preserved for future use.
-                </p>
-            </div>
-        </section>
-
-
-        <footer>
-            <div>
-                <img src="/assets/AWA_Logo_Negativ_RGB.png" class="footer-logo">
+            <!--Vault image to make reading a little easier-->
+            <div class="uk-margin-medium-top">
+                <img src="/assets/vault.jpg">
             </div>
 
-            <div>
-                <ul>
-                    <a href="/"><li>Home</li></a>
-                    <a href="/memories/"><li>Memories</li></a>
-                    <a href="/contribute/"><li>Contribute</li></a>
-                    <a href="/news/"><li>News</li></a>
-                    <a href="/about/"><li>About</li></a>
-                    <a href="/contact/"><li>Contact</li></a>
-                </ul>
-            </div>
+            <h2 style="font-size:50px;">The Technology</h2>
 
-            <div>
-                <ul>
-                    <li>Arctic World Archive</li>
-                    <li>Grønland 56</li>
-                    <li>3045 Drammen</li>
-                    <li>Norway</li>
-                </ul>
-            </div>
+            <p>
+                The technology used to store the data is as important as the Archive itself. Most digital storage
+                mediums have a limited lifetime, and hardware, software and file formats become obsolete as technology
+                evolves
+                <br><br>
+                The purpose-built digital medium can last for over 1000 years in the archive with guaranteed future
+                accessibility. The storage medium, piqlFilm, is futureproof and technology independent, so no matter how
+                much time has passed and how technology has evolved, the data will still be accessible.
+                <br><br>
+                The technology can withstand extreme electromagnetic exposure and has undergone extensive longevity and
+                accessibility testing.
+            </p>
 
-            <div>
-                <a href="https://www.facebook.com/ArcticWorldArchive/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-                <a href="https://www.linkedin.com/company/arctic-world-archive/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <div class="vault-img uk-margin-medium-top">
+                <img
+                    src="https://images.unsplash.com/photo-1526240921501-3ab5bbeba831?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3744&q=80">
             </div>
-        </footer>
+            <!--About SNSK-->
+            <a href="https://www.snsk.no/" target="_blank">
+                <h2 style="font-size:50px;" class="uk-margin-medium-top">SNSK</h2>
+            </a>
+            <p>
+                SNSK is headquartered in Longyearbyen. The company was founded in November 1916 and took over coal
+                mining in Longyearbyen after the American company Arctic Coal Company. Since then, Store Norske has been
+                operating coal mines in Svalbard continuously, with the exception of a period during World War II. SNSK
+                has solid experience with industrial operations under extreme, arctic conditions.
+                <br /><br />
+                The company is 100 percent owned by the Norwegian state and the authorities have always considered
+                SNSK's business in a broader perspective than the purely corporate economy. The company is an important
+                player in maintaining a stable, Norwegian family community in Svalbard.
+            </p>
 
-        <script src="/js/script.js"></script>
-    </body>
+            <!--About Piql-->
+            <a href="https://www.piql.com" target="_blank">
+                <h2 style="font-size:50px;" class="uk-margin-medium-top">Piql</h2>
+            </a>
+            <p>
+                Piql is dedicated to preventing that irreplaceable data is lost. The company develop methods and
+                technologies that will keep essential information authentic, accessible and usable at any point in the
+                future.
+                <br /><br />
+                Since the company was started in 2002, it has creatively challenged industry standards to come up with
+                new and better solutions. One of these solutions is a migration-free and self-contained storage medium
+                with unique long-term properties.
+                <br /><br />
+                Piql is represented globally through a global network of Piql Partners that offers Piql Services to
+                Clients that has a need to keep data secure preserved for future use.
+            </p>
+    </div>
+
+
+    <footer>
+        <div class="uk-block">
+            <img src="/assets/AWA_Logo_Negativ_RGB.png" class="footer-logo" alt="AWA Logo">
+        </div>
+
+        <div class="uk-block">
+            <ul>
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/memories/">
+                    <li>Memories</li>
+                </a>
+                <a href="/contribute/">
+                    <li>Contribute</li>
+                </a>
+                <a href="/news/">
+                    <li>News</li>
+                </a>
+                <a href="/about/">
+                    <li>About</li>
+                </a>
+                <a href="/contact/">
+                    <li>Contact</li>
+                </a>
+                <a href="/privacy-notice/">
+                    <li>Privacy Notice</li>
+                </a>
+            </ul>
+        </div>
+        
+        <div class="uk-block">
+            <ul>
+                <li>Arctic World Archive</li>
+                <li>Grønland 56</li>
+                <li>3045 Drammen</li>
+                <li>Norway</li>
+            </ul>
+        </div>
+
+        <div class="uk-block">
+            <a href="https://www.facebook.com/ArcticWorldArchive/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/arctic-world-archive/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
 </html>

@@ -103,5 +103,5 @@
 }
 
 .info-div:nth-child(2) {
-    background-image: url('../darkMountians.jpg');
+    background-image: url('/assets/darkMountians.jpg');
 }
