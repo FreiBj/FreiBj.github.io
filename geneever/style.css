@@ -53,6 +53,11 @@ table {
 body {
   font-family: 'Open Sans', sans-serif;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 a {
   color:#323232;
@@ -89,7 +94,7 @@ p {font-size:20px; font-weight:400;}
    flex-wrap:wrap;
 
    min-height:50vh;
-   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+   background: #015870;
    align-items: center;
 }
 
@@ -120,6 +125,11 @@ p {font-size:20px; font-weight:400;}
 
 #text-content {
   padding: 0 0 0 50px;
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #text-content h1, p, h2, a {
@@ -180,7 +190,7 @@ footer {
   color:white;
   padding:25px 0 25px 0;
 
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  background: #015870;
   text-align:center;
 }
 
@@ -211,7 +221,7 @@ nav {
   height: 7rem;
   width:100%;
   /* background: #5b78c7; */
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  background: #015870;
 
   position:relative;
 
@@ -295,7 +305,7 @@ nav {
   .nav-links {
     position: fixed;
     /* background: #5b78c7; */
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    background: #015870;
     height: 100vh;
     width: 100%;
     flex-direction: column;

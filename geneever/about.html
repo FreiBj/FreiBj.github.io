@@ -45,7 +45,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav>
+    <nav id="navbar">
         <div class="logo">
             <a href="/"><img src="logo.png" alt="GeneEver Logo" class="logo"></a>
         </div>
@@ -65,7 +65,7 @@
     </nav>
 
     <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
-        <h1 >About GeneEver</h1>
+        <h1>About GeneEver</h1>
         <div class="text">
             <h2 class="uk-margin-medium-top" style="color:#ed7d31; font-weight: bold;">Background</h2>
             <p style="line-height: 1.5; font-size:1.5rem; font-weight: lighter;">
@@ -224,18 +224,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="#">Learn More</a></li>
-                </ul>
-
-            </div>
-
-            <div class="uk-block uk-block-default">
-
-                <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
 
             </div>
@@ -258,7 +247,25 @@
 
     <!--Script for whole page-->
     <script src="script.js"></script>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
 
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
