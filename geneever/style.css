@@ -129,7 +129,7 @@ p {font-size:20px; font-weight:400;}
   display:flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 #text-content h1, p, h2, a {
@@ -175,8 +175,8 @@ p {font-size:20px; font-weight:400;}
     color:white;
   }
 
-  #image img {
-    height:17em;
+  #image {
+    margin-bottom:4rem;
   }
 }
 
@@ -200,9 +200,10 @@ footer {
 
 }
 
-.footer-links li {
+.footer-links li {margin:.35rem;}
+
+.footer-links li a {
   color:white !important;
-  margin:5px;
 
   font-size:20px;
 }
@@ -341,6 +342,9 @@ nav {
   }
   .nav-links li:nth-child(4) {
     transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 1.0s;
   }
   li.fade {
     opacity: 1;

@@ -1,10 +1,10 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>News</title>
+    <title>GeneEver</title>
     <meta name="description" content="GeneEver">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,9 +35,21 @@
 
     <!--<link rel="stylesheet" href="normalize.css">-->
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .partners {
+            margin:20px;
+        }
+    </style>
+
+
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
 </head>
 
+
 <body>
+
     <!-- Navbar -->
     <nav>
         <div class="logo">
@@ -59,39 +71,60 @@
         </div>
     </nav>
 
+    <div class="uk-container uk-margin-large-top uk-margin-large-bottom uk-flex uk-flex-middle uk-flex-column">
+        <h1 style="font-size:70px;">Our Partners</h1>
+        <p style="max-width:800px;">GeneEver has strong parnters within research and development, technology, data preservation and within the domains of seeds and plant preservation</p>
 
-    <section class="news flex-parent">
-        <!-- <div class="bg-img" style="background-image:url('Crop.jpg')"> -->
-        <!-- <h1>News</h1> -->
-        </div>
-    </section>
-
-    <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div class="uk-card-media-left uk-cover-container">
-                <img src="crop.jpg" alt="" uk-cover>
-                <canvas width="600" height="400"></canvas>
-            </div>
-            <div>
-                <div class="uk-card-body">
-                    <h3 class="uk-card-title">News Article Example</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <div class="uk-card uk-card-default" style="border-radius: 20px;">
+            <div class="uk-flex uk-wrap uk-flex-wrap uk-flex-row uk-flex-middle uk-flex-center">
+                <div class="partners">
+                    <img src="assets/nibio.jpg" style="width:250px;">
+                    <p style="text-align:center;">Nibio</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                <img src="crop.jpg" alt="" uk-cover>
-                <canvas width="600" height="400"></canvas>
-            </div>
-            <div>
-                <div class="uk-card-body">
-                    <h3 class="uk-card-title">News Article Example</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    
+                <div class="partners">
+                    <img src="assets/ungdom.jpg" style="width:250px;">
+                    <p style="text-align:center;"><a href="https://www.mestergronn.no/" target="_blank">Grønn Næringskompetanse</a></p>
                 </div>
+    
+                <div class="partners">
+                    <img src="assets/piql.jpg" style="width:250px;">
+                    <p style="text-align:center;">Piql</p>
+                </div>
+    
+                <div class="partners">
+                    <img src="assets/sagaplant.png" style="width:250px;">
+                    <p style="text-align:center;">Sagaplant</p>
+                </div>
+    
+            </div>
+    
+            <div class="uk-flex uk-flex-wrap uk-flex-row uk-flex-middle uk-flex-center">
+                <div class="partners">
+                    <img src="assets/kuleuven.png" style="width:250px;">
+                    <p style="text-align:center;">Katholieke Universiteit, Leuven</p>
+                </div>
+    
+                <div class="partners">
+                    <img src="assets/ipk.png" style="width:250px;">
+                    <p style="text-align:center;"><a href="https://www.mestergronn.no/" target="_blank">IPK Gatersleben</a></p>
+                </div>
+    
+                <div class="partners">
+                    <img src="assets/nordgen.png" style="width:250px;">
+                    <p style="text-align:center;">NordGen</p>
+                </div>
+    
+                <div class="partners">
+                    <img src="assets/luke.png" style="width:200px;">
+                    <p style="text-align:center;">Natural Resources Institute, Finland</p>
+                </div>
+    
             </div>
         </div>
+        
+        
+        
     </div>
 
     <!--Footer with block elements-->
@@ -118,9 +151,9 @@
         <small>&copy; Copyright 2020 GeneEver</small>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <!--Script for whole page-->
     <script src="script.js"></script>
+
 </body>
 
 </html>
