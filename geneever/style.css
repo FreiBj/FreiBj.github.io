@@ -228,6 +228,8 @@ nav {
   display:flex;
   justify-content:space-evenly;
   align-content: center;
+
+  z-index: 1000;
 }
 
 .nav-links {
@@ -368,4 +370,10 @@ nav {
   font-weight: 800;
   color: white;
   /* box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23); */
+}
+
+@media only screen and (max-width: 680px) {
+  .text-box {
+    margin:8rem 0 !important; 
+  }
 }
