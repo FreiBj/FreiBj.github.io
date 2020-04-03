@@ -160,6 +160,10 @@ p {font-size:20px; font-weight:400;}
     align-items:center;
   }
 
+  div#image {
+    justify-content: center !important;
+  }
+
   #text-content {
     width:90%;
     padding: 0 0 0 0;
@@ -184,6 +188,7 @@ p {font-size:20px; font-weight:400;}
 /* All footer css */
 footer .uk-block {
   width:250px;
+  margin:.5rem;
 }
 
 footer {

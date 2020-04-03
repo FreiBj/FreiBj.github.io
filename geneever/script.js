@@ -11,20 +11,13 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("toggle");
 });
 
+var fills;
 
-windowHeight = window.innerHeight * 0.3;
-windowWidth = window.innerWidth * 0.3;
-
-var svg;
-/*Colors for the small balls, speed and width and height*/
-var fills = ['#012732', '#ffffff', '#a8acb2', '#ed7d31'],
+// Adapt the DNA helix to smaller screens
+if (window.innerWidth >= 1380) {
+    var fills = ['#012732', '#ffffff', '#a8acb2', '#ed7d31'],
     h = 150,
     w = 700,
-    hS = 150,
-    wS = 300,
-
-    // h       = windowHeight,
-    // w       = windowWidth,
 
     numX = 30,
     numY = 30,
@@ -34,46 +27,46 @@ var fills = ['#012732', '#ffffff', '#a8acb2', '#ed7d31'],
     y = d3.scale.linear().range([h - 10, 10]),
     z = d3.scale.linear().range([10, 2]);
 
-if (window.innerWidth <= 1380) {
-    var svg = d3.select(".dna-helix")
-        .append("svg")
-        .attr("width", wS)
-        .attr("height", hS)
-        .attr("style", "transform:rotate(-30deg); overflow:visible;")
+} else if (window.innerWidth < 1380) {
+    var fills = ['#012732', '#ffffff', '#a8acb2', '#ed7d31'],
+    h = 150,
+    w = 300,
 
-    /*Background color, move with mouse*/
-    svg.append("rect")
-        .attr("width", wS)
-        .attr("height", hS)
-        .attr("fill-opacity", 0)
-        // .on("mousemove", function () { torsion = 0.5 * d3.mouse(this)[0] / w; });
-} else {
-    /*Choose class, id or tag for the helix to be placed in -- was .dna-helix*/
-    var svg = d3.select(".dna-helix")
-        .append("svg")
-        .attr("width", w)
-        .attr("height", h)
-        .attr("style", "transform:rotate(-30deg); overflow:visible;")
-
-    /*Background color, move with mouse*/
-    svg.append("rect")
-        .attr("width", w)
-        .attr("height", h)
-        .attr("fill-opacity", 0)
-    // .on("mousemove", function () { torsion = 0.5 * d3.mouse(this)[0] / w; });
+    numX = 15,
+    numY = 15,
+    speed = 0.02,
+    torsion = 0.2,
+    x = d3.scale.linear().range([10, w - 10]),
+    y = d3.scale.linear().range([h - 10, 10]),
+    z = d3.scale.linear().range([10, 2]);
 }
+
+var svg;
+/*Colors for the small balls, speed and width and height*/
+// var fills = ['#012732', '#ffffff', '#a8acb2', '#ed7d31'],
+//     h = 150,
+//     w = 700,
+
+//     numX = 30,
+//     numY = 30,
+//     speed = 0.02,
+//     torsion = 0.2,
+//     x = d3.scale.linear().range([10, w - 10]),
+//     y = d3.scale.linear().range([h - 10, 10]),
+//     z = d3.scale.linear().range([10, 2]);
+
 /*Choose class, id or tag for the helix to be placed in -- was .dna-helix*/
-// var svg = d3.select(".dna-helix")
-//     .append("svg")
-//     .attr("width", w)
-//     .attr("height", h)
-//     .attr("style", "transform:rotate(-30deg); overflow:visible;")
+var svg = d3.select(".dna-helix")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", h)
+    .attr("style", "transform:rotate(-30deg); overflow:visible;")
 
 /*Background color, move with mouse*/
-// svg.append("rect")
-//     .attr("width", w)
-//     .attr("height", h)
-//     .attr("fill-opacity", 0)
+svg.append("rect")
+    .attr("width", w)
+    .attr("height", h)
+    .attr("fill-opacity", 0)
 // .on("mousemove", function () { torsion = 0.5 * d3.mouse(this)[0] / w; });
 
 var container = svg.append("g");
