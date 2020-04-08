@@ -261,11 +261,13 @@
             </p>
 
             <h2>Try out this Interactive 3D model yourself!</h2>
+            <button class="uk-button" onclick="loadModel(this)">Click to Load 3D model</button>
 
-            <div class="uk-flex uk-flex-center">
+            <div class="uk-flex uk-flex-center uk-flex-middle">
                 <!-- Crybox 3D interactive model -->
-                <model-viewer background-color="#70BCD1" src="assets/cryobox-render.glb" alt="A 3D model of the Cryobox"
-                    camera-controls>
+
+                <model-viewer background-color="#70BCD1" src="assets/cryobox-render.glb" ios-src="assets/cryobox-render.glb" alt="A 3D model of the Cryobox"
+                    camera-controls reveal="auto" field-of-view="30deg" style="display:none;">
                     <button slot="hotspot-1" onmouseover="mouseOver(this.slot)" onmouseout="mouseOut(this.slot)"
                         class="hotspot" data-position="-28.03973049618999m 52.20000076293945m 1.03740118297182m"
                         data-normal="0m 1m 0m">
@@ -354,6 +356,14 @@
             } else {
                 navbar.classList.remove("sticky");
             }
+        }
+
+        function loadModel(button) {
+            var render = document.querySelector("model-viewer");
+            render.style.display = "block";
+            
+            var button = button;
+            button.remove();
         }
 
         // 3D render onhover and not hovering functions
