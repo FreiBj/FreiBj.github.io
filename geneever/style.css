@@ -364,6 +364,9 @@ nav {
   .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
   }
+  #about {
+    margin-top:70px;
+  }
 }
 
 .bg-img {
