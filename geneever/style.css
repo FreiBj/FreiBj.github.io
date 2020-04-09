@@ -19,7 +19,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-
 /*Text antialiasing*/
 * {
   -webkit-font-smoothing: antialiased;
@@ -30,6 +29,10 @@ time, mark, audio, video {
 /* article, aside, details, figcaption, figure, */
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+svg {
+  width: 100%;
+  height: 100%;
 }
 body {
 	line-height: 1.5;
