@@ -19,6 +19,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+svg {
+width: calc(100% + 2px); /*or your fixed width + 2px */
+margin-left: -1px;
+}
+
 /*Text antialiasing*/
 * {
   -webkit-font-smoothing: antialiased;
