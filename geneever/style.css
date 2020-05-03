@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 
 svg {
-width: calc(100% + 2px); /*or your fixed width + 2px */
+width: calc(100% + 4px); /*or your fixed width + 2px */
 margin-left: -1px;
 }
 
