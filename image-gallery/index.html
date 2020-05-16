@@ -5,12 +5,15 @@
    <link rel="stylesheet" type="text/css" href="style.css">
    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
 <body>
 
-   <header>
-      <h1>AWA Gallery Demo <br> <span>[ New Memories Grid Page ]</span> <br> <br><span><i>Hover over the images and
+   <header class="">
+      <h1 class="animate__animated animate__fadeInUp">AWA Gallery Demo <br> <span>[ New Memories Grid Page ]</span> <br>
+         <br><span><i>Hover over the images and
                click<br> to reveal description</i></span></h1>
    </header>
 
@@ -19,53 +22,55 @@
       <div class="row">
          <ul>
             <a href="#" class="close"></a>
-            <li>
-               <a href="#item02">
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
-               </a>
-            </li>
-            <li>
-               <a href="#item02">
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/3892302/contact.png" alt="">
-               </a>
-            </li>
-            <li>
-               <a href="#item02">
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/4154721/dive--001.png" alt="">
-               </a>
-            </li>
-            <li>
-               <a class="image" href="#item01">
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg" alt="">
-               </a>
-            </li>
-            <li>
-               <a class="image" href="#item02">
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png" alt="">
-               </a>
-            </li>
-            <li>
-               <a class="image" href="#item03">
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/4360101/liberosis_--_12.png" alt="">
-               </a>
-            </li>
-            <li>
-               <a class="image" href="#item03">
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/3148799/technical-book.jpg" alt="">
-               </a>
-            </li>
-            <li>
-               <a class="image" href="#item03">
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/2883479/cover.jpg" alt="">
-               </a>
-            </li>
+            <div class="images">
+               <li>
+                  <a href="#item02">
+                     <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="#item02">
+                     <img src="https://cdn.dribbble.com/users/545884/screenshots/3892302/contact.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="#item02">
+                     <img src="https://cdn.dribbble.com/users/545884/screenshots/4154721/dive--001.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a class="image" href="#item01">
+                     <img src="https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a class="image" href="#item02">
+                     <img src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a class="image" href="#item03">
+                     <img src="https://cdn.dribbble.com/users/545884/screenshots/4360101/liberosis_--_12.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a class="image" href="#item03">
+                     <img src="https://cdn.dribbble.com/users/545884/screenshots/3148799/technical-book.jpg" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a class="image" href="#item03">
+                     <img src="https://cdn.dribbble.com/users/545884/screenshots/2883479/cover.jpg" alt="">
+                  </a>
+               </li>
+            </div>
          </ul>
       </div>
-      
+
 
 
       <!-- Popups -->
-      <div id="item01" class="port">
+      <div id="item01" class="port animate__animated animate__fadeIn animate__delay-2s">
          <div class="row">
             <div class="description">
                <h1>Item 01 // Item Name Here</h1>
@@ -78,7 +83,7 @@
       </div>
 
       <!-- Item 02 -->
-      <div id="item02" class="port">
+      <div id="item02" class="port animate__animated animate__fadeIn animate__delay-2s">
          <div class="row">
             <div class="description">
                <h1>Item 02 // Item Name Here</h1>
@@ -90,7 +95,7 @@
       </div>
 
 
-      <div id="item03" class="port">
+      <div id="item03" class="port animate__animated animate__fadeIn animate__delay-2s">
          <div class="row">
             <div class="description">
                <h1>Item 03 // Item Name Here</h1>

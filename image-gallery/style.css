@@ -26,6 +26,7 @@ a {
 .row {
   width: 100%;
   max-width: 1170px;
+  min-width:1170px;
   margin: 0 auto;
   padding: 0;
   clear: both;
@@ -129,6 +130,7 @@ header p {
 
 .port {
   position: absolute;
+  display:none;
   width: 100%;
   height: 100%;
   top: 0;
@@ -167,6 +169,7 @@ header p {
   transition: all 0.5s linear;
 }
 .port.item_open {
+  display:block;
   visibility: visible;
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
@@ -199,4 +202,21 @@ header p {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+/* own styles */
+/* .images {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: flex-start;
+} */
+
+/* Amimations */
+.animate__animated.animate__fadeOut {
+  animation-duration: 0.5s;
+}
+
+.animate__delay-2s {
+  --animate-delay: 0.2s;
 }
