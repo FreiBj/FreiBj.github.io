@@ -6,6 +6,12 @@
 html,body {
   margin:0;
   padding:0;
+  
+  --cssans-primary: 31, 51, 104;
+  --cssans-secondary: 237, 21, 118;
+  --cssans-accent1: 43, 208, 247;
+  --cssans-accent2: 255, 92, 92;
+  --cssans-accent3: 255, 216, 9;
 }
 
 body {
@@ -35,9 +41,9 @@ ul {
 }
 
 a {
+  font-size: 1.3rem;
   text-decoration: none;
   color:black;
-  padding:;
 }
 
 .loading-screen {
@@ -157,6 +163,5 @@ ul.transition li {
 hr {
     border:0.7px solid #d6dbe0;
     margin:8vh;
-    width
     border-radius: 25px;
 }

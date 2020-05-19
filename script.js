@@ -20,9 +20,8 @@ function pageTransition() {
 function contentAnimation() {
   // alert("Contant animation");
   var tl = gsap.timeline();
-  tl.from(".left", {duration:1.5, translateY:50,opacity:0})
+  tl.from(".left", {duration:1.5, translateY:50,opacity:0});
   tl.to("img", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)"})
-  
 }
 
 
