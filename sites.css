@@ -10,9 +10,17 @@ html,body {
 
 body {
   font-family: 'Montserrat', Sans-Serif;
-  height:100vh;
+  /*height:100vh;*/
   background: rgb(240,240,240);
   font-weight:600;
+}
+
+main {
+  /*display:flex;*/
+  /*flex-direction:column;*/
+  /*margin-bottom:4em;*/
+  /*position:relative;*/
+  /*z-index:3;*/
 }
 
 .wrapper {
@@ -100,12 +108,12 @@ ul.transition li {
 }
 
 @media (min-width: 650px) {
-  main {
-    display:flex;
-    margin-bottom:4em;
-    /*position:relative;*/
-    z-index:3;
-  }
+  /*main {*/
+  /*  display:flex;*/
+  /*  margin-bottom:4em;*/
+  /*  position:relative;*/
+  /*  z-index:3;*/
+  /*}*/
   
   .wrapper {
     max-width:950px;
