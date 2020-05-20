@@ -83,7 +83,7 @@
           <div class="column">
             <a class="logo" href="sites.html">
               <div class="cssans cssans--left">
-                <div class="cssans__accessible">CSSans Pro</div>
+                <div class="cssans__accessible">Frei Bjerkestrand</div>
     
                 <div class="cssans__word">
                     <b class="cssans:F"></b>
@@ -114,6 +114,7 @@
           <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
@@ -126,15 +127,18 @@
         <div class="left">
           <h1>GeneEver project</h1>
           <a href="geneever.html" class="cta">Show me it!</a>
-          <img class="animate__animated animate__fadeIn" src="https://www.pexels.com/assets/pexels-stock-photos-6c3d5eb0cbed47e1bdf44ff85ebd9cd4669f50b895b3c6e76a23a4fd43852099.jpg">
+          <img class="animate__animated animate__fadeIn" src="geneever/genetics_icon_tomatoes.png">
         </div>
         
         <!--<img class="animate__animated animate__fadeIn" src="https://www.pexels.com/assets/pexels-stock-photos-6c3d5eb0cbed47e1bdf44ff85ebd9cd4669f50b895b3c6e76a23a4fd43852099.jpg">-->
         
         <div class="left">
           <h1>Arctic World Archive + Snøhetta</h1>
-          <a href="https://www.arcticworldarchive.org" target="_blank" class="cta">Take me to AWA</a>
+          <a href="awa.html" class="cta">Take me to AWA</a>
           <img class="animate__animated animate__fadeIn" src="arctic.png">
+          <video playsinline autoplay muted loop id="player">
+            <source id="player" src="awa/header-vid.mp4" type="video/mp4">
+          </video>
         </div>
         
         <div class="left">
@@ -151,10 +155,32 @@
         
         </div>
       </main>
+      
+      <footer class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-flex-between wrapper uk-margin-medium-top">
+        
+        <div class="uk-block">
+            <!--<a href="/"><img src="logo.png" alt="Footer logo" class="logo"></a>-->
+        	<p>Created By Frei Bjerkestrand</p>
+        </div>
+        
+        <!--<div class="uk-block uk-block-default uk-flex uk-flex-row">-->
+        <!--    <div class="uk-block uk-block-default">-->
+        <!--        <ul class="footer-links">-->
+        <!--            <li><a href="index.html">Home</a></li>-->
+        <!--            <li><a href="about.html">About</a></li>-->
+        <!--            <li><a href="partners.html">Partners</a></li>-->
+        <!--            <li><a href="news.html">News</a></li>-->
+        <!--            <li><a href="contact.html">Contact</a></li>-->
+        <!--        </ul>-->
+        <!--    </div>-->
+        <!--</div>-->
+        
+        <div class="uk-block"><small> All Rights Reserved &copy; 2020</small></div>
+    </footer>
     
     
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="barba.js"></script>
+    <script src="gsap/gsap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

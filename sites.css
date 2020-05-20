@@ -7,6 +7,10 @@ html,body {
   margin:0;
   padding:0;
   
+  box-sizing: border-box;
+  
+  scroll-behavior: smooth;
+  
   --cssans-primary: 31, 51, 104;
   --cssans-secondary: 237, 21, 118;
   --cssans-accent1: 43, 208, 247;
@@ -19,7 +23,10 @@ body {
   /*height:100vh;*/
   background: rgb(240,240,240);
   font-weight:600;
+  margin:2em 0 2em 0;
 }
+
+header {margin-top:2.5em;}
 
 main {
   /*display:flex;*/
@@ -80,7 +87,7 @@ li {
 
 h1 {
   font-size:3em;
-  margin-top:1.5em;
+  /*margin-top:1.5em;*/
 }
 
 p {
@@ -128,7 +135,7 @@ ul.transition li {
   /*}*/
   
   .wrapper {
-    max-width:950px;
+    max-width:1000px;
     margin:0 auto;
   }
   
@@ -170,4 +177,537 @@ hr {
     border:0.7px solid #d6dbe0;
     margin:8vh;
     border-radius: 25px;
+}
+
+/*Footer Styles*/
+footer {
+  border-top: 1px solid #AAAAAA;
+}
+.uk-block {
+  width:250px;
+  margin:.5rem;
+}
+
+
+/*Flex Classes*/
+
+.uk-flex-stretch {
+    align-items: stretch
+}
+
+.uk-flex-top {
+    align-items: flex-start
+}
+
+.uk-flex-middle {
+    align-items: center
+}
+
+.uk-flex-bottom {
+    align-items: flex-end
+}
+
+.uk-flex-row {
+    flex-direction: row;
+}
+
+.uk-flex-row-reverse {
+    flex-direction: row-reverse
+}
+
+.uk-flex-column {
+    flex-direction: column
+}
+
+.uk-flex-column-reverse {
+    flex-direction: column-reverse
+}
+
+.uk-flex-nowrap {
+    flex-wrap: nowrap
+}
+
+.uk-flex-wrap {
+    flex-wrap: wrap
+}
+
+.uk-flex-wrap-reverse {
+    flex-wrap: wrap-reverse
+}
+
+.uk-flex-wrap-stretch {
+    align-content: stretch
+}
+
+.uk-flex-wrap-top {
+    align-content: flex-start
+}
+
+.uk-flex-wrap-middle {
+    align-content: center
+}
+
+.uk-flex-wrap-bottom {
+    align-content: flex-end
+}
+
+.uk-flex-wrap-between {
+    align-content: space-between
+}
+
+.uk-flex-wrap-around {
+    align-content: space-around
+}
+
+.uk-flex-first {
+    order: -1
+}
+
+.uk-flex-last {
+    order: 99
+}
+.uk-flex {
+    display: flex
+}
+
+.uk-flex-inline {
+    display: inline-flex
+}
+
+.uk-flex-inline::after,.uk-flex-inline::before,.uk-flex::after,.uk-flex::before {
+    display: none
+}
+
+.uk-flex-left {
+    justify-content: flex-start
+}
+
+.uk-flex-center {
+    justify-content: center
+}
+
+.uk-flex-right {
+    justify-content: flex-end
+}
+
+.uk-flex-between {
+    justify-content: space-between
+}
+
+.uk-flex-around {
+    justify-content: space-around
+}
+
+/*Margin Classes*/
+.uk-margin-top {
+    margin-top: 20px!important
+}
+
+.uk-margin-bottom {
+    margin-bottom: 20px!important
+}
+
+.uk-margin-left {
+    margin-left: 20px!important
+}
+
+.uk-margin-right {
+    margin-right: 20px!important
+}
+
+.uk-margin-small {
+    margin-bottom: 10px
+}
+
+*+.uk-margin-small {
+    margin-top: 10px!important
+}
+
+.uk-margin-small-top {
+    margin-top: 10px!important
+}
+
+.uk-margin-small-bottom {
+    margin-bottom: 10px!important
+}
+
+.uk-margin-small-left {
+    margin-left: 10px!important
+}
+
+.uk-margin-small-right {
+    margin-right: 10px!important
+}
+
+.uk-margin-medium {
+    margin-bottom: 40px
+}
+
+*+.uk-margin-medium {
+    margin-top: 40px!important
+}
+
+.uk-margin-medium-top {
+    margin-top: 40px!important
+}
+
+.uk-margin-medium-bottom {
+    margin-bottom: 40px!important
+}
+
+.uk-margin-medium-left {
+    margin-left: 40px!important
+}
+
+.uk-margin-medium-right {
+    margin-right: 40px!important
+}
+
+.uk-margin-large {
+    margin-bottom: 40px
+}
+
+*+.uk-margin-large {
+    margin-top: 40px!important
+}
+
+.uk-margin-large-top {
+    margin-top: 40px!important
+}
+
+.uk-margin-large-bottom {
+    margin-bottom: 40px!important
+}
+
+.uk-margin-large-left {
+    margin-left: 40px!important
+}
+
+.uk-margin-large-right {
+    margin-right: 40px!important
+}
+
+@media (min-width: 1200px) {
+    .uk-margin-large {
+        margin-bottom:70px
+    }
+
+    *+.uk-margin-large {
+        margin-top: 70px!important
+    }
+
+    .uk-margin-large-top {
+        margin-top: 70px!important
+    }
+
+    .uk-margin-large-bottom {
+        margin-bottom: 70px!important
+    }
+
+    .uk-margin-large-left {
+        margin-left: 70px!important
+    }
+
+    .uk-margin-large-right {
+        margin-right: 70px!important
+    }
+}
+
+.uk-margin-xlarge {
+    margin-bottom: 70px
+}
+
+*+.uk-margin-xlarge {
+    margin-top: 70px!important
+}
+
+.uk-margin-xlarge-top {
+    margin-top: 70px!important
+}
+
+.uk-margin-xlarge-bottom {
+    margin-bottom: 70px!important
+}
+
+.uk-margin-xlarge-left {
+    margin-left: 70px!important
+}
+
+.uk-margin-xlarge-right {
+    margin-right: 70px!important
+}
+
+@media (min-width: 1200px) {
+    .uk-margin-xlarge {
+        margin-bottom:140px
+    }
+
+    *+.uk-margin-xlarge {
+        margin-top: 140px!important
+    }
+
+    .uk-margin-xlarge-top {
+        margin-top: 140px!important
+    }
+
+    .uk-margin-xlarge-bottom {
+        margin-bottom: 140px!important
+    }
+
+    .uk-margin-xlarge-left {
+        margin-left: 140px!important
+    }
+
+    .uk-margin-xlarge-right {
+        margin-right: 140px!important
+    }
+}
+
+.form-container {
+    position: relative;
+}
+
+.form-container .input-cont {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.form-container .input-cont input {
+    padding-bottom: 16px
+}
+
+.form-container .input-cont.error input {
+    border-bottom: 1px solid #9f0000
+}
+
+.form-container .textarea-cont {
+    margin-top: 50px;
+    margin-bottom: 10px
+}
+
+.form-container .textarea-cont textarea {
+    height: 360px;
+    resize: none
+}
+
+.form-container .textarea-cont.error textarea {
+    border-bottom: 1px solid #9f0000
+}
+
+.form-container .err-msg {
+    padding-top: 10px;
+    color: #9f0000
+}
+
+.form-container .form-error {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    color: lightgreen;
+}
+
+/*! CSS Used from: https://milenium5.com/wp-content/themes/milenium/static/css/main.0dca620a.chunk.css */
+
+.btn-actions {
+	text-align: right;
+}
+
+.btn-actions .button {
+	position: relative;
+	color: #0ac789;
+	color: lightgreen;
+	margin: 40px 0 0 auto;
+	padding-right: 40px;
+	border: 0;
+	background-color: initial;
+}
+
+.btn-actions .button:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-top: 11px solid transparent;
+	border-bottom: 11px solid transparent;
+	border-left: 26px solid #0ac789;
+	border-left: 26px solid blue;
+}
+
+button:focus {
+	outline: none;
+}
+
+@media only screen and (max-width:1440px) {
+	.btn-actions .button {
+		margin: 30px 0 0 auto;
+	}
+}
+
+@media only screen and (max-width:1200px) {
+	.btn-actions .button {
+		padding-right: 30px;
+	}
+	.btn-actions .button:after {
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+		border-left: 18px solid #0ac789;
+		border-left: 18px solid darkblue;
+	}
+}
+
+@media only screen and (max-width:700px) {
+	.btn-actions .button {
+		padding-right: 25px;
+	}
+}
+
+input,
+textarea {
+	width: 100%;
+	color: #000;
+	color: lightgreen;
+	border: 0;
+	border-bottom: 1px solid #0ac789;
+	border-bottom: 1px solid green;
+	border-radius: 0;
+	margin: 0;
+	background: 0 0;
+}
+
+input,
+input:focus,
+input:hover,
+textarea,
+textarea:focus,
+textarea:hover {
+	box-shadow: none;
+	outline: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #000;
+	color: green;
+	opacity: 1;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	-webkit-transition: all 1 ease-out;
+	transition: all 1 ease-out;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: #000;
+	color: lightgreen;
+	opacity: 1;
+	-ms-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	-ms-transition: all 1 ease-out;
+	transition: all 1 ease-out;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #000;
+	color: green;
+	opacity: 1;
+	transition: all .3s ease-out;
+	transition: all 1 ease-out;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+	opacity: .3;
+}
+
+input:focus::-ms-input-placeholder,
+textarea:focus::-ms-input-placeholder {
+	opacity: .3;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+	opacity: .3;
+}
+
+.form-container {
+	position: relative;
+}
+
+.form-container .input-cont {
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.form-container .input-cont input {
+	padding-bottom: 16px;
+}
+
+.form-container .textarea-cont {
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.form-container .textarea-cont textarea {
+	height: 360px;
+	resize: none;
+}
+
+@media only screen and (max-width:1440px) {
+	.form-container .input-cont input {
+		padding-bottom: 12px;
+	}
+	.form-container .textarea-cont textarea {
+		height: 290px;
+	}
+}
+
+@media only screen and (max-width:1200px) {
+	.form-container .input-cont input {
+		padding-bottom: 10px;
+	}
+	.form-container .textarea-cont textarea {
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width:700px) {
+	.form-container .input-cont,
+	.form-container .textarea-cont {
+		margin-top: 40px;
+	}
+	.form-container .textarea-cont textarea {
+		height: 175px;
+	}
+}
+
+.contact-page .contact-section>* {
+	width: 100%;
+	max-width: 1130px;
+	margin: auto;
+}
+
+.contact-page .contact-section .btn-actions .button {
+	color: inherit;
+}
+
+.contact-page .contact-section .btn-actions .button:after {
+	border-left-color: #000;
+}
+
+@media only screen and (max-width:1440px) {
+	.contact-page .contact-section>* {
+		max-width: 868px;
+	}
+}
+
+@media only screen and (max-width:1200px) {
+	.contact-page .contact-section>* {
+		max-width: 666px;
+	}
 }
