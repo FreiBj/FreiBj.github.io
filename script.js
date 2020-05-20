@@ -20,9 +20,8 @@ function pageTransition() {
 function contentAnimation() {
   // alert("Contant animation");
   var tl = gsap.timeline();
-  tl.from(".left", {duration:1.5, translateY:50,opacity:0})
+  tl.from(".left", {duration:1.5, translateY:50,opacity:0});
   tl.to("img", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)"})
-  
 }
 
 
@@ -36,34 +35,51 @@ function delay(n) {
 }
 
 
+// barba.init({
+  
+//   sync: true,
+  
+//   transitions: [{
+//     async leave(data) {
+      
+//       const done = this.async();
+      
+//       pageTransition();
+//       await delay(1500);
+//       done();
+//     },
+    
+//     async beforeEnter(data) {
+//       pageTransition();
+//     },
+    
+//     async enter(data) {
+//       contentAnimation();
+//     },
+    
+//     async once(data) {
+//       contentAnimation();
+//     }
+    
+//   }]
+  
+// });
+
 barba.init({
-  
-  sync: true,
-  
+  timeout: 5000,
   transitions: [{
-    async leave(data) {
-      
-      const done = this.async();
-      
-      pageTransition();
-      await delay(1500);
-      done();
+    name: 'opacity-transition',
+    leave(data) {
+      return gsap.to(data.current.container, {
+        opacity: 0
+      });
     },
-    
-    async beforeEnter(data) {
-      pageTransition();
-    },
-    
-    async enter(data) {
-      contentAnimation();
-    },
-    
-    async once(data) {
-      contentAnimation();
+    enter(data) {
+      return gsap.from(data.next.container, {
+        opacity: 0
+      });
     }
-    
   }]
-  
 });
 
 $(function() {
