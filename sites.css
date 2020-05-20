@@ -29,6 +29,11 @@ main {
   /*z-index:3;*/
 }
 
+.left {
+  display:flex;
+  flex-direction: column;
+}
+
 .wrapper {
   padding:1em;
 }
@@ -92,7 +97,8 @@ p {
 
 img {
   width:100%;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  padding:2em 0 0 0;
+  /*clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);*/
 }
 
 ul.transition {
