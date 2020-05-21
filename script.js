@@ -18,12 +18,10 @@ function pageTransition() {
 }
 
 function contentAnimation() {
-  // alert("Contant animation");
   var tl = gsap.timeline();
+  
   tl.from(".left", {duration:1.5, translateY:50,opacity:0});
   tl.from(".go-back", {duration:1.5, translateY:50,opacity:0});
-  window.scrollTo(0,0);
-  // tl.to("img", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)"})
 }
 
 
@@ -73,6 +71,7 @@ barba.hooks.enter(() => {
 
 barba.init({
   timeout: 5000,
+  sync: true,
   transitions: [{
     name: 'opacity-transition',
     leave(data) {
@@ -85,6 +84,12 @@ barba.init({
       return gsap.from(data.next.container, {
         opacity: 0
       });
+    },
+    async enter(data) {
+      contentAnimation();
+    },
+    async once(data) {
+      contentAnimation();
     }
   }]
 });
