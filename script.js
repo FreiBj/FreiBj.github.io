@@ -85,11 +85,7 @@ barba.init({
       return gsap.from(data.next.container, {
         opacity: 0
       });
-    },
-    async enter(data) {
-      contentAnimation();
-    },
-    async once(data) {contentAnimation();}
+    }
   }]
 });
 

@@ -11,6 +11,15 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("toggle");
 });
 
+// Page Transitions
+// Function to add and remove the page transition screen
+function pageTransition() {
+  var tl = gsap.timeline();
+  tl.set('.loading-screen', { transformOrigin: "bottom left"});
+  tl.to('.loading-screen', { duration: .5, scaleY: 1});
+  tl.to('.loading-screen', { duration: .5, scaleY: 0, skewX: 0, transformOrigin: "top left", ease: "power1.out", delay: 1 });
+}
+
 var fills;
 
 // Adapt the DNA helix to smaller screens
