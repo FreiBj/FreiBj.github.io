@@ -1,183 +1,250 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Primary Meta Tags -->
-    <title>Websites by Frei Bjerkestrand</title>
-    <meta charset="UTF-8">
-    <meta name="title" content="Websites by Frei Bjerkestrand">
-    <meta name="description" content="All of my work gathered at one easy to read website.">
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Kapena - Minimal Portfolio HTML Template</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by CocoBasic" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="CocoBasic" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://freibj.github.io/">
-    <meta property="og:title" content="Websites by Frei Bjerkestrand">
-    <meta property="og:description" content="All of my work gathered at one easy to read website. The goal is to show people how a few lines of code can result in something beautiful.">
-    <meta property="og:image" content="img.jpg">
+        <link rel="shortcut icon" href="images/favicon.ico" />    
+        <link href='http://fonts.googleapis.com/css?family=Work%20Sans:400,500,700,900%7CPT%20Serif%7CRoboto:700' rel='stylesheet' type='text/css'>		
+        <link rel="stylesheet" type="text/css"  href='style.css' />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://freibj.github.io/">
-    <meta property="twitter:title" content="Websites by Frei Bjerkestrand">
-    <meta property="twitter:description" content="All of my work gathered at one easy to read website. The goal is to show people how a few lines of code can result in something beautiful.">
-    <meta property="twitter:image" content="img.jpg">
+        <!--[if lt IE 9]>
+                <script src="js/html5shiv.js"></script>            
+                <script src="js/respond.min.js"></script>                   
+        <![endif]-->         
+    </head>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="sites.css">
-    <link rel="stylesheet" type="text/css" href="cssans.min.css">
-    <!--<link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>-->
-    <!--<link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet"/>-->
-    <!--<link href="https://unpkg.com/sanitize.css/page.css" rel="stylesheet"/>-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Fixing scalability issues-->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-  </head>
+    <body class="content-1170 center-relative">
 
+        <div class="site-wrapper">                  
+            <div class="doc-loader"></div>  
 
-  <body data-barba="wrapper">
+            <header class="header-holder">
+                <div class="menu-wrapper center-relative relative">
 
-    <!--<div class="container">-->
-    <!--  <a href="https://freibj.github.io/awa/index.html" target="_blank">-->
-    <!--      <div class="card">-->
-    <!--         <h2>-->
-    <!--           Arctic World Archive-->
-    <!--         </h2>-->
-    <!--         <img src="arctic.png" alt="Image of Arctic World Archive website">-->
-    <!--       </div>-->
-    <!--    </a>-->
+                    <div class="header-logo">
+                        <a href="index.html"> 
+                            <!-- <img src="images/logo@2x.png" alt="Kapena">  -->
+                            <img src="http://static1.squarespace.com/static/54fe2137e4b038fd96c85245/t/5902635d9f7456e3fc6e68d8/1586363457720/?format=1500w" alt="">
+                        </a>
+                    </div>
 
-    <!--  <a href="#" target="_blank">-->
-    <!--      <div class="card">-->
-    <!--         <h2>-->
-    <!--            Bruteforce-->
-    <!--          </h2>-->
-    <!--          <img src="repl.png" alt="Image of Repl.it website">-->
-    <!--        </div>-->
-    <!--    </a>-->
+                    <div class="toggle-holder">
+                        <div id="toggle">
+                            <div class="first-menu-line"></div>
+                            <div class="second-menu-line"></div>
+                            <div class="third-menu-line"></div>                               
+                        </div>                            
+                    </div>
 
-    <!--  <a href="cookie/index.html" target="_blank">-->
-    <!--     <div class="card">-->
-    <!--        <h2>-->
-    <!--          Cookie Clicker-->
-    <!--        </h2>-->
-    <!--        <img src="cookie.png" alt="Image of Cookie clicker game">-->
-    <!--      </div>-->
-    <!--    </a>-->
-
-    <!--    <a href="https://github.com/FreiBj/FreiBj.github.io" target="_blank">-->
-    <!--      <div class="card">-->
-    <!--        <h2>-->
-    <!--          GitHub Repo-->
-    <!--        </h2>-->
-    <!--        <img src="github.png" alt="Image of the Github repo page">-->
-    <!--    </div>-->
-    <!--    </a>-->
-
-    <!--</div>-->
-    
-    <div class="loading-container">
-      <div class="loading-screen"></div>
-    </div>
-    
-    <div class="wrapper">
-      <div class="row">
-          <div class="column">
-            <a class="logo" href="sites.html">
-              <div class="cssans cssans--left">
-                <div class="cssans__accessible">Frei Bjerkestrand</div>
-    
-                <div class="cssans__word">
-                    <b class="cssans:F"></b>
-                    <b class="cssans:r"></b>
-                    <b class="cssans:e"></b>
-                    <b class="cssans:i"></b>
+                    <div class="menu-holder">
+                        <nav id="header-main-menu">
+                            <ul class="main-menu sm sm-clean">
+                                <li>
+                                    <a href="index.html">Work</a>
+                                </li>
+                                <li>
+                                    <a href="service.html">Service</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clear"></div>                        
                 </div>
-    
-                <div class="cssans__word">
-                    <b class="cssans:B"></b>
-                    <b class="cssans:j"></b>
-                    <b class="cssans:e"></b>
-                    <b class="cssans:r"></b>
-                    <b class="cssans:k"></b>
-                    <b class="cssans:e"></b>
-                    <b class="cssans:s"></b>
-                    <b class="cssans:t"></b>
-                    <b class="cssans:r"></b>
-                    <b class="cssans:a"></b>
-                    <b class="cssans:n"></b>
-                    <b class="cssans:d"></b>
+            </header>
+
+            <div id="content" class="site-content">                
+                <div class="section-wrapper">
+                    <!-- 
+                    <h1 class="entry-title page-title block content-1170 center-relative">
+                        We are digital crafters from New York. <br>
+                        Our passion is <b>UI &amp; UX</b> design &amp; coding.
+                    </h1> -->
+
+                    <h1 class="entry-title page-title content-570" style="text-align: left;">
+                        We are a multidisciplinary creative studio and clothing brand based in Oslo, Norway.
+                    </h1>
+
+                    <!-- <img class="title-logo center-relative block" src="images/divider_01.png" alt=""> -->
+
+                    <div class="content-wrapper block center-relative">
+                        <div id="portfolio-wrapper">
+                            <ul class="grid" id="portfolio-grid">                                    
+                                <li class="grid-sizer"></li>
+
+                                <li class="grid-item element-item p_two_third">
+                                    <a class="item-link" href="awa.html">
+                                        <img src="images/vault.jpg" alt="" />
+
+                                        <div class="portfolio-text-holder">
+                                            <p class="portfolio-title">
+                                                Arctic World Archive
+                                            </p>
+                                            <p class="portfolio-desc">
+                                                WEBDESIGN
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="grid-item element-item p_one_third">
+                                    <a class="item-link" href="portfolio-2.html">
+                                        <img src="images/portfolio_item_02.jpg" alt="" />
+                                        <div class="portfolio-text-holder">
+                                            <p class="portfolio-title">
+                                                Nature Logo
+                                            </p>
+                                            <p class="portfolio-desc">
+                                                IDENTITY
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="grid-item element-item p_one_third">
+                                    <a class="item-link" href="portfolio-3.html">
+                                        <img src="images/portfolio_item_03.jpg" alt="" />
+                                        <div class="portfolio-text-holder">
+                                            <p class="portfolio-title">
+                                                Smooth Stone
+                                            </p>
+                                            <p class="portfolio-desc">
+                                                FONT
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="grid-item element-item p_one_third">
+                                    <a class="item-link" href="portfolio-4.html">
+                                        <img src="images/portfolio_item_04.jpg" alt="" />
+                                        <div class="portfolio-text-holder">
+                                            <p class="portfolio-title">
+                                                Noise Five
+                                            </p>
+                                            <p class="portfolio-desc">
+                                                DESIGN
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="grid-item element-item p_one_third">
+                                    <a class="item-link" href="portfolio-5.html">
+                                        <img src="images/portfolio_item_05.jpg" alt="" />
+                                        <div class="portfolio-text-holder">
+                                            <p class="portfolio-title">
+                                                Plate Mockup
+                                            </p>
+                                            <p class="portfolio-desc">
+                                                PHOTOSHOP
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="grid-item element-item p_one_third">
+                                    <a class="item-link" href="portfolio-6.html">
+                                        <img src="images/portfolio_item_06.jpg" alt="" />
+                                        <div class="portfolio-text-holder">
+                                            <p class="portfolio-title">
+                                                Beard
+                                            </p>
+                                            <p class="portfolio-desc">
+                                                UX/UI
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="grid-item element-item p_two_third">
+                                    <a class="item-link" href="portfolio-7.html">
+                                        <img src="images/portfolio_item_07.jpg" alt="" />
+                                        <div class="portfolio-text-holder">
+                                            <p class="portfolio-title">
+                                                Wooden Stamp
+                                            </p>
+                                            <p class="portfolio-desc">
+                                                IDENTITY
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="clear"></div>                                    
+                        </div>
+
+                        <!-- <div class="block center-relative center-text more-posts-portfolio-holder">
+                            <p class="more-posts-portfolio">LOAD MORE</p>                                                            
+                        </div> -->
+                    </div>
+
+                    <div class="content-1170 center-relative top-70">
+                        <div class="one_half"> 
+                            <strong>The story</strong>
+                            <br> 
+                            With a warning label this big, you know they gotta be fun. Bring me the forms I need to fill out to have her taken away. 
+                            I decline the title of iron cook and accept the lesser title of zinc saucier.
+                        </div>
+
+                        <div class="one_half last"> 
+                            <strong>Dreams</strong>
+                            <br> 
+                            You probably haven’t heard of them before they sold out scenester literally readymade. Trust fund Thundercats flexitarian, 
+                            aesthetic Tumblr banjo freegan semiotics biodiesel master cleanse.
+                        </div>
+                        <div class="clear"></div>
+                    </div>           
+                </div>                                                           
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content center-relative">
+                    <img class="footer-logo" src="images/divider_01.png" alt="Kapena">
+                    <div class="copyright-holder content-1170 center-relative"> 
+                        © 2018. Made by <a href="https://cocobasic.com/">Coco+Basic.</a>
+                    </div>
+
+                    <div class="social-holder content-1170 center-relative"> 
+                        <a href="#">
+                            <span class="fa fa-twitter"></span>
+                        </a> 
+                        <a href="#">
+                            <span class="fa fa-facebook"></span>
+                        </a> 
+                        <a href="#">
+                            <span class="fa fa-youtube-play"></span>
+                        </a> 
+                        <a href="#">
+                            <span class="fa fa-pinterest-p"></span>
+                        </a> 
+                        <a href="#">
+                            <span class="fa fa-behance"></span>
+                        </a>
+                    </div>
                 </div>
-            </div></a>
-          </div>
+            </footer>
+
         </div>
-        
-        <header style="border-bottom: 1px solid #AAAAAA;">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-    </div>
-      
-      <main data-barba="container" data-barba-namespace="home" class="main">
-        <div class="wrapper">
-        
-        <div class="left">
-          <h1>GeneEver project</h1>
-          <a href="geneever.html" class="cta">Show me it!</a>
-          <img class="animate__animated animate__fadeIn" src="geneever/genetics_icon_tomatoes.png">
-        </div>
-        
-        <!--<img class="animate__animated animate__fadeIn" src="https://www.pexels.com/assets/pexels-stock-photos-6c3d5eb0cbed47e1bdf44ff85ebd9cd4669f50b895b3c6e76a23a4fd43852099.jpg">-->
-        
-        <div class="left">
-          <h1>Arctic World Archive + Snøhetta</h1>
-          <a href="awa.html" class="cta">Take me to AWA</a>
-          <img class="animate__animated animate__fadeIn" src="arctic.png">
-        </div>
-        
-        <div class="left">
-          <h1>Bruteforce in Python</h1>
-          <a href="https://www.arcticworldarchive.org" target="_blank" class="cta">Try out my program</a>
-          <img class="animate__animated animate__fadeIn"src="repl.png">
-        </div>
-        
-        <div class="left">
-          <h1>Cookie Clicker</h1>
-          <a href="https://www.arcticworldarchive.org" target="_blank" class="cta">Play this game!</a>
-          <img class="animate__animated animate__fadeIn" src="cookie.png">
-        </div>
-        
-        </div>
-      </main>
-      
-      <footer class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-flex-between wrapper uk-margin-medium-top">
-        
-        <div class="uk-block">
-            <!--<a href="/"><img src="logo.png" alt="Footer logo" class="logo"></a>-->
-        	<p>Created By Frei Bjerkestrand</p>
-        </div>
-        
-        <!--<div class="uk-block uk-block-default uk-flex uk-flex-row">-->
-        <!--    <div class="uk-block uk-block-default">-->
-        <!--        <ul class="footer-links">-->
-        <!--            <li><a href="index.html">Home</a></li>-->
-        <!--            <li><a href="about.html">About</a></li>-->
-        <!--            <li><a href="partners.html">Partners</a></li>-->
-        <!--            <li><a href="news.html">News</a></li>-->
-        <!--            <li><a href="contact.html">Contact</a></li>-->
-        <!--        </ul>-->
-        <!--    </div>-->
-        <!--</div>-->
-        
-        <div class="uk-block"><small> All Rights Reserved &copy; 2020</small></div>
-    </footer>
-    
-    
-    <script src="barba.js"></script>
-    <script src="gsap/gsap.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+
+        <!--Load JavaScript-->
+        <script src="js/jquery.js"></script>			
+        <script src='js/jquery.smartmenus.min.js'></script>                                                		                                       
+        <script src='js/imagesloaded.pkgd.js'></script>                
+        <script src='js/isotope.pkgd.js'></script>                
+        <script src='js/jquery.fitvids.js'></script>                        
+        <script src='js/swiper.min.js'></script>                        
+        <script src='js/main.js'></script>
+    </body>
 </html>
