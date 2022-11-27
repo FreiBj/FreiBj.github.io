@@ -1,180 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>GeneEver</title>
+		<meta name="description" content="GeneEver" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GeneEver</title>
-    <meta name="description" content="GeneEver">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- To Fill whole iPhone X ++ screen -->
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- To Fill whole iPhone X ++ screen -->
-    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+		<!-- <link rel="stylesheet" type="text/css" href="_root.css"> -->
 
-    <!-- <link rel="stylesheet" type="text/css" href="_root.css"> -->
+		<!--Favicons-->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon-16x16.png"
+		/>
+		<link rel="manifest" href="site.webmanifest" />
+		<meta name="msapplication-TileColor" content="#015870" />
+		<meta name="theme-color" content="#182848" />
 
+		<!--Raleway font from Google Fonts-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">-->
 
-    <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="msapplication-TileColor" content="#015870">
-    <meta name="theme-color" content="#182848">
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!--Raleway font from Google Fonts-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">-->
+		<!--UiKit CSS and JS libraries-->
+		<link rel="stylesheet" href="uikit.min.css" />
+		<script src="uikit.min.js"></script>
+		<script src="uikit-icons.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+		<!--<link rel="stylesheet" href="normalize.css">-->
+		<link rel="stylesheet" href="style.css" />
 
+		<style>
+			.partners {
+				margin: 20px;
+			}
+		</style>
 
-    <!--UiKit CSS and JS libraries-->
-    <link rel="stylesheet" href="uikit.min.css" />
-    <script src="uikit.min.js"></script>
-    <script src="uikit-icons.min.js"></script>
+		<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+	</head>
 
-    <!--<link rel="stylesheet" href="normalize.css">-->
-    <link rel="stylesheet" href="style.css">
+	<body>
+		<!-- Navbar -->
+		<nav>
+			<div class="logo">
+				<a href="/"
+					><img src="logo.png" alt="GeneEver Logo" class="logo"
+				/></a>
+			</div>
 
-    <style>
-        .partners {
-            margin: 20px;
-        }
-    </style>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="partners.html">Partners</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 
+			<div class="hamburger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
 
-    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+		<div
+			class="uk-flex uk-flex-column"
+			style="justify-content: space-between"
+		>
+			<div>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+					<path
+						fill="#015870"
+						fill-opacity="1"
+						d="M0,288L60,256C120,224,240,160,360,117.3C480,75,600,53,720,69.3C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+					></path>
+				</svg>
+			</div>
 
-</head>
+			<div
+				class="uk-container uk-margin-large-bottom uk-flex uk-flex-middle uk-flex-column"
+			>
+				<h1 style="font-size: 70px">Our Partners</h1>
+				<p style="max-width: 800px">
+					GeneEver has strong partners within research and
+					development, technology, data preservation and within the
+					domains of seeds and plant preservation
+				</p>
 
+				<div
+					class="uk-card uk-card-default"
+					style="border-radius: 20px"
+				>
+					<div
+						class="uk-flex uk-wrap uk-flex-wrap uk-flex-row uk-flex-middle uk-flex-center"
+					>
+						<div class="partners">
+							<img
+								src="assets/nibio.jpg"
+								style="max-width: 250px"
+							/>
+							<p style="text-align: center">Nibio</p>
+						</div>
 
-<body>
+						<div class="partners">
+							<img
+								src="assets/kompetanse.png"
+								style="max-width: 250px"
+							/>
+							<p style="text-align: center">
+								Grønn Næringskompetanse
+							</p>
+						</div>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <a href="/"><img src="logo.png" alt="GeneEver Logo" class="logo"></a>
-        </div>
+						<div class="partners">
+							<img
+								src="assets/piql.jpg"
+								style="max-width: 250px"
+							/>
+							<p style="text-align: center">Piql</p>
+						</div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="partners.html">Partners</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+						<div class="partners">
+							<img
+								src="assets/sagaplant.png"
+								style="max-width: 250px"
+							/>
+							<p style="text-align: center">Sagaplant</p>
+						</div>
+					</div>
 
-        <div class="hamburger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+					<div
+						class="uk-flex uk-flex-wrap uk-flex-row uk-flex-middle uk-flex-center"
+					>
+						<div class="partners">
+							<img
+								src="assets/kuleuven.png"
+								style="max-width: 250px"
+							/>
+							<p style="text-align: center">
+								Katholieke Universiteit, Leuven
+							</p>
+						</div>
 
-    <div class="uk-flex uk-flex-column" style="justify-content: space-between;">
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#015870" fill-opacity="1"
-                    d="M0,288L60,256C120,224,240,160,360,117.3C480,75,600,53,720,69.3C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-                </path>
-            </svg>
-        </div>
+						<div class="partners">
+							<img
+								src="assets/ipk.png"
+								style="max-width: 250px"
+							/>
+							<p style="text-align: center">
+								<a
+									href="https://www.mestergronn.no/"
+									target="_blank"
+									>IPK Gatersleben</a
+								>
+							</p>
+						</div>
 
-        <div class="uk-container uk-margin-large-bottom uk-flex uk-flex-middle uk-flex-column">
-            <h1 style="font-size:70px;">Our Partners</h1>
-            <p style="max-width:800px;">GeneEver has strong partners within research and development, technology, data
-                preservation and within the domains of seeds and plant preservation</p>
+						<div class="partners">
+							<img
+								src="assets/nordgen.png"
+								style="max-width: 250px"
+							/>
+							<p style="text-align: center">NordGen</p>
+						</div>
 
-            <div class="uk-card uk-card-default" style="border-radius: 20px;">
-                <div class="uk-flex uk-wrap uk-flex-wrap uk-flex-row uk-flex-middle uk-flex-center">
-                    <div class="partners">
-                        <img src="assets/nibio.jpg" style="max-width:250px;">
-                        <p style="text-align:center;">Nibio</p>
-                    </div>
+						<div
+							class="partners"
+							style="
+								display: flex;
+								align-items: center;
+								flex-direction: column;
+							"
+						>
+							<img
+								src="assets/luke.png"
+								style="max-width: 200px"
+							/>
+							<p style="text-align: center">
+								Natural Resources Institute, Finland
+							</p>
+						</div>
+						<div
+							class="partners"
+							style="
+								display: flex;
+								align-items: center;
+								flex-direction: column;
+							"
+						>
+							<img
+								src="plantmania.png"
+								style="max-width: 200px"
+							/>
+							<p style="text-align: center">Plantmania</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                    <div class="partners">
-                        <img src="assets/kompetanse.png" style="max-width:250px;">
-                        <p style="text-align:center;">Grønn
-                            Næringskompetanse</p>
-                    </div>
+			<div>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1440 320"
+					style="display: inline-block; transform: scaleX(-1)"
+				>
+					<path
+						fill="#015870"
+						fill-opacity="1"
+						d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,202.7C672,181,768,139,864,106.7C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+					></path>
+				</svg>
+			</div>
+		</div>
 
-                    <div class="partners">
-                        <img src="assets/piql.jpg" style="max-width:250px;">
-                        <p style="text-align:center;">Piql</p>
-                    </div>
+		<!--Footer with block elements-->
+		<footer
+			class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-flex-around"
+		>
+			<div class="uk-block uk-block-primary">
+				<a href="/"
+					><img src="logo.png" alt="Footer logo" class="logo"
+				/></a>
+			</div>
+			<div class="uk-block uk-block-default uk-flex uk-flex-row">
+				<div class="uk-block uk-block-default">
+					<ul class="footer-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="partners.html">Partners</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-block uk-block-default">
+				<small>&copy; Copyright 2022 GeneEver</small>
+			</div>
+		</footer>
 
-                    <div class="partners">
-                        <img src="assets/sagaplant.png" style="max-width:250px;">
-                        <p style="text-align:center;">Sagaplant</p>
-                    </div>
-
-                </div>
-
-                <div class="uk-flex uk-flex-wrap uk-flex-row uk-flex-middle uk-flex-center">
-                    <div class="partners">
-                        <img src="assets/kuleuven.png" style="max-width:250px;">
-                        <p style="text-align:center;">Katholieke Universiteit, Leuven</p>
-                    </div>
-
-                    <div class="partners">
-                        <img src="assets/ipk.png" style="max-width:250px;">
-                        <p style="text-align:center;"><a href="https://www.mestergronn.no/" target="_blank">IPK
-                                Gatersleben</a></p>
-                    </div>
-
-                    <div class="partners">
-                        <img src="assets/nordgen.png" style="max-width:250px;">
-                        <p style="text-align:center;">NordGen</p>
-                    </div>
-
-                    <div class="partners" style="display: flex; align-items: center; flex-direction: column;">
-                        <img src="assets/luke.png" style="max-width:200px;">
-                        <p style="text-align:center;">Natural Resources Institute, Finland</p>
-                    </div>
-
-                </div>
-            </div>
-
-
-        </div>
-
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
-                style="display: inline-block; transform: scaleX(-1);">
-                <path fill="#015870" fill-opacity="1"
-                    d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,202.7C672,181,768,139,864,106.7C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-        </div>
-
-    </div>
-
-    <!--Footer with block elements-->
-    <footer class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-flex-around">
-
-        <div class="uk-block uk-block-primary">
-            <a href="/"><img src="logo.png" alt="Footer logo" class="logo"></a>
-        </div>
-        <div class="uk-block uk-block-default uk-flex uk-flex-row">
-
-            <div class="uk-block uk-block-default">
-
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="partners.html">Partners</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-            </div>
-        </div>
-        <div class="uk-block uk-block-default"><small>&copy; Copyright 2020 GeneEver</small></div>
-    </footer>
-
-    <!--Script for whole page-->
-    <script src="script.js"></script>
-
-</body>
-
+		<!--Script for whole page-->
+		<script src="script.js"></script>
+	</body>
 </html>

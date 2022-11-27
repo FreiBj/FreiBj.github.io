@@ -1,336 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>About</title>
+		<meta name="description" content="GeneEver" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>About</title>
-  <meta name="description" content="GeneEver" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- To Fill whole iPhone X ++ screen -->
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- To Fill whole iPhone X ++ screen -->
-  <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+		<!-- <link rel="stylesheet" type="text/css" href="_root.css"> -->
 
-  <!-- <link rel="stylesheet" type="text/css" href="_root.css"> -->
+		<!--Favicons-->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon-16x16.png"
+		/>
+		<link rel="manifest" href="site.webmanifest" />
+		<meta name="msapplication-TileColor" content="#015870" />
+		<meta name="theme-color" content="#182848" />
 
-  <!--Favicons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <meta name="msapplication-TileColor" content="#015870" />
-  <meta name="theme-color" content="#182848" />
+		<!--Raleway font from Google Fonts-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">-->
 
-  <!--Raleway font from Google Fonts-->
-  <!--<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">-->
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+			rel="stylesheet"
+		/>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet" />
+		<!--UiKit CSS and JS libraries-->
+		<link rel="stylesheet" href="uikit.min.css" />
+		<script src="uikit.min.js"></script>
+		<script src="uikit-icons.min.js"></script>
 
-  <!--UiKit CSS and JS libraries-->
-  <link rel="stylesheet" href="uikit.min.css" />
-  <script src="uikit.min.js"></script>
-  <script src="uikit-icons.min.js"></script>
+		<!--<link rel="stylesheet" href="normalize.css">-->
+		<link rel="stylesheet" href="style.css" />
 
-  <!--<link rel="stylesheet" href="normalize.css">-->
-  <link rel="stylesheet" href="style.css" />
+		<style>
+			model-viewer {
+				width: 100%;
+				height: 50vh;
 
-  <style>
-    model-viewer {
-      width: 100%;
-      height: 50vh;
-
-      /* border:2px solid lightslategrey;
+				/* border:2px solid lightslategrey;
             border-radius: 5px; */
-    }
+			}
 
-    .annotation {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      margin-left: 15px;
-      margin-top: 15px;
-      padding: 1em;
-      width: 200px;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.8);
-      border-radius: 0.5em;
-      font-size: 12px;
-      line-height: 1.2;
-      transition: opacity 0.5s;
+			.annotation {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				margin-left: 15px;
+				margin-top: 15px;
+				padding: 1em;
+				width: 200px;
+				color: #fff;
+				background: rgba(0, 0, 0, 0.8);
+				border-radius: 0.5em;
+				font-size: 12px;
+				line-height: 1.2;
+				transition: opacity 0.5s;
 
-      display: none;
-    }
+				display: none;
+			}
 
-    /* This keeps child nodes hidden while the element loads */
-    :not(:defined)>* {
-      display: none;
-    }
+			/* This keeps child nodes hidden while the element loads */
+			:not(:defined) > * {
+				display: none;
+			}
 
-    .hotspot {
-      content: "1";
-      /* position: absolute; */
-      /* top: -30px; */
-      /* left: -30px; */
-      width: 30px;
-      height: 30px;
-      border: 0px solid #fff;
-      border-radius: 50%;
-      font-size: 16px;
-      line-height: 30px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.8);
-    }
-  </style>
-</head>
+			.hotspot {
+				content: '1';
+				/* position: absolute; */
+				/* top: -30px; */
+				/* left: -30px; */
+				width: 30px;
+				height: 30px;
+				border: 0px solid #fff;
+				border-radius: 50%;
+				font-size: 16px;
+				line-height: 30px;
+				text-align: center;
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+	</head>
 
-<body>
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">
-      <a href="/"><img src="logo.png" alt="GeneEver Logo" class="logo" /></a>
-    </div>
+	<body>
+		<!-- Navbar -->
+		<nav>
+			<div class="logo">
+				<a href="/"
+					><img src="logo.png" alt="GeneEver Logo" class="logo"
+				/></a>
+			</div>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="partners.html">Partners</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="partners.html">Partners</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 
-    <div class="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
+			<div class="hamburger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
 
-  <div class="uk-flex uk-flex-column" style="justify-content: space-between">
-    <div style="overflow: hidden; width: 100%">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#015870" fill-opacity="1"
-          d="M0,288L60,256C120,224,240,160,360,117.3C480,75,600,53,720,69.3C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-        </path>
-      </svg>
-    </div>
+		<div
+			class="uk-flex uk-flex-column"
+			style="justify-content: space-between"
+		>
+			<div style="overflow: hidden; width: 100%">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+					<path
+						fill="#015870"
+						fill-opacity="1"
+						d="M0,288L60,256C120,224,240,160,360,117.3C480,75,600,53,720,69.3C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+					></path>
+				</svg>
+			</div>
 
-    <div class="uk-container uk-margin-large-bottom" id="about">
-      <h1 class="uk-margin-medium-bottom">About GeneEver</h1>
-      <p style="line-height: 1.5; font-size: 1.5rem; font-weight: lighter">
-        GeneEver is established in order to develop and commercialize
-        solutions for safe long-term storage of different types of
-        biological/genetic material with the associated data and information
-        in the same storage device. GeneEver is based on many years of R&D and
-        innovation work in close contact with well-respected institutions and
-        industry players in Norway and abroad. The first product/service to be
-        launched is a newly developed "co-storage device" (cryoBox) for
-        co-storage of living plants and associated data. Then will follow
-        solutions for co-storage of seeds and data, and finally further
-        development of this into solutions for co-storage in the human and
-        animal fields. We will also explore the possibility of further
-        developing our conservation solution for viruses for e.g. the use
-        within research and development of vaccines (a hot topic in these
-        COVID-19 times).
-      </p>
-      <h2 class="uk-margin-medium-top" style="color: #ed7d31; font-weight: bold">
-        Background
-      </h2>
-      <p style="line-height: 1.5; font-size: 1.5rem; font-weight: lighter">
-        The world's genetic diversity is under pressure. This applies to plants, insects, fish and animals. Particularly
-        serious is that genetic resources, species, varieties, seeds and clone-informed material related to food
-        production and benefit crops are lost.
-        Seed banks and cryopreservation laboratories are working purposefully to preserve genetic material from plants,
-        fish and animals.
-        <br><br>
-        On the human side, genetic material is also being worked on over time, including tissue
-        samples, stem cells and DNA. The same happens with the development of methods of safe preservation of viruses
-        over time.
-        A major challenge related to genetic material stored over time is to preserve the associated information/data
-        since it is stored in a different location (and on many different mediums) than the genetic material. There is
-        currently no solution for such co-storage.
-      </p>
+			<div class="uk-container uk-margin-large-bottom" id="about">
+				<h1 class="uk-margin-medium-bottom">About GeneEver</h1>
+				<p
+					style="
+						line-height: 1.5;
+						font-size: 1.5rem;
+						font-weight: lighter;
+					"
+				>
+					GeneEver is established in order to develop and
+					commercialize solutions for safe long-term storage of
+					different types of biological/genetic material with the
+					associated data and information in the same storage device.
+					GeneEver is based on many years of R&D and innovation work
+					in close contact with well-respected institutions and
+					industry players in Norway and abroad. The first
+					product/service to be launched is a newly developed
+					"co-storage device" (cryoBox) for co-storage of living
+					plants and associated data. Then will follow solutions for
+					co-storage of seeds and data, and finally further
+					development of this into solutions for co-storage in the
+					human and animal fields. We will also explore the
+					possibility of further developing our conservation solution
+					for viruses for e.g. the use within research and development
+					of vaccines (a hot topic in these COVID-19 times).
+				</p>
 
-      <h2 class="uk-margin-medium-top" style="color: #ed7d31; font-weight: bold">
-        The Cryo method
-      </h2>
-      <p style="line-height: 1.5; font-size: 1.5rem; font-weight: lighter">
-        The cryo method has become an increasingly used and recognised tool to
-        keep living plant material alive all across the world. The method
-        consists of placing small shot tips from the living plant in liquid
-        nitrogen (N2 -196°Celsius), a solid method that safeguards all the
-        genetic information.
-      </p>
+				<img
+					src="the-team.jpg"
+					class="uk-margin-large-bottom uk-margin-large-top"
+					alt=""
+				/>
+				<h2
+					class="uk-margin-medium-top"
+					style="color: #ed7d31; font-weight: bold"
+				>
+					Background
+				</h2>
+				<p
+					style="
+						line-height: 1.5;
+						font-size: 1.5rem;
+						font-weight: lighter;
+					"
+				>
+					The world's genetic diversity is under pressure. This
+					applies to plants, insects, fish and animals. Particularly
+					serious is that genetic resources, species, varieties, seeds
+					and clone-informed material related to food production and
+					benefit crops are lost. Seed banks and cryopreservation
+					laboratories are working purposefully to preserve genetic
+					material from plants, fish and animals.
+					<br /><br />
+					On the human side, genetic material is also being worked on
+					over time, including tissue samples, stem cells and DNA. The
+					same happens with the development of methods of safe
+					preservation of viruses over time. A major challenge related
+					to genetic material stored over time is to preserve the
+					associated information/data since it is stored in a
+					different location (and on many different mediums) than the
+					genetic material. There is currently no solution for such
+					co-storage.
+				</p>
 
-      <h2 class="uk-margin-medium-top" style="color: #ed7d31; font-weight: bold">
-        The related information is just as important!
-      </h2>
-      <p style="line-height: 1.5; font-size: 1.5rem; font-weight: lighter">
-        The two companies Piql and Green Business Competence (GNK), have developed solutions for cryopreserved material
-        and seeds co-stored with associated data, through a series of scientific research and development projects
-        Development and expertise in the field have now come so far that a separate company has now been established
-        with the aim of commercialising the results of this work. The rights granted by Piql and GNK from these projects
-        have therefore been transferred to the newly created company GeneEver.
-        What GeneEver is now doing is developing a holistic and innovative digital service with the online data
-        management portal and ordering data transferred to a secure photosensitive long-term preservation medium, to be
-        co-stored with genetic material.
-      </p>
+				<img
+					src="holding-box.jpg"
+					class="uk-margin-large-bottom uk-margin-large-top"
+					alt=""
+				/>
 
-      <h2 class="uk-margin-medium-top" style="color: #ed7d31; font-weight: bold">
-        Cryobox
-      </h2>
-      <p style="line-height: 1.5; font-size: 1.5rem; font-weight: lighter">
-        We have, with support from Oslofjord Regional Research Fund, the
-        Research Council of Norway, Innovation Norway in cooperation with
-        Sagaplant, Norwegian Institute of Bioeconomy Research (NIBIO), Norner
-        and EGGS Design developed the Cryobox.
+				<h2
+					class="uk-margin-medium-top"
+					style="color: #ed7d31; font-weight: bold"
+				>
+					The Cryo method
+				</h2>
+				<p
+					style="
+						line-height: 1.5;
+						font-size: 1.5rem;
+						font-weight: lighter;
+					"
+				>
+					The cryo method has become an increasingly used and
+					recognised tool to keep living plant material alive all
+					across the world. The method consists of placing small shot
+					tips from the living plant in liquid nitrogen (N2
+					-196°Celsius), a solid method that safeguards all the
+					genetic information.
+				</p>
 
-        <br /><br />
+				<h2
+					class="uk-margin-medium-top"
+					style="color: #ed7d31; font-weight: bold"
+				>
+					The related information is just as important!
+				</h2>
+				<p
+					style="
+						line-height: 1.5;
+						font-size: 1.5rem;
+						font-weight: lighter;
+					"
+				>
+					The two companies Piql and Grønn Næringskompetanse (GNK),
+					have developed solutions for cryopreserved material and
+					seeds co-stored with associated data, through a series of
+					scientific research and development projects Development and
+					expertise in the field have now come so far that a separate
+					company has now been established with the aim of
+					commercialising the results of this work. The rights granted
+					by Piql and GNK from these projects have therefore been
+					transferred to the newly created company GeneEver. What
+					GeneEver is now doing is developing a holistic and
+					innovative digital service with the online data management
+					portal and ordering data transferred to a secure
+					photosensitive long-term preservation medium, to be
+					co-stored with genetic material.
+				</p>
 
-        The Cryobox is designed in a way which allows the biological material
-        and the related information to be cryo preserved together. This way,
-        one does not need to keep a separate archive to be able to access the
-        information in the future.
+				<h2
+					class="uk-margin-medium-top"
+					style="color: #ed7d31; font-weight: bold"
+				>
+					Cryobox
+				</h2>
+				<p
+					style="
+						line-height: 1.5;
+						font-size: 1.5rem;
+						font-weight: lighter;
+					"
+				>
+					We have, with support from Oslofjord Regional Research Fund,
+					the Research Council of Norway, Innovation Norway in
+					cooperation with Sagaplant, Norwegian Institute of
+					Bioeconomy Research (NIBIO), Norner and EGGS Design
+					developed the Cryobox.
 
-        <br /><br />
+					<br /><br />
 
-        Apart from Sagaplant in Norway, the Cryobox has been tested by Luke
-        Natural Resources Institute in Finland and the Catholic University of
-        Leuven in Belgium.
-      </p>
+					The Cryobox is designed in a way which allows the biological
+					material and the related information to be cryo preserved
+					together. This way, one does not need to keep a separate
+					archive to be able to access the information in the future.
 
-      <h2>Try out this Interactive 3D model yourself!</h2>
-      <button class="uk-button" onclick="loadModel(this)">
-        Click to Load 3D model
-      </button>
+					<br /><br />
 
-      <div class="uk-flex uk-flex-center uk-flex-middle">
-        <!-- Crybox 3D interactive model -->
+					Apart from Sagaplant in Norway, the Cryobox has been tested
+					by Luke Natural Resources Institute in Finland and the
+					Catholic University of Leuven in Belgium.
+				</p>
 
-        <model-viewer src="assets/cryobox-render.glb" ios-src="assets/cryobox-render.glb"
-          alt="A 3D model of the Cryobox" camera-controls reveal="auto" data-js-focus-visible field-of-view="30deg"
-          style="display: none">
-          <button slot="hotspot-1" onmouseover="mouseOver(this.slot)" onmouseout="mouseOut(this.slot)" class="hotspot"
-            data-position="-28.03973049618999m 52.20000076293945m 1.03740118297182m" data-normal="0m 1m 0m">
-            <div class="annotation" id="annotation-1">
-              <p><strong>Numbers</strong></p>
-              <p>The numbers make for easy sorting and retrieving of data</p>
-            </div>
-          </button>
+				<img
+					src="cryobo.jpg"
+					class="uk-margin-large-bottom uk-margin-large-top"
+					alt=""
+				/>
 
-          <button slot="hotspot-2" onmouseover="mouseOver(this.slot)" onmouseout="mouseOut(this.slot)" class="hotspot"
-            data-position="-0.5659441738120563m 43.904928701077196m 65.77497679605085m"
-            data-normal="-0.0021625360609555722m 0.0632106314500485m 0.9979978654834245m">
-            <div class="annotation" id="annotation-2">
-              <p><strong>The Cover</strong></p>
-              <p>
-                The cover is removable for easy storage and good protection.
-              </p>
-            </div>
-          </button>
+				<h2>Try out this Interactive 3D model yourself!</h2>
+				<button class="uk-button" onclick="loadModel(this)">
+					Click to Load 3D model
+				</button>
 
-          <button slot="hotspot-3" onmouseover="mouseOver(this.slot)" onmouseout="mouseOut(this.slot)" class="hotspot"
-            data-position="10.768063531709597m 51.99138147541851m -2.801946815970595m"
-            data-normal="0.0035576895304730094m 0.9999936514246706m -0.0001998888677011594m">
-            <div class="annotation" id="annotation-3">
-              <p><strong>Airflow holes</strong></p>
-              <p>
-                Not only does it make the Cryobox look better, it also serves
-                as ventilation holes for humidity.
-              </p>
-            </div>
-          </button>
-        </model-viewer>
-      </div>
-    </div>
+				<div class="uk-flex uk-flex-center uk-flex-middle">
+					<!-- Crybox 3D interactive model -->
 
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
-        style="display: inline-block; transform: scaleX(-1)">
-        <path fill="#015870" fill-opacity="1"
-          d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,202.7C672,181,768,139,864,106.7C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
-      </svg>
-    </div>
-  </div>
+					<model-viewer
+						src="assets/cryobox-render.glb"
+						ios-src="assets/cryobox-render.glb"
+						alt="A 3D model of the Cryobox"
+						camera-controls
+						reveal="auto"
+						data-js-focus-visible
+						field-of-view="30deg"
+						style="display: none"
+					>
+						<button
+							slot="hotspot-1"
+							onmouseover="mouseOver(this.slot)"
+							onmouseout="mouseOut(this.slot)"
+							class="hotspot"
+							data-position="-28.03973049618999m 52.20000076293945m 1.03740118297182m"
+							data-normal="0m 1m 0m"
+						>
+							<div class="annotation" id="annotation-1">
+								<p><strong>Numbers</strong></p>
+								<p>
+									The numbers make for easy sorting and
+									retrieving of data
+								</p>
+							</div>
+						</button>
 
-  <!--Footer with block elements-->
-  <footer class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-flex-around">
-    <div class="uk-block uk-block-primary">
-      <a href="/"><img src="logo.png" alt="Footer logo" class="logo" /></a>
-    </div>
-    <div class="uk-block uk-block-default uk-flex uk-flex-row">
-      <div class="uk-block uk-block-default">
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="uk-block uk-block-default">
-      <small>&copy; Copyright 2020 GeneEver</small>
-    </div>
-  </footer>
+						<button
+							slot="hotspot-2"
+							onmouseover="mouseOver(this.slot)"
+							onmouseout="mouseOut(this.slot)"
+							class="hotspot"
+							data-position="-0.5659441738120563m 43.904928701077196m 65.77497679605085m"
+							data-normal="-0.0021625360609555722m 0.0632106314500485m 0.9979978654834245m"
+						>
+							<div class="annotation" id="annotation-2">
+								<p><strong>The Cover</strong></p>
+								<p>
+									The cover is removable for easy storage and
+									good protection.
+								</p>
+							</div>
+						</button>
 
-  <!-- Script for 3D render -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+						<button
+							slot="hotspot-3"
+							onmouseover="mouseOver(this.slot)"
+							onmouseout="mouseOut(this.slot)"
+							class="hotspot"
+							data-position="10.768063531709597m 51.99138147541851m -2.801946815970595m"
+							data-normal="0.0035576895304730094m 0.9999936514246706m -0.0001998888677011594m"
+						>
+							<div class="annotation" id="annotation-3">
+								<p><strong>Airflow holes</strong></p>
+								<p>
+									Not only does it make the Cryobox look
+									better, it also serves as ventilation holes
+									for humidity.
+								</p>
+							</div>
+						</button>
+					</model-viewer>
+				</div>
+			</div>
 
-  <!--Script for whole page-->
-  <script src="script.js"></script>
-  <script>
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function () {
-      myFunction();
-    };
+			<div>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1440 320"
+					style="display: inline-block; transform: scaleX(-1)"
+				>
+					<path
+						fill="#015870"
+						fill-opacity="1"
+						d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,202.7C672,181,768,139,864,106.7C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+					></path>
+				</svg>
+			</div>
+		</div>
 
-    // Get the navbar
-    var navbar = document.getElementById("navbar");
+		<!--Footer with block elements-->
+		<footer
+			class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-flex-around"
+		>
+			<div class="uk-block uk-block-primary">
+				<a href="/"
+					><img src="logo.png" alt="Footer logo" class="logo"
+				/></a>
+			</div>
+			<div class="uk-block uk-block-default uk-flex uk-flex-row">
+				<div class="uk-block uk-block-default">
+					<ul class="footer-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="partners.html">Partners</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-block uk-block-default">
+				<small>&copy; Copyright 2022 GeneEver</small>
+			</div>
+		</footer>
 
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
+		<!-- Script for 3D render -->
+		<script
+			type="module"
+			src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+		></script>
 
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
+		<!--Script for whole page-->
+		<script src="script.js"></script>
+		<script>
+			// When the user scrolls the page, execute myFunction
+			window.onscroll = function () {
+				myFunction();
+			};
 
-    function loadModel(button) {
-      var render = document.querySelector("model-viewer");
-      render.style.display = "block";
+			// Get the navbar
+			var navbar = document.getElementById('navbar');
 
-      var button = button;
-      button.remove();
-    }
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
 
-    // 3D render onhover and not hovering functions
-    function mouseOver(SlotID) {
-      if (SlotID == "hotspot-1") {
-        document.getElementById("annotation-1").style.display = "block";
-      } else if (SlotID == "hotspot-2") {
-        document.getElementById("annotation-2").style.display = "block";
-      } else if (SlotID == "hotspot-3") {
-        document.getElementById("annotation-3").style.display = "block";
-      }
-    }
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add('sticky');
+				} else {
+					navbar.classList.remove('sticky');
+				}
+			}
 
-    function mouseOut(SlotID) {
-      if (SlotID == "hotspot-1") {
-        document.getElementById("annotation-1").style.display = "none";
-      } else if (SlotID == "hotspot-2") {
-        document.getElementById("annotation-2").style.display = "none";
-      } else if (SlotID == "hotspot-3") {
-        document.getElementById("annotation-3").style.display = "none";
-      }
-    }
-  </script>
-</body>
+			function loadModel(button) {
+				var render = document.querySelector('model-viewer');
+				render.style.display = 'block';
 
+				var button = button;
+				button.remove();
+			}
+
+			// 3D render onhover and not hovering functions
+			function mouseOver(SlotID) {
+				if (SlotID == 'hotspot-1') {
+					document.getElementById('annotation-1').style.display =
+						'block';
+				} else if (SlotID == 'hotspot-2') {
+					document.getElementById('annotation-2').style.display =
+						'block';
+				} else if (SlotID == 'hotspot-3') {
+					document.getElementById('annotation-3').style.display =
+						'block';
+				}
+			}
+
+			function mouseOut(SlotID) {
+				if (SlotID == 'hotspot-1') {
+					document.getElementById('annotation-1').style.display =
+						'none';
+				} else if (SlotID == 'hotspot-2') {
+					document.getElementById('annotation-2').style.display =
+						'none';
+				} else if (SlotID == 'hotspot-3') {
+					document.getElementById('annotation-3').style.display =
+						'none';
+				}
+			}
+		</script>
+	</body>
 </html>
